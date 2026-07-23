@@ -274,11 +274,26 @@ a{color:inherit;text-decoration:none}
   color:rgba(244,241,234,0.84);max-width:46ch;margin-top:1.6rem; }
 .hero-cta{ display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.3rem; }
 
-/* plain hero — no image/video, just the page's normal light background.
-   the base .hero styling above (light text, dark scrim, light ghost button)
-   is tuned for a photo behind it, so a plain hero needs its own dark-on-light
-   overrides rather than removing those shared rules everyone else relies on. */
-.hero.plain{ background:var(--bg); color:var(--t-hi); min-height:80svh; height:auto;
+/* centered variant — same image hero, but content centred instead of the
+   usual bottom-left block. The backlink stays pinned left since a centred
+   "← Home" reads oddly floating above centred text. Extra scrim + text-shadow
+   because a busy/bright photo (containers with their own printed logos) can
+   still fight plain light text even with the base scrim. */
+.hero.centered .hero-inner{ display:flex;flex-direction:column;align-items:center;text-align:center; }
+.hero.centered .backlink{ align-self:flex-start; }
+.hero.centered .hero-cta{ justify-content:center; }
+.hero.centered .hero-scrim{
+  background:
+    linear-gradient(180deg, rgba(6,10,18,.6) 0%, rgba(6,10,18,.3) 26%, rgba(6,10,18,.45) 66%, rgba(6,10,18,.85) 100%),
+    radial-gradient(60% 55% at 50% 45%, rgba(6,10,18,.35), transparent 70%);
+}
+.hero.centered .display{ text-shadow:0 2px 20px rgba(0,0,0,.5), 0 1px 3px rgba(0,0,0,.4); }
+.hero.centered .hero-sub{ margin-inline:auto; }
+
+/* plain hero — no image/video, just the page's own soft tinted-gradient
+   background (transparent lets the body's gradient show through) instead
+   of a flat colour, with dark text since the backdrop is light. */
+.hero.plain{ background:transparent; color:var(--t-hi); min-height:52svh; height:auto;
   display:flex; align-items:center; justify-content:center; text-align:center; }
 .hero.plain .hero-inner{ display:flex; flex-direction:column; align-items:center; padding-bottom:0; }
 .hero.plain .hero-cta{ justify-content:center; }
@@ -287,23 +302,7 @@ a{color:inherit;text-decoration:none}
 .hero.plain .hero-sub{ color:var(--t-mid); margin-inline:auto; }
 .hero.plain .btn.ghost{ color:var(--t-hi);background:var(--glass-soft);border-color:var(--glass-line-2); }
 .hero.plain .btn.ghost::after{ background:rgba(255,255,255,0.5); }
-/* the silver-chrome .grad above is tuned for dark photos and nearly
-   disappears on this light background — fall back to the standard
-   dark teal/slate ramp used everywhere else on a plain background.
-   background-clip/color must be repeated here — the `background` shorthand
-   above resets background-clip to its default, which otherwise fights the
-   base .grad rule's `background-clip:text` and leaves the text invisible
-   behind a solid gradient block. */
-.hero.plain .grad{
-  background:linear-gradient(110deg,
-    var(--orange) 0%, #12656f 22%,
-    #4e6a74 42%, #5d747f 47%,
-    #f2f7f8 50%,
-    #5d747f 53%, #4e6a74 58%,
-    #12656f 78%, var(--orange) 100%);
-  background-size:300% 100%;
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+.hero.plain .grad{ color:var(--orange); }
 
 .scroll-cue{ position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);z-index:3;
   display:flex;flex-direction:column;align-items:center;gap:.7rem;
@@ -930,14 +929,12 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
   border:1px solid rgba(255,255,255,.3); background:rgba(255,255,255,.1);
   backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
 
-/* On dark imagery: full polished-silver chrome with the same drifting highlight */
+/* On dark imagery: the silver-chrome shimmer read as too faint/washed-out
+   over a busy photo — plain solid white holds up far better */
 .hero .grad, .cta-full .grad{
-  background:linear-gradient(110deg,
-    #eef4f6 0%, #b9c5cc 22%, #ffffff 42%,
-    #98a8b1 60%, #e9eff2 78%, #c3ced5 100%);
-  background-size:220% 100%;
-  -webkit-background-clip:text; background-clip:text; color:transparent;
-  animation:chromeShift 6s ease-in-out infinite alternate;
+  background:none; -webkit-background-clip:initial; background-clip:initial;
+  color:#fff;
+  animation:none;
 }
 
 /* ============================================================
