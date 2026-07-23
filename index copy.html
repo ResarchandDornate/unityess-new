@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UnityESS — Energy, when you need it | Battery Energy Storage, India</title>
+<meta name="description" content="Unity ESS — battery energy storage built for India's grid by Ornate Solar and Inverted Energy. Commissioned in under 48 hours, monitored 24/7, from 1 kWh homes to 6.25 MWh utility systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- AMBIENT FX — drifting light, grain, grid (fills negative space with depth) -->
+<div class="fx-aurora" aria-hidden="true">
+  <span class="orb o1"></span>
+  <span class="orb o2"></span>
+  <span class="orb o3"></span>
+  <span class="orb o4"></span>
+</div>
+<div class="fx-grid" aria-hidden="true"></div>
+<div class="fx-grain" aria-hidden="true"></div>
+<div class="progress-beam" aria-hidden="true"></div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader">
+  <div class="loader-num"><span id="loadNum">0</span><small>%</small></div>
+  <div class="loader-bar"><i id="loadBar"></i></div>
+  <div class="loader-tag">UNITY ESS · ENERGY, WHEN YOU NEED IT</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a class="brand" href="index.html" data-hot>
+    <svg class="mark" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="13" stroke="#005f6b" stroke-width="1.6"/>
+      <circle cx="16" cy="16" r="4.6" fill="#005f6b"/>
+    </svg>
+    <span>UNITY<b>ESS</b></span>
+  </a>
+  <div class="nav-links">
+    <a href="#collection" class="hide-sm" data-hot>  Our Products</a>
+    <a href="#applications" class="hide-sm" data-hot>Applications</a>
+    <a href="#wire" class="hide-sm" data-hot>The Wire</a>
+    <a href="#manufacture" class="hide-sm" data-hot>The Manufacture</a>
+    <a href="#contact" class="btn" data-hot><span>Contact Us</span></a>
+  </div>
+</nav>
+
+<!-- YOU — brand intro: Built for You → UNITY ESS -->
+<section class="you" id="you" aria-label="Unity ESS — built for you. Energy, when you need it.">
+  <div class="you-stage">
+    <h2 class="you-line" id="youLine" aria-hidden="true">
+      <span class="you-anchor" id="youAnchor">
+        <span class="you-prefixes">
+          <span class="you-prefix">Built for</span>
+          <span class="you-prefix">Always with</span>
+          <span class="you-prefix">Always</span>
+        </span><span class="you-word" id="youWord">You</span>
+      </span>
+    </h2>
+    <div class="you-logo" id="youLogo" aria-hidden="true">
+      <div class="yl-word" id="ylWord">
+        <span class="yl-u" id="ylU">U</span><span class="yl-l">N</span><span class="yl-l">I</span><span class="yl-l">T</span><span class="yl-l">Y</span><span class="yl-gap"></span><span class="yl-l">E</span><span class="yl-l">S</span><span class="yl-l">S</span>
+        <i class="yl-strike" id="ylStrike"></i>
+      </div>
+      <div class="yl-tag" id="ylTag">Energy, when you need it.</div>
+    </div>
+    <div class="scroll-cue you-cue"><span>Scroll</span><span class="bar"></span></div>
+  </div>
+</section>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-media" data-parallax="0.14">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/for-website.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <div class="eyebrow line-mask"><span>Unity ESS &middot; Battery Energy Storage &middot; India</span></div>
+    <h1 class="display" style="margin-top:1.3rem">
+      <span class="line-mask"><span>Energy,</span></span>
+      <span class="line-mask"><span class="grad script">when you need it.</span></span>
+    </h1>
+    <p class="hero-sub reveal">We store energy so when you need it, it is there. Commissioned in under 48 hours. Monitored 24/7. Built for India&rsquo;s grid, by people who understand what happens when it fails.</p>
+    <div class="hero-cta reveal">
+      <a href="#contact" class="btn" data-hot><span>Enquire about your project</span></a>
+      <a href="#collection" class="btn ghost" data-hot><span>Explore our products</span></a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat reveal"><div class="num"><span data-count="48">0</span> <b>hrs</b></div><div class="lbl">Commissioned In Under</div></div>
+    <div class="stat reveal"><div class="num"><span data-count="24" data-suf="/7">0</span></div><div class="lbl">Monitored, For Life</div></div>
+    <div class="stat reveal"><div class="num"><span data-count="20">0</span> <b>yrs</b></div><div class="lbl">Asset Life, Managed</div></div>
+    <div class="stat reveal"><div class="num"><span data-count="6.25" data-dec="2">0</span> <b>MWh</b></div><div class="lbl">Utility Flagship</div></div>
+  </div>
+</section>
+
+<!-- SPEC RIBBON -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-group">
+      <span>Energy, when you need it</span><i>&#9670;</i><span>Commissioned in under 48 hours</span><i>&#9670;</i><span>Monitored 24/7</span><i>&#9670;</i><span>&lt;20 ms switchover</span><i>&#9670;</i><span>1 kWh &ndash; 6.25 MWh</span><i>&#9670;</i><span>Solar at noon, power at seven</span><i>&#9670;</i><span>Built for India&rsquo;s grid</span><i>&#9670;</i><span>Made in India</span><i>&#9670;</i>
+    </div>
+    <div class="ticker-group">
+      <span>Energy, when you need it</span><i>&#9670;</i><span>Commissioned in under 48 hours</span><i>&#9670;</i><span>Monitored 24/7</span><i>&#9670;</i><span>&lt;20 ms switchover</span><i>&#9670;</i><span>1 kWh &ndash; 6.25 MWh</span><i>&#9670;</i><span>Solar at noon, power at seven</span><i>&#9670;</i><span>Built for India&rsquo;s grid</span><i>&#9670;</i><span>Made in India</span><i>&#9670;</i>
+    </div>
+  </div>
+</div>
+
+<!-- STATEMENT -->
+<section class="pad" id="statement" style="padding-bottom:clamp(2.5rem,6vh,5rem)">
+  <div class="wrap center-head">
+    <div class="eyebrow center fade">Why storage</div>
+    <h2 class="h2" style="margin-top:1.3rem">
+      <span class="line-mask"><span>You do not wait for the grid</span></span>
+      <span class="line-mask"><span class="muted">to decide when you have power.</span></span>
+    </h2>
+    <p class="lead reveal" style="margin-top:1.8rem;max-width:52ch;margin-inline:auto">
+      Storage is what changes that. Energy captured when it exists &mdash; solar at noon, wind at 3am &mdash; held, and released the moment you need it.
+    </p>
+  </div>
+</section>
+
+<!-- IMAGE EXPANSION — frame grows to fullscreen on scroll -->
+<section class="xpand" id="xpand">
+  <div class="xpand-stage">
+    <div class="xpand-surround" id="xpandSurround" aria-hidden="true">
+      <div class="xs-eyebrow eyebrow">Field Notes — 01</div>
+      <div class="xs-index">01</div>
+      <div class="xs-marks"><i></i><i></i><i></i><i></i></div>
+      <div class="xs-meta xs-meta-l">UNITY cabinets · commissioned on-site</div>
+      <div class="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div>
+    </div>
+    <figure class="xpand-frame" id="xpandFrame">
+      <img id="xpandImg" src="assets/img/hero-sunset.jpg" alt="UnityESS cabinets at sunset on a solar site">
+      <div class="xpand-scrim"></div>
+      <figcaption class="xpand-cap" id="xpandCap">
+        <div class="eyebrow" style="color:#a7d6dc">Dusk, Rajasthan</div>
+        <div class="xpand-line">Where the day&rsquo;s sun<br>becomes the night&rsquo;s power.</div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- THE PROBLEM + HORIZONTAL GALLERY -->
+<section class="hgal-sec" id="story">
+  <div class="wrap hgal-head">
+    <div class="eyebrow fade">The Problem</div>
+    <h2 class="h2" style="margin-top:1.1rem">
+      <span class="line-mask"><span>Solar at noon.</span></span>
+      <span class="line-mask"><span>Demand at seven.</span></span>
+      <span class="line-mask"><span class="grad script">Storage connects them.</span></span>
+    </h2>
+    <p class="lead reveal" style="margin-top:1.4rem;max-width:54ch">India&rsquo;s renewable capacity is real and growing fast. But solar power at noon does not help a factory running the evening shift. Wind at 3am does not power a hospital at 8pm. The grid needs something in between.</p>
+  </div>
+
+  <div class="wrap time-grid">
+    <div class="tcard reveal">
+      <div class="tmark">12pm</div>
+      <h4>Solar at peak. Nobody using it.</h4>
+      <p>Rooftop and utility solar at full capacity. We capture what would otherwise be lost.</p>
+    </div>
+    <div class="tcard reveal">
+      <div class="tmark">3am</div>
+      <h4>Wind runs. The city sleeps.</h4>
+      <p>Generation highest at night. Storage holds it until the shift changes, the machines start.</p>
+    </div>
+    <div class="tcard reveal">
+      <div class="tmark">7pm</div>
+      <h4>Peak demand. Everything draws.</h4>
+      <p>Factories. Hospitals. Families. We release what we stored, instantly, reliably, every time.</p>
+    </div>
+  </div>
+
+  <div class="wrap hgal-head" style="margin-top:clamp(3rem,7vh,5rem);margin-bottom:clamp(2rem,4vw,3rem)">
+    <div class="hint reveal">Scroll to explore <svg width="22" height="10" viewBox="0 0 22 10" fill="none"><path d="M0 5h20M16 1l5 4-5 4" stroke="currentColor" stroke-width="1.3"/></svg></div>
+  </div>
+
+  <div class="hgal" id="hgal">
+    <div class="hgal-track" id="hgalTrack">
+      <figure class="hg tall"><div class="hg-media"><img src="assets/img/sunrise-track.jpg" alt="Sunrise over solar arrays in Rajasthan"></div><figcaption>First light · Rajasthan</figcaption></figure>
+      <figure class="hg"><div class="hg-media"><img src="assets/img/commercial-cabinets.jpg" alt="Unity Meridian units deployed on site"></div><figcaption>Unity Meridian · deployed on-site</figcaption></figure>
+      <figure class="hg tall"><div class="hg-media"><img src="assets/img/container-desert.jpg" alt="Utility-scale solar deployment from the air"></div><figcaption>Utility-scale · desert-proven</figcaption></figure>
+      <figure class="hg"><div class="hg-media"><img src="assets/img/container-close.jpg" alt="Unity Perpetual container commissioned on site"></div><figcaption>Unity Perpetual · on site</figcaption></figure>
+      <figure class="hg tall"><div class="hg-media"><img src="assets/img/cabinets-sunset.jpg" alt="Solar field at dusk in Rajasthan"></div><figcaption>Solar field at dusk · Rajasthan</figcaption></figure>
+      <figure class="hg"><div class="hg-media"><img src="assets/img/solar-rows.jpg" alt="Rows of solar panels stretching to the horizon"></div><figcaption>PV rows · to the horizon</figcaption></figure>
+      <figure class="hg tall"><div class="hg-media"><img src="assets/img/aerial-1.jpg" alt="Aerial view of a solar plant"></div><figcaption>From the air · solar at scale</figcaption></figure>
+      <figure class="hg"><div class="hg-media"><img src="assets/img/cabinets-field.jpg" alt="UnityESS cabinets on site"></div><figcaption>On the ground · commissioned</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- THE COLLECTION -->
+<section class="pad" id="collection">
+  <div class="wrap">
+    <div class="prod-head">
+      <div class="sec-head">
+        <div class="eyebrow fade">The Collection</div>
+        <h2 class="h2"><span class="line-mask"><span>Four systems.</span></span><span class="line-mask"><span>One family.</span></span></h2>
+      </div>
+      <a href="#contact" class="btn ghost reveal" data-hot><span>Not sure which? Ask us</span></a>
+    </div>
+    <div class="prod-grid g4">
+      <a class="card reveal" href="infinity.html" data-hot>
+        <div class="media"><img src="assets/img/infinity-portable.jpg" alt="Unity Reserve home and small business storage"></div>
+        <div class="body">
+          <div class="tag">1 – 5 kWh</div>
+          <div class="name">Reserve</div>
+          <div class="cap">The power that stays when everything else goes. &lt;20&nbsp;ms switchover. For homes, clinics, small businesses.</div>
+          <span class="go">Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+        </div>
+      </a>
+      <a class="card reveal" href="model-a.html" data-hot>
+        <div class="media"><img src="assets/img/commercial-cabinets.jpg" alt="Unity Meridian commercial cabinets"></div>
+        <div class="body">
+          <div class="tag">233 – 836 kWh</div>
+          <div class="name">Meridian</div>
+          <div class="cap">Charges at peak solar hours, dispatches intelligently across the demand cycle. The lights do not go out.</div>
+          <span class="go">Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+        </div>
+      </a>
+      <a class="card reveal" href="hopewind-385kw.html" data-hot>
+        <div class="media"><img src="assets/img/panels-field2.jpg" alt="Unity Equinox hybrid solar, grid and storage platform"></div>
+        <div class="body">
+          <div class="tag">Mid-range hybrid</div>
+          <div class="name">Equinox</div>
+          <div class="cap">Solar, grid and storage in one intelligent platform. Solar when available. Grid when required. Storage always balancing the two.</div>
+          <span class="go">Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+        </div>
+      </a>
+      <a class="card reveal" href="model-c.html" data-hot>
+        <div class="media"><img src="assets/img/modelc-container.jpg" alt="Unity Perpetual containerised utility system"></div>
+        <div class="body">
+          <div class="tag">5 – 6.25 MWh</div>
+          <div class="name">Perpetual</div>
+          <div class="cap">The utility flagship. Containerised, scalable, monitored through the 20-year life of the asset. It does not stop.</div>
+          <span class="go">Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FILM — THE MANUFACTURE -->
+<section class="film" id="manufacture">
+  <div class="film-media" data-parallax="0.14">
+    <video id="filmVideo" muted loop playsinline preload="metadata" poster="assets/img/container-factory.jpg">
+      <source src="assets/build-quality.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="film-scrim"></div>
+  <div class="film-bar fb-top" aria-hidden="true"></div>
+  <div class="film-bar fb-bot" aria-hidden="true"></div>
+  <div class="film-hud" aria-hidden="true">
+    <span class="rec"><i></i>REC</span>
+    <span class="tc" id="filmTC">00:00:00:00</span>
+    <span class="fmeta">UnityESS &middot; assembly line &middot; cam 02</span>
+  </div>
+  <div class="film-inner">
+    <div class="eyebrow line-mask" style="color:#a7d6dc"><span>The Manufacture</span></div>
+    <h2 class="h1" style="margin-top:1.1rem;max-width:18ch">
+      <span class="line-mask"><span>Ornate Solar and Inverted</span></span>
+      <span class="line-mask"><span>Energy, working as one.</span></span>
+    </h2>
+    <p class="hero-sub reveal" style="max-width:54ch">We came together because we kept running into the same wall. Generation was growing. Storage was lagging. The companies filling that gap were more interested in winning contracts than in what happened after commissioning.</p>
+    <p class="hero-sub reveal" style="max-width:54ch;margin-top:1rem">So we built Unity ESS to be the kind of company we wanted to work with. Between us, years on the ground in Indian renewable energy &mdash; and the judgment of people who have seen it go wrong, and know how to make sure it does not happen again.</p>
+  </div>
+</section>
+
+<!-- APPLICATIONS — horizontal scroll -->
+<section class="pad hsec" id="applications" style="padding-bottom:0">
+  <div class="wrap" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+    <div class="eyebrow fade">Applications</div>
+    <h2 class="h2" style="margin-top:1rem"><span class="line-mask"><span>Built for the operations</span></span><span class="line-mask"><span>that cannot afford to stop.</span></span></h2>
+    <p class="lead reveal" style="margin-top:1.4rem;max-width:54ch">Every application is a different load profile, a different consequence of failure. We design around the specific site, not a catalogue. These are the industries we serve.</p>
+  </div>
+  <div class="htrack" id="htrack">
+    <article class="hcard"><div class="hbg"><img src="assets/img/commercial-cabinets.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">01</div><h4>Manufacturing &amp; Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines. A plant that cannot afford downtime.</p><div class="sys">Meridian &middot; Perpetual</div></div></article>
+    <article class="hcard"><div class="hbg"><img src="assets/img/cabinets-trees.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">02</div><h4>Hospitals &amp; Healthcare</h4><p>Instant switchover, continuous ICU power, surgical suite backup. The grid that never goes dark.</p><div class="sys">Reserve &middot; Meridian</div></div></article>
+    <article class="hcard"><div class="hbg"><img src="assets/img/aerial-1.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">03</div><h4>Utilities &amp; Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p><div class="sys">Perpetual</div></div></article>
+    <article class="hcard"><div class="hbg"><img src="assets/img/panels-field2.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand. Renewable energy that works like dispatchable power.</p><div class="sys">Equinox &middot; Perpetual</div></div></article>
+    <article class="hcard"><div class="hbg"><img src="assets/img/container-close.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">05</div><h4>Data Centres &amp; IT</h4><p>Uninterruptible backup, UPS replacement, peak demand management for critical infrastructure.</p><div class="sys">Meridian &middot; Perpetual</div></div></article>
+    <article class="hcard"><div class="hbg"><img src="assets/img/sunrise-track.jpg" alt=""></div>
+      <div class="hcard-body"><div class="idx">06</div><h4>Agriculture &amp; Cold Chain</h4><p>Cold storage backup, irrigation power, post-harvest protection. The crop that does not get lost to a power cut.</p><div class="sys">Reserve &middot; Meridian</div></div></article>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="pad alt" id="how">
+  <div class="tech-bg" aria-hidden="true"><img src="assets/img/aerial-green2.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom:clamp(2rem,5vh,4rem)">
+      <div class="eyebrow center fade">How we work</div>
+      <h2 class="h2" style="margin-top:1.2rem"><span class="line-mask"><span>Three commitments,</span></span><span class="line-mask"><span>in the order we make them.</span></span></h2>
+      <p class="lead reveal" style="margin-top:1.6rem;max-width:50ch;margin-inline:auto">These are not values statements. They are how we can be held to account.</p>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">01 — Always with you</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We stay.</h3>
+        <p class="lead reveal" style="margin-top:1.1rem">Most energy companies are built around the sale. We are built around what comes after it. Every system we deploy is monitored around the clock, for the full life of the asset. When something shifts &mdash; in load, in grid behaviour, in battery health &mdash; we are already looking at it.</p>
+        <div class="chips reveal">
+          <span class="chip">24/7 monitoring</span><span class="chip">Full asset life</span><span class="chip">Predictive alerts</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/container-close.jpg" alt="UnityESS container system on site"></div>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">02 — Proven before promised</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We do not speculate.</h3>
+        <p class="lead reveal" style="margin-top:1.1rem">Before any system goes live, it has been tested against the specific conditions of your site. We have seen what happens when that step gets skipped. It is expensive and embarrassing for everyone. We would rather take the time upfront.</p>
+        <div class="chips reveal">
+          <span class="chip">Site-specific testing</span><span class="chip">Tested before live</span><span class="chip">No shortcuts</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/commercial-cabinets.jpg" alt="UnityESS commercial cabinets"></div>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">03 — Energy with intelligence</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We think ahead.</h3>
+        <p class="lead reveal" style="margin-top:1.1rem">3-tier BMS architecture. Predictive dispatch. Performance optimisation. Battery life extension. Our systems learn the patterns of your site and get more efficient over time &mdash; that is what keeps your cost of storage falling year on year.</p>
+        <div class="chips reveal">
+          <span class="chip">3-tier BMS</span><span class="chip">Predictive dispatch</span><span class="chip">Self-optimising</span><span class="chip">Falling cost / kWh</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/solar-rows.jpg" alt="Solar PV rows on a UnityESS site"></div>
+    </div>
+  </div>
+</section>
+
+<!-- IN THE FIELD — monitoring banner -->
+<section class="banner" id="field">
+  <div class="banner-media" data-parallax="0.14">
+    <img src="assets/img/container-desert.jpg" alt="UnityESS systems deployed at scale" />
+  </div>
+  <div class="banner-scrim"></div>
+  <div class="banner-grid" aria-hidden="true"></div>
+  <div class="banner-inner">
+    <div class="eyebrow line-mask" style="color:var(--blue-glow)"><span>In the Field</span></div>
+    <h2 class="h2" style="margin-top:1.1rem;max-width:18ch">
+      <span class="line-mask"><span>Deployed</span></span>
+      <span class="line-mask"><span>across India.</span></span>
+    </h2>
+    <p class="hero-sub reveal" style="max-width:52ch">Every Unity system is monitored around the clock by our operations centre. Real-time telemetry, predictive analytics and rapid response ensure maximum uptime across every deployment. When something changes &mdash; in load, in grid behaviour, in cell health &mdash; we know before you do.</p>
+    <div class="bene-grid">
+      <div class="bene reveal"><h4><i>&#9670;</i>Real-time fleet monitoring</h4><p>Live telemetry from every deployed system, around the clock.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Predictive maintenance</h4><p>Anomaly detection that flags a problem before it becomes one.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Remote optimisation</h4><p>Firmware updates and performance tuning, delivered over the air.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Dedicated support</h4><p>A rapid-response team that knows your site by name.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SITES UNDER MANAGEMENT — parallax mosaic -->
+<section class="pad mosaic-sec" id="sites">
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom:clamp(5rem,12vh,9rem)">
+      <div class="eyebrow center fade">Under management</div>
+      <h2 class="h2" style="margin-top:1.2rem">
+        <span class="line-mask"><span>Every project runs 24/7 monitoring</span></span>
+        <span class="line-mask"><span class="grad">from our operations centre.</span></span>
+      </h2>
+      <p class="lead reveal" style="margin-top:1.6rem;max-width:52ch;margin-inline:auto">Real-time telemetry, predictive alerts, remote response. These are the sites currently under management.</p>
+    </div>
+  </div>
+  <div class="wrap mosaic" id="mosaic">
+    <div class="mcol" data-speed="-11">
+      <figure class="mitem"><img src="assets/img/container-desert.jpg" alt="Unity Perpetual at a manufacturing site in Rajasthan"><figcaption>Manufacturing · Rajasthan — Perpetual · 2.5 MWh</figcaption></figure>
+      <figure class="mitem"><img src="assets/img/cabinets-trees.jpg" alt="Unity Meridian at a hospital in Delhi NCR"><figcaption>Hospital · Delhi NCR — Meridian · 261 kWh</figcaption></figure>
+    </div>
+    <div class="mcol" data-speed="10">
+      <figure class="mitem"><img src="assets/img/panels-field2.jpg" alt="Unity Equinox solar hybrid in Gujarat"><figcaption>Solar hybrid · Gujarat — Equinox · 1.8 MWh</figcaption></figure>
+      <figure class="mitem"><video class="mvid" muted loop playsinline preload="metadata" poster="assets/img/container-factory.jpg"><source src="assets/loading.mp4" type="video/mp4"></video><figcaption>Dispatch day · factory gate</figcaption></figure>
+    </div>
+    <div class="mcol" data-speed="-18">
+      <figure class="mitem"><img src="assets/img/misc-1.jpg" alt="Unity Meridian at a cold storage facility in Andhra Pradesh"><figcaption>Cold storage · Andhra Pradesh — Meridian · 261 kWh</figcaption></figure>
+      <figure class="mitem"><img src="assets/img/container-factory.jpg" alt="Unity Perpetual at a data centre in Pune"><figcaption>Data centre · Pune — Perpetual · 6.25 MWh</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- THE WIRE -->
+<section class="pad" id="wire" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <div class="eyebrow fade">The Wire</div>
+      <h2 class="h2"><span class="line-mask"><span>The people at the</span></span><span class="line-mask"><span>end of India&rsquo;s grid.</span></span></h2>
+      <p class="lead reveal" style="margin-top:1.4rem;max-width:54ch">A series of 90-second silent films. True stories from the operations that cannot afford to lose power, and what changes when they finally do not. No dialogue. No explanation. Just the story.</p>
+    </div>
+    <div class="wire-grid">
+      <article class="wcard reveal">
+        <div class="ep">Episode 1</div>
+        <h4>Night Shift.</h4>
+        <p>A nurse in Rajasthan. She has worked the night shift for eleven years. The generator takes forty seconds to start. She has counted, every time.</p>
+        <div class="wmeta">Rajasthan · District hospital</div>
+      </article>
+      <article class="wcard reveal">
+        <div class="ep">Episode 2</div>
+        <h4>Cold Storage.</h4>
+        <p>A mango farmer in Andhra Pradesh. &#8377;18 lakh. Lost to a six-hour power cut. He says the number the way you say something you cannot forget.</p>
+        <div class="wmeta">Andhra Pradesh · Agriculture</div>
+      </article>
+      <article class="wcard reveal">
+        <div class="ep">Episode 3</div>
+        <h4>Year Seven.</h4>
+        <p>The operations manager of a plant where a system was installed seven years ago. He talks about what it is like to actually run one &mdash; not the commissioning day, but year seven.</p>
+        <div class="wmeta">Maharashtra · Manufacturing</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — full-bleed image -->
+<section class="cta-full" id="contact">
+  <div class="cta-media" data-parallax="0.1"><img src="assets/img/sunrise-track.jpg" alt="Sunrise over a UnityESS solar site"></div>
+  <div class="cta-scrim"></div>
+  <div class="cta-inner">
+    <div class="eyebrow center line-mask" style="color:#a7d6dc"><span>Contact</span></div>
+    <h2 class="h2" style="margin-top:1.2rem"><span class="line-mask"><span>Ready to deploy?</span></span><span class="line-mask"><span class="grad script">Tell us about your project.</span></span></h2>
+    <p class="hero-sub reveal" style="margin-inline:auto;max-width:46ch">Our energy solutions team responds within 24 hours.</p>
+    <div class="cta-points reveal">
+      <span>Response within 24 hours</span>
+      <span>Custom deployment planning</span>
+      <span>Flexible commissioning</span>
+    </div>
+    <div class="reveal" style="margin-top:2.2rem"><a href="mailto:info@ornatesolar.com" class="btn" data-hot><span>Begin the conversation</span></a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html" data-hot>
+        <svg class="mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="#005f6b" stroke-width="1.6"/><circle cx="16" cy="16" r="4.6" fill="#005f6b"/></svg>
+        <span>UNITY<b>ESS</b></span>
+      </a>
+      <p>Energy, when you need it. Battery energy storage built for India&rsquo;s grid by Ornate Solar and Inverted Energy, working as one.</p>
+    </div>
+    <div><h5>Our Products</h5><ul><li><a href="infinity.html" data-hot>Reserve</a></li><li><a href="model-a.html" data-hot>Meridian</a></li><li><a href="hopewind-385kw.html" data-hot>Equinox</a></li><li><a href="model-c.html" data-hot>Perpetual</a></li><li><a href="pm-kusum-yojana.html" data-hot>PM KUSUM Yojana</a></li></ul></div>
+    <div><h5>Company</h5><ul><li><a href="#manufacture" data-hot>The Manufacture</a></li><li><a href="#applications" data-hot>Applications</a></li><li><a href="#wire" data-hot>The Wire</a></li><li><a href="https://service.unityess.cloud/report" data-hot>Service &amp; Support</a></li></ul></div>
+    <div><h5>Contact</h5><ul><li>A-87, Okhla Phase II, New Delhi</li><li><a href="tel:+9118002026252" data-hot>+91 1800 2026 252</a></li><li><a href="mailto:info@ornatesolar.com" data-hot>info@ornatesolar.com</a></li></ul></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 Unity ESS · Ornate Solar × Inverted Energy</span><span>Energy, when you need it</span></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

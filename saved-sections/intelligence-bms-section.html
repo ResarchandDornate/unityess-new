@@ -1,0 +1,54 @@
+<!--
+  SAVED SECTION — "Energy with intelligence" (BMS living-circuit)
+  Removed from index.html on 2026-07-21.
+
+  To restore: paste this whole block back into index.html between the
+  vbreak section ("Inside the machine") and the film section ("The Manufacture").
+  The animation code lives in assets/js/main.js (initEnergyChip) and the styles
+  in assets/css/style.css (.chip-sec / .chip-* rules) — both were left in place,
+  so the section works again the moment this markup returns.
+-->
+
+<!-- ENERGY WITH INTELLIGENCE — the BMS, visualised as a living circuit -->
+<section class="chip-sec" id="intelligence">
+  <div class="wrap chip-grid">
+    <div class="chip-copy">
+      <div class="eyebrow fade">Energy with intelligence</div>
+      <h2 class="h2" style="margin-top:1.2rem">
+        <span class="line-mask"><span>Power, routed</span></span>
+        <span class="line-mask"><span class="grad">the moment it&rsquo;s needed.</span></span>
+      </h2>
+      <div class="cspecs reveal">
+        <span class="cspec">3-tier BMS</span>
+        <span class="cspec">Predictive dispatch</span>
+        <span class="cspec">&lt;20&nbsp;ms switchover</span>
+        <span class="cspec">Self-optimising</span>
+      </div>
+    </div>
+    <div class="chip-stage">
+      <svg class="chip-circuit" id="chipCircuit" viewBox="0 0 760 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <defs>
+          <filter id="chipSoft" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="3" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <radialGradient id="chipCoreGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0d3b43"/>
+            <stop offset="62%" stop-color="#082a30"/>
+            <stop offset="100%" stop-color="#04161a"/>
+          </radialGradient>
+          <linearGradient id="chipCellGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0e4f59"/>
+            <stop offset="100%" stop-color="#083338"/>
+          </linearGradient>
+        </defs>
+        <g id="chipBase"></g>
+        <g id="chipNodes"></g>
+        <g id="chipFlow"></g>
+        <g id="chipCore"></g>
+      </svg>
+      <div class="chip-hud chip-hud-tl"><i></i>BMS CORE &middot; LIVE</div>
+      <div class="chip-hud chip-hud-br">CHARGE &#8644; DISPATCH</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,154 @@
+<!--
+  SAVED SECTIONS — everything that followed the Applications section on index.html
+  (How We Work / Three commitments, In the Field banner, Sites Under Management,
+  The Wire, and the full-bleed Contact CTA). Removed on 2026-07-21.
+
+  Why a file instead of commenting out in place: these blocks contain HTML
+  comments of their own, and HTML comments cannot be nested - commenting the
+  whole range out would break the page.
+
+  To restore: paste this whole block back into index.html between the
+  Applications section (</section> of id="applications") and the footer,
+  then remove id="contact" from the <footer> tag (it was moved there so the
+  "Contact Us" / "Enquire" buttons still had a scroll target).
+  All CSS and JS for these sections was left in place.
+-->
+
+<!-- HOW WE WORK -->
+<section class="pad alt" id="how">
+  <div class="tech-bg" aria-hidden="true"><img src="assets/img/aerial-green2.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom:clamp(2rem,5vh,4rem)">
+      <div class="eyebrow center fade">How we work</div>
+      <h2 class="h2" style="margin-top:1.2rem"><span class="line-mask"><span>Three commitments,</span></span><span class="line-mask"><span>in the order we make them.</span></span></h2>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">01 — Always with you</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We stay.</h3>
+        <div class="chips reveal">
+          <span class="chip">24/7 monitoring</span><span class="chip">Full asset life</span><span class="chip">Predictive alerts</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/container-close.jpg" alt="UnityESS container system on site"></div>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">02 — Proven before promised</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We do not speculate.</h3>
+        <div class="chips reveal">
+          <span class="chip">Site-specific testing</span><span class="chip">Tested before live</span><span class="chip">No shortcuts</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/commercial-cabinets.jpg" alt="UnityESS commercial cabinets"></div>
+    </div>
+
+    <div class="feat">
+      <div>
+        <div class="num-mark reveal">03 — Energy with intelligence</div>
+        <h3 class="h3 reveal" style="margin-top:1.1rem">We think ahead.</h3>
+        <div class="chips reveal">
+          <span class="chip">3-tier BMS</span><span class="chip">Predictive dispatch</span><span class="chip">Self-optimising</span><span class="chip">Falling cost / kWh</span>
+        </div>
+      </div>
+      <div class="feat-media"><img data-drift src="assets/img/solar-rows.jpg" alt="Solar PV rows on a UnityESS site"></div>
+    </div>
+  </div>
+</section>
+
+<!-- IN THE FIELD — monitoring banner -->
+<section class="banner" id="field">
+  <div class="banner-media" data-parallax="0.14">
+    <img src="assets/img/container-desert.jpg" alt="UnityESS systems deployed at scale" />
+  </div>
+  <div class="banner-scrim"></div>
+  <div class="banner-grid" aria-hidden="true"></div>
+  <div class="banner-inner">
+    <div class="eyebrow line-mask" style="color:var(--blue-glow)"><span>In the Field</span></div>
+    <h2 class="h2" style="margin-top:1.1rem;max-width:18ch">
+      <span class="line-mask"><span>Deployed</span></span>
+      <span class="line-mask"><span>across India.</span></span>
+    </h2>
+    <div class="bene-grid">
+      <div class="bene reveal"><h4><i>&#9670;</i>Real-time fleet monitoring</h4><p>Live telemetry from every deployed system, around the clock.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Predictive maintenance</h4><p>Anomaly detection that flags a problem before it becomes one.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Remote optimisation</h4><p>Firmware updates and performance tuning, delivered over the air.</p></div>
+      <div class="bene reveal"><h4><i>&#9670;</i>Dedicated support</h4><p>A rapid-response team that knows your site by name.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SITES UNDER MANAGEMENT — parallax mosaic -->
+<section class="pad mosaic-sec" id="sites">
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom:clamp(5rem,12vh,9rem)">
+      <div class="eyebrow center fade">Under management</div>
+      <h2 class="h2" style="margin-top:1.2rem">
+        <span class="line-mask"><span>Every project runs 24/7 monitoring</span></span>
+        <span class="line-mask"><span class="grad">from our operations centre.</span></span>
+      </h2>
+    </div>
+  </div>
+  <div class="wrap mosaic" id="mosaic">
+    <div class="mcol" data-speed="-11">
+      <figure class="mitem"><img src="assets/img/container-desert.jpg" alt="Unity Perpetual at a manufacturing site in Rajasthan"><figcaption>Manufacturing · Rajasthan — Perpetual · 2.5 MWh</figcaption></figure>
+      <figure class="mitem"><img src="assets/img/cabinets-trees.jpg" alt="Unity Meridian at a hospital in Delhi NCR"><figcaption>Hospital · Delhi NCR — Meridian · 261 kWh</figcaption></figure>
+    </div>
+    <div class="mcol" data-speed="10">
+      <figure class="mitem"><img src="assets/img/panels-field2.jpg" alt="Unity Equinox solar hybrid in Gujarat"><figcaption>Solar hybrid · Gujarat — Equinox · 1.8 MWh</figcaption></figure>
+      <figure class="mitem"><video class="mvid" muted loop playsinline preload="metadata" poster="assets/img/container-factory.jpg"><source src="assets/loading.mp4" type="video/mp4"></video><figcaption>Dispatch day · factory gate</figcaption></figure>
+    </div>
+    <div class="mcol" data-speed="-18">
+      <figure class="mitem"><img src="assets/img/misc-1.jpg" alt="Unity Meridian at a cold storage facility in Andhra Pradesh"><figcaption>Cold storage · Andhra Pradesh — Meridian · 261 kWh</figcaption></figure>
+      <figure class="mitem"><img src="assets/img/container-factory.jpg" alt="Unity Perpetual at a data centre in Pune"><figcaption>Data centre · Pune — Perpetual · 6.25 MWh</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- THE WIRE -->
+<section class="pad" id="wire" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <div class="eyebrow fade">The Wire</div>
+      <h2 class="h2"><span class="line-mask"><span>The people at the</span></span><span class="line-mask"><span>end of India&rsquo;s grid.</span></span></h2>
+    </div>
+    <div class="wire-grid">
+      <article class="wcard reveal">
+        <div class="ep">Episode 1</div>
+        <h4>Night Shift.</h4>
+        <p>A nurse in Rajasthan. She has worked the night shift for eleven years. The generator takes forty seconds to start. She has counted, every time.</p>
+        <div class="wmeta">Rajasthan · District hospital</div>
+      </article>
+      <article class="wcard reveal">
+        <div class="ep">Episode 2</div>
+        <h4>Cold Storage.</h4>
+        <p>A mango farmer in Andhra Pradesh. &#8377;18 lakh. Lost to a six-hour power cut. He says the number the way you say something you cannot forget.</p>
+        <div class="wmeta">Andhra Pradesh · Agriculture</div>
+      </article>
+      <article class="wcard reveal">
+        <div class="ep">Episode 3</div>
+        <h4>Year Seven.</h4>
+        <p>The operations manager of a plant where a system was installed seven years ago. He talks about what it is like to actually run one &mdash; not the commissioning day, but year seven.</p>
+        <div class="wmeta">Maharashtra · Manufacturing</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — full-bleed image -->
+<section class="cta-full" id="contact">
+  <div class="cta-media" data-parallax="0.1"><img src="assets/img/sunrise-track.jpg" alt="Sunrise over a UnityESS solar site"></div>
+  <div class="cta-scrim"></div>
+  <div class="cta-inner">
+    <div class="eyebrow center line-mask" style="color:#a7d6dc"><span>Contact</span></div>
+    <h2 class="h2" style="margin-top:1.2rem"><span class="line-mask"><span>Ready to deploy?</span></span><span class="line-mask"><span class="grad">Tell us about your project.</span></span></h2>
+    <div class="cta-points reveal">
+      <span>Response within 24 hours</span>
+      <span>Custom deployment planning</span>
+      <span>Flexible commissioning</span>
+    </div>
+    <div class="reveal" style="margin-top:2.2rem"><a href="mailto:info@ornatesolar.com" class="btn" data-hot><span>Begin the conversation</span></a></div>
+  </div>
+</section>

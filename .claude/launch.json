@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "unityess-20july",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4175", "--directory", "/Users/anushthashalinchoudhary/Desktop/work/website/20 july"],
+      "port": 4175
+    },
+    {
+      "name": "unityess-3july",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "/Users/anushthashalinchoudhary/Desktop/work/website/3july"],
+      "port": 4173
+    },
+    {
+      "name": "unityess-3july-alt",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4174", "--directory", "/Users/anushthashalinchoudhary/Desktop/work/website/3july"],
+      "port": 4174
+    }
+  ]
+}
