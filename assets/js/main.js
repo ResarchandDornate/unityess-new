@@ -390,15 +390,18 @@ function initYouIntro(){
 
   tl.fromTo(line, { x: () => px(0) }, { x: () => px(0), duration: .01 }, 0);  /* centre "Built for You" */
 
-  swap(0.25, 0, 1);   /* Built for You  → Always with You */
-  swap(1.05, 1, 2);   /* Always with You → Always You */
+  /* every phrase gets the same ~0.7s hold before it transitions to the next —
+     the old timings (0.25s / 0.09s) left almost no time to read the first
+     couple of phrases, so the sequence felt rushed and uneven */
+  swap(0.7, 0, 1);   /* Built for You  → Always with You */
+  swap(2.1, 1, 2);   /* Always with You → Always You */
 
   /* Always You → You (alone, dead centre) */
-  tl.to(prefixes[2], { yPercent: -120, opacity: 0, filter: 'blur(5px)', duration: .42, ease: 'power2.in' }, 1.85)
-    .to(line, { x: 0, duration: .6 }, 1.85);
+  tl.to(prefixes[2], { yPercent: -120, opacity: 0, filter: 'blur(5px)', duration: .42, ease: 'power2.in' }, 3.5)
+    .to(line, { x: 0, duration: .6 }, 3.5);
 
   /* ---- the morph: You becomes the teal U of the logo PNG ---- */
-  const m = 2.7;
+  const m = 4.6;
   tl.to(word, { opacity: 0, filter: 'blur(8px)', duration: .34, ease: 'power1.in' }, m)
     .fromTo(logo, { opacity: 0 }, { opacity: 1, duration: .3, ease: 'none' }, m + .04)
     .fromTo(logo, { x: () => dx(), y: () => dy(), scale: () => uScale() },
