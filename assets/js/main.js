@@ -272,7 +272,6 @@ function initImageExpand(){
   const sec   = document.getElementById('xpand');
   const frame = document.getElementById('xpandFrame');
   const img   = document.getElementById('xpandImg');
-  const cap   = document.getElementById('xpandCap');
   const surr  = document.getElementById('xpandSurround');
   if (!sec) return;
 
@@ -288,8 +287,10 @@ function initImageExpand(){
   tl.fromTo(frame, { clipPath: from },
       { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'none', duration: 1 })
     .fromTo(img, { scale: 1.18 }, { scale: 1, ease: 'none', duration: 1 }, 0)
-    .to(surr, { opacity: 0, y: -12, duration: 0.42, ease: 'power1.out' }, 0)
-    .to(cap, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' }, 0.55);
+    .to(surr, { opacity: 0, y: -12, duration: 0.42, ease: 'power1.out' }, 0);
+  /* the caption is no longer part of the scrubbed timeline — it stays put
+     and fully visible throughout, instead of fading in partway through the
+     scroll (which left it invisible/easy to miss at the start) */
 }
 
 /* ------------------------------------------------------------
