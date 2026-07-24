@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpetual — UnityESS</title>
-<meta name="description" content="Perpetual — a liquid-cooled, containerised utility BESS scaling to 6.25 MWh per unit, for grid support, arbitrage and renewable firming.">
+<title>Equinox — UnityESS</title>
+<meta name="description" content="Equinox — a mid-range hybrid Energy Storage System for Open Access Applications, pairing on-site solar with storage for reliable, low-cost power.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -65,6 +65,9 @@
   .feature-item p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
   @media (max-width: 760px) { .feature-list { grid-template-columns: 1fr; } }
 
+  .about-text { max-width: 760px; }
+  .about-text p { color: var(--ink-soft); margin: 0 0 18px; }
+
   .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .app-card { border-top: 2px solid var(--teal); padding-top: 16px; }
   .app-card h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; margin: 0 0 8px; }
@@ -120,22 +123,22 @@
 
 <main class="wrap">
 
-  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / Perpetual</div>
+  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / Equinox</div>
 
   <!-- HERO -->
   <section class="product-hero">
-    <img src="assets/img/perpetual-render.jpg" alt="Perpetual">
+    <img src="assets/img/equinox-render.jpg" alt="Equinox">
     <div>
-      <div class="eyebrow">BESS · Utility Series</div>
-      <h1>Perpetual</h1>
-      <div class="range-line">5 MWh – 6.25 MWh (product line range) · Containerized, 20ft</div>
+      <div class="eyebrow">UESS · Industrial Series · Solar + Storage</div>
+      <h1>Equinox</h1>
+      <div class="range-line">260 kWh – 850 kWh (product line range)</div>
       <div class="badge-row">
-        <div class="badge"><div class="num">6.25 MWh</div><div class="label">Capacity (current SKU)</div></div>
-        <div class="badge"><div class="num">2.5 MW</div><div class="label">Power</div></div>
-        <div class="badge"><div class="num">20ft</div><div class="label">Form Factor</div></div>
-        <div class="badge"><div class="num">C4</div><div class="label">Corrosion Rated</div></div>
+        <div class="badge"><div class="num">260–850</div><div class="label">Capacity (kWh)</div></div>
+        <div class="badge"><div class="num">125 kW</div><div class="label">Power</div></div>
+        <div class="badge"><div class="num">Outdoor</div><div class="label">Cabinet + solar array</div></div>
+        <div class="badge"><div class="num">Hybrid</div><div class="label">Solar · Grid · Storage</div></div>
       </div>
-      <blockquote>Built for India's fast-growing utility-scale solar and hybrid projects — delivering high-density, multi-megawatt-hour storage in a single containerized unit. Plug-and-operate design minimizes civil work for faster commissioning.</blockquote>
+      <blockquote>Optimize your operations with an Energy Storage System designed for Open Access Applications. It stores low-cost renewable energy for later utilization and delivers reliable power — solar when available, grid when required, storage always balancing the two.</blockquote>
       <div class="hero-cta">
         <a class="btn btn-solid" href="contact.html">Request Consultation</a>
         <a class="btn btn-ghost" href="contact.html">Download Datasheet</a>
@@ -143,33 +146,18 @@
     </div>
   </section>
 
-  <!-- TECHNICAL SPECIFICATIONS -->
+  <!-- OVERVIEW -->
   <section class="block">
-    <div class="eyebrow">Technical Specifications</div>
-    <h2>Engineering detail, variant by variant</h2>
+    <div class="eyebrow">Overview</div>
+    <h2>Where the platform fits</h2>
     <div style="overflow-x:auto;">
       <table class="spec-table">
-        <tr><td>Variants</td><td>C-5.00 MWh / C-6.25 MWh</td></tr>
-        <tr><td>Nominal Capacity</td><td>5,015.96 / 6,251.3 kWh</td></tr>
-        <tr><td>Nominal Voltage</td><td>1331.2V</td></tr>
-        <tr><td>Voltage Range</td><td>1164.8~1497.6V / 1123.2~1497.6V</td></tr>
-        <tr><td>Cell</td><td>LFP 3.2V / 314Ah / LFP 3.2V / 587Ah</td></tr>
-        <tr><td>Cluster Config</td><td>1P 416S×12 / 1P 416S×8</td></tr>
-        <tr><td>Nominal Power</td><td>2,507.9 / 3,125.6 kW (@0.5CP)</td></tr>
-        <tr><td>Auxiliary Power</td><td>400V AC, 50/60 Hz</td></tr>
-        <tr><td>Operating Temp</td><td>-30°C to 50°C / -30°C to 55°C</td></tr>
-        <tr><td>Altitude</td><td>≤3000m</td></tr>
-        <tr><td>SoC Accuracy</td><td>≤3% (after balancing)</td></tr>
-        <tr><td>Relative Humidity</td><td>≤100% RH (non condensing)</td></tr>
-        <tr><td>Rating</td><td>Container: IP55, Module: IP67</td></tr>
-        <tr><td>Cooling</td><td>Liquid Cooling</td></tr>
-        <tr><td>Noise</td><td>≤75dB (A), Standard; ≤65dB (A), Silencer Assembly (Optional)</td></tr>
-        <tr><td>Weight</td><td>42 / 49 tons</td></tr>
-        <tr><td>Corrosion Grade</td><td>C4</td></tr>
-        <tr><td>Fire Suppression</td><td>Smoke &amp; heat detectors, FACP, ventilation, dry pipes with sprinklers, aerosol</td></tr>
-        <tr><td>Communication</td><td>CAN / Modbus 485 / TCP; CAN recommended</td></tr>
-        <tr><td>Dimensions</td><td>6058 × 2436 × 2896 mm</td></tr>
-        <tr><td>Certification</td><td>IEC62619, UL1973, UL9540A (Cell/Pack/Rack/System level)</td></tr>
+        <tr><td>Product Type</td><td>UESS</td></tr>
+        <tr><td>Series</td><td>Industrial · Solar + Storage</td></tr>
+        <tr><td>Capacity</td><td>260 kWh – 850 kWh</td></tr>
+        <tr><td>Power Output</td><td>125 kW</td></tr>
+        <tr><td>Form Factor</td><td>Outdoor cabinet + solar array</td></tr>
+        <tr><td>Best For</td><td>Sites pairing on-site solar generation with storage</td></tr>
       </table>
     </div>
   </section>
@@ -177,29 +165,38 @@
   <!-- KEY FEATURES -->
   <section class="block">
     <div class="eyebrow">Key Features</div>
-    <h2>Built for utility-scale demands</h2>
+    <h2>Solar, grid and storage, working as one</h2>
     <div class="feature-list">
-      <div class="feature-item"><span class="mark">—</span><p>Configurable as 5 MWh and 6.25 MWh in the same 20-ft form factor</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>Highly configurable inverter designed for 2hr / 4hr discharge rates</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>Rated for C4 corrosion resistance — functions reliably up to 95% humidity</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>AI-enabled EMS for instantaneous switching between power sources</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>Advanced thermal management with multi-layer safety architecture</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>Fully integrated PCS-BMS-EMS architecture for ramp-rate control and frequency response</p></div>
-      <div class="feature-item"><span class="mark">—</span><p>Plug-and-operate design — minimizes civil work and installation time</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Charges from on-site solar when it's available, from the grid when it's not</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Storage layer continuously balances the two, so supply never depends on one source alone</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Built for Open Access Applications — captures low-cost renewable energy for later use</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Three-tier BMS prevents overcharge and balances cells for safety and reliability</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>AI-enabled EMS monitors operations, controls dispatch strategy, and reports in real time</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Outdoor-rated cabinet, engineered for the same industrial conditions as the rest of the collection</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block">
+    <div class="eyebrow">About Equinox</div>
+    <h2>A hybrid platform for sites that generate their own power</h2>
+    <div class="about-text">
+      <p>Equinox is built for sites that already have — or are planning — on-site solar generation, and need storage that makes that generation actually usable around the clock. It sits between Meridian's commercial scale and Perpetual's utility scale, sized for industrial sites running Open Access power arrangements.</p>
+      <p>Solar, grid and storage in one intelligent platform: solar when it's available, grid when it's required, storage always balancing the two — so the timing of generation stops being the thing that decides whether the lights stay on.</p>
     </div>
   </section>
 
   <!-- APPLICATIONS -->
   <section class="block">
     <div class="eyebrow">Applications</div>
-    <h2>Where the Perpetual delivers unstoppable performance</h2>
+    <h2>Where the Equinox delivers unstoppable performance</h2>
     <div class="app-grid">
-      <div class="app-card"><h3>Utility-scale solar &amp; hybrid projects</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-      <div class="app-card"><h3>Grid frequency regulation</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-      <div class="app-card"><h3>Peak shaving &amp; load shifting</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-      <div class="app-card"><h3>Renewable energy integration</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-      <div class="app-card"><h3>Ramp-rate control</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-      <div class="app-card"><h3>IPP &amp; EPC deployments</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
+      <div class="app-card"><h3>Open Access power sites</h3><p>Capture low-cost renewable energy and deploy it exactly when it's needed.</p></div>
+      <div class="app-card"><h3>Industrial facilities with on-site solar</h3><p>Turn intermittent solar generation into dependable, dispatchable power.</p></div>
+      <div class="app-card"><h3>Peak &amp; valley price arbitrage</h3><p>Charge low, discharge high, with automated dispatch.</p></div>
+      <div class="app-card"><h3>Renewable integration</h3><p>Seamless deployment pairing on-site generation with storage.</p></div>
+      <div class="app-card"><h3>Grid-tied hybrid sites</h3><p>Solar and grid working together, balanced by storage.</p></div>
+      <div class="app-card"><h3>Mid-scale commercial &amp; industrial</h3><p>Sized between Meridian and Perpetual for growing operations.</p></div>
     </div>
   </section>
 
@@ -212,8 +209,8 @@
         <div><h3>Meridian</h3><div class="tag">Commercial Series</div></div>
         <div class="arrow">→</div>
       </a>
-      <a class="explore-card" href="equinox.html">
-        <div><h3>Equinox</h3><div class="tag">Industrial Series</div></div>
+      <a class="explore-card" href="model-c.html">
+        <div><h3>Perpetual</h3><div class="tag">Utility Series</div></div>
         <div class="arrow">→</div>
       </a>
     </div>
@@ -224,7 +221,7 @@
 <section class="closing">
   <div class="wrap">
     <div class="eyebrow">Get Started</div>
-    <h3>Interested in Perpetual?</h3>
+    <h3>Interested in Equinox?</h3>
     <p>Get in touch for specialized pricing, technical consultation, and custom configuration options.</p>
     <div class="btn-row">
       <a class="btn btn-solid" href="contact.html">Talk to Engineering</a>

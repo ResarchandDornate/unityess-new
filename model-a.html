@@ -1,147 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>UNITY Model A — 261–522 kWh Commercial BESS | UnityESS</title>
-<meta name="description" content="A liquid-cooled commercial BESS built on 314Ah LFP cells — for peak shaving, backup and solar integration at factories, campuses and data centres. By Ornate Solar." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian — UnityESS</title>
+<meta name="description" content="Meridian — a liquid-cooled commercial BESS built on 314Ah LFP cells, for peak shaving, backup and solar integration at factories, campuses and data centres.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css?v=34" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FBFAF8; --ink: #16191A; --ink-soft: #4A4E50; --muted: #8A8E90;
+    --teal: #005F6B; --teal-tint: #E7EBED; --line: #DEDBD4; --line-soft: #EDEAE3; --radius: 2px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
+
+  header.site { border-bottom: 1px solid var(--line-soft); position: sticky; top: 0; background: rgba(251,250,248,0.92); backdrop-filter: blur(6px); z-index: 50; }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; max-width: 1180px; margin: 0 auto; }
+  .logo { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; }
+  nav.links { display: flex; gap: 36px; font-family: 'Inter', sans-serif; font-size: 13px; letter-spacing: 0.03em; color: var(--ink-soft); }
+  nav.links a:hover { color: var(--ink); }
+  nav.links a.current { color: var(--teal); }
+  .nav-right { display: flex; align-items: center; gap: 28px; }
+  .btn { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 14px 26px; display: inline-block; border-radius: var(--radius); transition: all 0.2s ease; }
+  .btn-solid { background: var(--ink); color: var(--paper); }
+  .btn-solid:hover { background: var(--teal); }
+  .btn-ghost { border: 1px solid var(--ink); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+  .btn-small { padding: 11px 20px; font-size: 11px; }
+  @media (max-width: 860px) { nav.links { display: none; } }
+
+  .breadcrumb { padding: 24px 0 0; font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--muted); }
+  .breadcrumb a:hover { color: var(--teal); }
+
+  .product-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; padding: 32px 0 72px; align-items: center; }
+  .product-hero img { width: 100%; border-radius: var(--radius); display: block; }
+  .product-hero h1 { font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(38px, 5vw, 54px); margin: 12px 0 8px; }
+  .range-line { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--ink-soft); margin-bottom: 28px; }
+  .badge-row { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+  .badge { padding: 18px 8px 18px 0; border-right: 1px solid var(--line); }
+  .badge:last-child { border-right: none; padding-right: 0; }
+  .badge .num { font-family: 'Fraunces', serif; font-size: 22px; }
+  .badge .label { font-family: 'Inter', sans-serif; font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+  blockquote { font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; color: var(--ink-soft); border-left: 2px solid var(--teal); padding-left: 20px; margin: 0 0 32px; }
+  .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+  @media (max-width: 900px) { .product-hero { grid-template-columns: 1fr; gap: 28px; } .badge-row { grid-template-columns: repeat(2, 1fr); } }
+
+  section.block { padding: 72px 0; border-top: 1px solid var(--line-soft); }
+  .block h2 { font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 38px); margin: 12px 0 40px; }
+
+  .variant-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .variant-card { border: 1px solid var(--line); background: #fff; border-radius: var(--radius); overflow: hidden; }
+  .variant-card img { width: 100%; height: 180px; object-fit: cover; display: block; background: var(--teal-tint); }
+  .variant-body { padding: 24px; }
+  .variant-body .tag { font-family: 'Inter', sans-serif; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+  .variant-body h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 21px; margin: 0 0 4px; }
+  .variant-body .range { font-family: 'Inter', sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  .variant-body p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 16px; }
+  .variant-body a { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); }
+  .variant-body a:hover { color: var(--teal); }
+  @media (max-width: 760px) { .variant-grid { grid-template-columns: 1fr; } }
+
+  .feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 40px; }
+  .feature-item { display: flex; gap: 14px; align-items: flex-start; padding: 18px 0; border-top: 1px solid var(--line-soft); }
+  .feature-item .mark { color: var(--teal); font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; line-height: 1.4; }
+  .feature-item p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+  @media (max-width: 760px) { .feature-list { grid-template-columns: 1fr; } }
+
+  .eng-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .eng-grid img { width: 100%; border-radius: var(--radius); display: block; }
+  .eng-list { display: flex; flex-direction: column; gap: 18px; }
+  .eng-item { border-top: 2px solid var(--teal); padding-top: 12px; font-size: 15.5px; color: var(--ink-soft); }
+  @media (max-width: 900px) { .eng-grid { grid-template-columns: 1fr; gap: 28px; } }
+
+  .about-text { max-width: 760px; }
+  .about-text p { color: var(--ink-soft); margin: 0 0 18px; }
+
+  .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .app-card { border-top: 2px solid var(--teal); padding-top: 16px; }
+  .app-card h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; margin: 0 0 8px; }
+  .app-card p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
+  @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .app-grid { grid-template-columns: 1fr; } }
+
+  .explore-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .explore-card { border: 1px solid var(--line); background: #fff; padding: 26px; border-radius: var(--radius); display: flex; justify-content: space-between; align-items: center; transition: border-color 0.2s ease; }
+  .explore-card:hover { border-color: var(--teal); }
+  .explore-card h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; margin: 0 0 4px; }
+  .explore-card .tag { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--muted); }
+  .explore-card .arrow { font-family: 'Fraunces', serif; font-style: italic; color: var(--teal); font-size: 20px; }
+  @media (max-width: 700px) { .explore-grid { grid-template-columns: 1fr; } }
+
+  .closing { background: var(--teal); color: var(--paper); padding: 90px 0; text-align: center; }
+  .closing .eyebrow { color: #BFE0E4; }
+  .closing h3 { font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(28px, 4vw, 40px); margin: 16px 0 18px; }
+  .closing p { max-width: 500px; margin: 0 auto 32px; color: #DCEEEF; font-size: 16px; }
+  .closing .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .closing .btn-solid { background: var(--paper); color: var(--teal); }
+  .closing .btn-solid:hover { background: var(--ink); color: var(--paper); }
+  .closing .btn-ghost { border-color: var(--paper); color: var(--paper); }
+  .closing .btn-ghost:hover { background: rgba(255,255,255,0.12); border-color: var(--paper); }
+
+  footer.site { padding: 64px 0 40px; font-family: 'Inter', sans-serif; font-size: 13.5px; color: var(--ink-soft); }
+  .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid var(--line-soft); }
+  .foot-grid .logo { margin-bottom: 14px; }
+  .foot-grid h5 { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+  .foot-grid a, .foot-grid p { display: block; margin-bottom: 10px; color: var(--ink-soft); }
+  .foot-grid a:hover { color: var(--teal); }
+  .foot-bottom { padding-top: 24px; display: flex; justify-content: space-between; color: var(--muted); font-size: 12.5px; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+</style>
 </head>
 <body>
 
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
-
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <a class="brand" href="index.html" data-hot>
-    <img class="logo-img" src="assets/img/logo.png" alt="UNITY ESS">
-  </a>
-  <div class="nav-links">
-    <a href="infinity.html" class="hide-sm" data-hot>Infinity</a>
-    <a href="model-a.html" class="hide-sm" data-hot>Model A</a>
-    <a href="model-c.html" class="hide-sm" data-hot>Model C</a>
-    <a href="index.html#tech" class="hide-sm" data-hot>Technology</a>
-  </div>
-  <a href="https://ornatesolar.com" class="btn" data-hot><span>Request a Quote</span></a>
-</nav>
-
-<!-- HERO -->
-<header class="hero centered" id="top">
-  <div class="hero-media" data-parallax="0.18"><img src="assets/img/commercial-cabinets.jpg" alt="UNITY Model A units on site"></div>
-  <div class="hero-scrim"></div>
-  <div class="hero-inner">
-    <a class="backlink reveal" href="index.html#range" data-hot>&larr; All products</a>
-    <div class="eyebrow line-mask" style="margin-top:1.1rem"><span>Commercial</span></div>
-    <h1 class="display" style="margin-top:.9rem"><span class="line-mask"><span>UNITY Model A</span></span></h1>
-    <p class="hero-sub reveal">261–522&nbsp;kWh of liquid-cooled LFP storage in a compact cabinet — for peak shaving, backup and solar integration at factories, campuses and data centres.</p>
-    <div class="hero-cta reveal"><a href="https://ornatesolar.com" class="btn" data-hot><span>Request a Quote</span></a></div>
+<header class="site">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">UnityESS</a>
+    <nav class="links">
+      <a href="products.html" class="current">Products</a>
+      <a href="how_it_works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="applications.html">Applications</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-small" href="https://service.unityess.cloud/report">Complaint</a>
+      <a class="btn btn-solid btn-small" href="contact.html">Get A Quote</a>
+    </div>
   </div>
 </header>
 
-<!-- SPECS -->
-<section class="stats">
-  <div class="stats-inner">
-    <div class="stat reveal"><div class="num">261–522</div><div class="lbl">kWh capacity</div></div>
-    <div class="stat reveal"><div class="num">125 <b>kW</b></div><div class="lbl">AC rated power</div></div>
-    <div class="stat reveal"><div class="num">314 <b>Ah</b></div><div class="lbl">LFP cell</div></div>
-    <div class="stat reveal"><div class="num">IP54</div><div class="lbl">Protection</div></div>
-  </div>
-</section>
+<main class="wrap">
 
-<!-- DETAIL 1 -->
-<section class="pad">
-  <div class="wrap">
-    <div class="feat">
-      <div>
-        <div class="eyebrow fade">Designed for commercial sites</div>
-        <h2 class="h2" style="margin-top:1rem;font-size:clamp(1.8rem,3.4vw,3rem)"><span class="line-mask"><span>Right-sized for the building.</span></span></h2>
-        <p class="lead reveal" style="margin-top:1.2rem">Model A delivers 261–522&nbsp;kWh of liquid-cooled LFP storage in a compact cabinet (1100×1320×2560&nbsp;mm) &mdash; engineered for commercial rooftops, factories, campuses and data centres needing dependable peak shaving and backup.</p>
-        <ul class="tick reveal">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M6 10.2l2.6 2.6L14 7.5" stroke="currentColor" stroke-width="1.4"/></svg><span>125&nbsp;kW AC rated power, 400&nbsp;V nominal</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M6 10.2l2.6 2.6L14 7.5" stroke="currentColor" stroke-width="1.4"/></svg><span>Liquid cooling for stable thermal performance</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M6 10.2l2.6 2.6L14 7.5" stroke="currentColor" stroke-width="1.4"/></svg><span>DC round-trip efficiency &gt; 94%</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M6 10.2l2.6 2.6L14 7.5" stroke="currentColor" stroke-width="1.4"/></svg><span>3-tiered BMS with cell-to-system protection</span></li>
-        </ul>
+  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / Meridian</div>
+
+  <!-- HERO -->
+  <section class="product-hero">
+    <img src="assets/img/meridian-render.jpg" alt="Meridian">
+    <div>
+      <div class="eyebrow">QESS · Commercial Series</div>
+      <h1>Meridian</h1>
+      <div class="range-line">233 kWh – 836 kWh (product line range)</div>
+      <div class="badge-row">
+        <div class="badge"><div class="num">261 kWh</div><div class="label">Capacity (current SKU)</div></div>
+        <div class="badge"><div class="num">125 kW</div><div class="label">Power</div></div>
+        <div class="badge"><div class="num">8,000</div><div class="label">Cycles</div></div>
+        <div class="badge"><div class="num">&gt;94%</div><div class="label">RTE</div></div>
       </div>
-      <div class="feat-media"><img data-drift src="assets/img/model-a.jpg" alt="UNITY Model A detail"></div>
-    </div>
-  </div>
-</section>
-
-<!-- DETAIL 2 -->
-<section class="pad alt">
-  <div class="wrap">
-    <div class="feat media-left">
-      <div class="feat-media"><img data-drift src="assets/img/modelc-container.jpg" alt="UnityESS build quality"></div>
-      <div>
-        <div class="eyebrow fade">Built to last</div>
-        <h2 class="h2" style="margin-top:1rem;font-size:clamp(1.8rem,3.4vw,3rem)"><span class="line-mask"><span>8,000 cycles,</span></span><span class="line-mask"><span>engineered in India.</span></span></h2>
-        <p class="lead reveal" style="margin-top:1.2rem">High-reliability 314&nbsp;Ah LFP cells deliver an 8,000-cycle lifetime with multi-stage fire safety &mdash; temperature and smoke detection, aerosol and flooding suppression &mdash; rated from −30 to 55&deg;C.</p>
-        <div class="reveal" style="margin-top:1.9rem"><a href="https://ornatesolar.com" class="btn ghost" data-hot><span>Talk to Engineering</span></a></div>
+      <blockquote>Power your operations with a BESS built for India's toughest industrial conditions. Delivers clean, reliable, and uninterrupted power — reducing diesel usage, cutting energy bills, and stabilizing your plant during peak loads.</blockquote>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="contact.html">Request Consultation</a>
+        <a class="btn btn-ghost" href="contact.html">Download Datasheet</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SPEC TABLE -->
-<section class="pad" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head" style="margin-bottom:clamp(2rem,4vw,3rem)">
-      <div class="eyebrow fade">Technical specifications</div>
-      <h2 class="h2" style="margin-top:1rem;font-size:clamp(1.8rem,3.4vw,3rem)"><span class="line-mask"><span>From the datasheet.</span></span></h2>
-      <p class="muted reveal" style="margin-top:.8rem">Two configurations share one cabinet platform.</p>
+  <!-- OTHER VARIANTS -->
+  <section class="block">
+    <div class="eyebrow">Other Variants</div>
+    <h2>Configured for your voltage and scale</h2>
+    <div class="variant-grid">
+      <div class="variant-card">
+        <img src="assets/img/model-a.jpg" alt="Meridian 4">
+        <div class="variant-body">
+          <div class="tag">Commercial Series</div>
+          <h3>Meridian 4</h3>
+          <div class="range">261 kWh &amp; 522 kWh</div>
+          <p>A compact low-voltage C&amp;I energy storage solution operating at 400V AC, available in 261 kWh and 522 kWh configurations with 2-hour and 4-hour charge/discharge durations.</p>
+          <a href="model-a.html">View Details →</a>
+        </div>
+      </div>
+      <div class="variant-card">
+        <img src="assets/img/cabinet-836.jpg" alt="Meridian 6/8">
+        <div class="variant-body">
+          <div class="tag">Commercial Series</div>
+          <h3>Meridian 6/8</h3>
+          <div class="range">418 kWh &amp; 836 kWh</div>
+          <p>A medium-voltage C&amp;I energy storage solution operating at 690V AC/800V AC, available in 418 kWh and 836 kWh configurations with 2-hour and 4-hour charge/discharge durations.</p>
+          <a href="model-a.html">View Details →</a>
+        </div>
+      </div>
     </div>
-    <div class="glass-panel reveal">
-      <table class="spectable">
-        <tr><th>Product models</th><td>A4-261-0.5C (261 kWh) · A4-522-0.25C (522 kWh)</td></tr>
-        <tr><th>AC rated power</th><td>125 kW</td></tr>
-        <tr><th>Nominal AC voltage</th><td>400 V (380–420 Vac)</td></tr>
-        <tr><th>Grid frequency</th><td>49.5–50.5 Hz · THDi ≤ 3% · PF 1.0 lead–1.0 lag</td></tr>
-        <tr><th>Cell</th><td>LFP 314 Ah · pack 1P52S · rack 1P260S</td></tr>
-        <tr><th>DC voltage</th><td>832 V nominal (754–936 V)</td></tr>
-        <tr><th>Cooling</th><td>Liquid cooled</td></tr>
-        <tr><th>Communication</th><td>RS485 / CAN / Ethernet</td></tr>
-        <tr><th>DC round-trip efficiency</th><td>&gt; 94%</td></tr>
-        <tr><th>Cycle life</th><td>8,000 cycles</td></tr>
-        <tr><th>Fire safety</th><td>Temp/smoke detection, aerosol, flooding</td></tr>
-        <tr><th>Noise / Operating temp</th><td>&lt; 80 dB · −30 to 55&deg;C · IP54</td></tr>
-        <tr><th>Dimensions / Weight</th><td>1100 × 1320 × 2560 mm · 2600 kg</td></tr>
-        <tr><th>Standards</th><td>IEC 62619, IEC 61000, UL 9540(A), UN 38.3</td></tr>
+  </section>
+
+  <!-- VARIANT COMPARISON -->
+  <section class="block">
+    <div class="eyebrow">Compare Variants</div>
+    <h2>Meridian 4 vs. Meridian 6/8</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse; font-family:'Inter', sans-serif; font-size:14px;">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding:14px; border-bottom:2px solid var(--ink); color:var(--muted); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; font-weight:600;"></th>
+            <th style="text-align:left; padding:14px; border-bottom:2px solid var(--ink); font-family:'Fraunces', serif; font-size:20px; font-weight:400;">Meridian 4</th>
+            <th style="text-align:left; padding:14px; border-bottom:2px solid var(--ink); font-family:'Fraunces', serif; font-size:20px; font-weight:400;">Meridian 6/8</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:14px; border-bottom:1px solid var(--line-soft); color:var(--muted); font-size:11px; letter-spacing:0.06em; text-transform:uppercase;">Voltage Class</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">Low voltage — 400V AC</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">Medium voltage — 690V AC / 800V AC</td></tr>
+          <tr><td style="padding:14px; border-bottom:1px solid var(--line-soft); color:var(--muted); font-size:11px; letter-spacing:0.06em; text-transform:uppercase;">Capacity Options</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">261 kWh &amp; 522 kWh</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">418 kWh &amp; 836 kWh</td></tr>
+          <tr><td style="padding:14px; border-bottom:1px solid var(--line-soft); color:var(--muted); font-size:11px; letter-spacing:0.06em; text-transform:uppercase;">Discharge Duration</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">2hr / 4hr configs</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">2hr / 4hr configs</td></tr>
+          <tr><td style="padding:14px; border-bottom:1px solid var(--line-soft); color:var(--muted); font-size:11px; letter-spacing:0.06em; text-transform:uppercase;">Best For</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">Smaller sites on standard low-voltage connections</td><td style="padding:14px; border-bottom:1px solid var(--line-soft);">Larger sites with medium-voltage infrastructure already in place</td></tr>
+        </tbody>
       </table>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="pad cta">
-  <div class="wrap">
-    <div class="eyebrow center fade">Next step</div>
-    <h2 class="h2" style="margin-top:1.1rem"><span class="line-mask"><span>Bring UNITY Model A</span></span><span class="line-mask"><span class="grad">to your site.</span></span></h2>
-    <p class="lead reveal">Share your load profile and our team will size and configure the right UnityESS solution for you.</p>
-    <div class="reveal"><a href="https://ornatesolar.com" class="btn" data-hot><span>Contact Engineering</span></a></div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="wrap foot-grid">
-    <div class="foot-brand">
-      <a class="brand" href="index.html" data-hot><img class="logo-img" src="assets/img/logo.png" alt="UNITY ESS"></a>
-      <p>Energy with intelligence — intelligent, scalable storage engineered and built in India by Ornate Solar.</p>
+  <!-- KEY FEATURES -->
+  <section class="block">
+    <div class="eyebrow">Key Features</div>
+    <h2>Built for scale, engineered for safety</h2>
+    <div class="feature-list">
+      <div class="feature-item"><span class="mark">—</span><p>LFP cells form modules, modules combine into clusters for scalable, reliable capacity growth</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Bidirectional PCS enables DC-AC and AC-DC charging, discharging and grid support</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Liquid cooling (HVAC) maintains optimal temperatures, maximizing efficiency and lifespan</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Three-tier BMS prevents overcharge and balances cells for safety and reliability</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>Corrosion-proof enclosure, rated IP54 for dust and water protection</p></div>
+      <div class="feature-item"><span class="mark">—</span><p>AI-enabled EMS monitors operations, controls strategies, and reports real-time analytics</p></div>
     </div>
-    <div><h5>Solutions</h5><ul><li><a href="infinity.html" data-hot>Unity Infinity</a></li><li><a href="model-a.html" data-hot>UNITY Model A</a></li><li><a href="model-c.html" data-hot>UNITY Model C</a></li></ul></div>
-    <div><h5>Company</h5><ul><li><a href="https://ornatesolar.com" data-hot>About Ornate</a></li><li><a href="index.html#tech" data-hot>Technology</a></li><li><a href="index.html#scale" data-hot>Manufacturing</a></li></ul></div>
-    <div><h5>Contact</h5><ul><li>A-87, Okhla Phase II, New Delhi</li><li><a href="tel:+9118002026252" data-hot>1800 2026 252</a></li><li><a href="mailto:info@ornatesolar.com" data-hot>info@ornatesolar.com</a></li></ul></div>
+  </section>
+
+  <!-- ENGINEERED FOR PERFORMANCE -->
+  <section class="block">
+    <div class="eyebrow">Engineered For Performance &amp; Safety</div>
+    <h2>Every detail accounted for</h2>
+    <div class="eng-grid">
+      <img src="assets/img/cabinet-photo.jpg" alt="Meridian engineering highlights">
+      <div class="eng-list">
+        <div class="eng-item">Normalized, high-protection grade construction design</div>
+        <div class="eng-item">Batteries are designed to be completely self-contained</div>
+        <div class="eng-item">Suitable for installations and use in a variety of environments</div>
+        <div class="eng-item">Advanced BMS control for maximum DC output efficiency</div>
+        <div class="eng-item">Separate space for batteries &amp; electrics enhances fire safety</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block">
+    <div class="eyebrow">About Meridian</div>
+    <h2>A compact, reliable system for commercial and industrial use</h2>
+    <div class="about-text">
+      <p>Meridian is a compact and reliable energy storage system made for commercial and industrial use. It comes with advanced battery technology, smart BMS, efficient cooling, and built-in fire safety for smooth and safe performance.</p>
+      <p>The system has separate battery and electrical sections, which helps improve safety, cooling, and overall reliability. Its outdoor cabinet design makes it suitable for different environments and weather conditions.</p>
+      <p>Meridian is easy to install and maintain, making it a practical solution for backup power, peak load management, and renewable energy support. It is designed for businesses looking for a safe, efficient, and scalable energy storage solution.</p>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section class="block">
+    <div class="eyebrow">Applications</div>
+    <h2>Where the Meridian delivers unstoppable performance</h2>
+    <div class="app-grid">
+      <div class="app-card"><h3>Factories &amp; warehouses</h3><p>Eliminate downtime with industrial-grade power that never stops delivering.</p></div>
+      <div class="app-card"><h3>Data centers</h3><p>Ultra-reliable energy backbone for always-on digital infrastructure.</p></div>
+      <div class="app-card"><h3>Commercial buildings</h3><p>Smart energy management that slashes costs and keeps operations seamless.</p></div>
+      <div class="app-card"><h3>EV charging stations</h3><p>High-power charging infrastructure that scales with electric mobility.</p></div>
+      <div class="app-card"><h3>Solar storage</h3><p>Capture every ray — store solar energy and deploy it when it matters most.</p></div>
+      <div class="app-card"><h3>Peak load management</h3><p>Shave peak demand charges and optimize your energy spend intelligently.</p></div>
+    </div>
+  </section>
+
+  <!-- EXPLORE MORE -->
+  <section class="block">
+    <div class="eyebrow">Explore More Systems</div>
+    <h2>Find the right solution for your needs</h2>
+    <div class="explore-grid">
+      <a class="explore-card" href="equinox.html">
+        <div><h3>Equinox</h3><div class="tag">Industrial Series</div></div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="explore-card" href="model-c.html">
+        <div><h3>Perpetual</h3><div class="tag">Utility Series</div></div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="eyebrow">Get Started</div>
+    <h3>Interested in Meridian?</h3>
+    <p>Get in touch for specialized pricing, technical consultation, and custom configuration options.</p>
+    <div class="btn-row">
+      <a class="btn btn-solid" href="contact.html">Talk to Engineering</a>
+      <a class="btn btn-ghost" href="how_it_works.html">How It Works</a>
+    </div>
   </div>
-  <div class="wrap foot-bottom"><span>© 2026 UnityESS · An Ornate Solar enterprise</span><span>Celebrating 25 years of trust</span></div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="display:inline-block;">UnityESS</a>
+        <p style="max-width:280px;">Battery energy storage built for India's grid by Ornate Solar and Inverted Energy, working as one.</p>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <a href="model-a.html">Meridian</a>
+        <a href="equinox.html">Equinox</a>
+        <a href="model-c.html">Perpetual</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="how_it_works.html">How It Works</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://service.unityess.cloud/report">File a Complaint</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>A-87, Okhla Phase II<br>New Delhi</p>
+        <p>+91-1800-2026-252</p>
+        <p>info@ornatesolar.com</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 UnityESS. All rights reserved.</div>
+      <div><a href="index.html">Home</a></div>
+    </div>
+  </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="assets/js/main.js?v=24"></script>
 </body>
 </html>
