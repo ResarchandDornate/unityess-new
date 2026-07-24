@@ -279,7 +279,8 @@ a{color:inherit;text-decoration:none}
    "← Home" reads oddly floating above centred text. Extra scrim + text-shadow
    because a busy/bright photo (containers with their own printed logos) can
    still fight plain light text even with the base scrim. */
-.hero.centered .hero-inner{ display:flex;flex-direction:column;align-items:center;text-align:center; }
+.hero.centered{ align-items:center; }
+.hero.centered .hero-inner{ display:flex;flex-direction:column;align-items:center;text-align:center;padding-bottom:0; }
 .hero.centered .backlink{ align-self:flex-start; }
 .hero.centered .hero-cta{ justify-content:center; }
 .hero.centered .hero-scrim{
@@ -403,7 +404,7 @@ a{color:inherit;text-decoration:none}
   transform:scale(1.04);will-change:transform; }
 .card:hover .media img{ transform:scale(1.12); }
 .card .body{ padding:1.2rem 1.3rem 1.5rem; }
-.card .tag{ font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);font-weight:700; }
+.card .tag{ font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);font-weight:500; }
 .card .name{ font-weight:400;font-size:1.25rem;letter-spacing:-.02em;margin-top:.6rem;color:var(--t-hi); }
 .card .cap{ color:var(--t-mid);font-size:.875rem;margin-top:.5rem;font-weight:300; }
 .card .go{ display:inline-flex;align-items:center;gap:.6em;margin-top:1.3rem;
@@ -438,6 +439,17 @@ a{color:inherit;text-decoration:none}
 .banner-media img{ width:100%;height:100%;object-fit:cover;will-change:transform; }
 .banner-scrim{ position:absolute;inset:0;z-index:1;
   background:linear-gradient(110deg, rgba(3,15,18,.9) 0%, rgba(3,15,18,.5) 55%, rgba(0,74,84,.48) 100%); }
+/* the monitoring banner's photo was reading too dark under the default
+   scrim — lighten it and lean on text-shadow so the image stays clearer
+   while every line of copy is still fully legible over it */
+#monitoring .banner-scrim{
+  background:linear-gradient(110deg, rgba(3,15,18,.55) 0%, rgba(3,15,18,.32) 55%, rgba(0,74,84,.34) 100%); }
+#monitoring .banner-inner *{ text-shadow:0 2px 14px rgba(0,0,0,.65), 0 1px 4px rgba(0,0,0,.55); }
+/* the dark teal/slate .grad shimmer (built for a light page background)
+   nearly vanishes over a photo — solid white reads clearly here instead */
+#monitoring .grad{ background:none; -webkit-background-clip:initial; background-clip:initial; color:#fff; animation:none; }
+#monitoring .banner-inner{ padding-left:clamp(1.5rem,5vw,4rem); }
+#monitoring h2.h1{ font-size:clamp(2.6rem,6.5vw,4.75rem); }
 .banner-inner{ position:relative;z-index:2;width:min(var(--wrap),100% - var(--gut)*2);margin-inline:auto; }
 .banner .hero-sub{ color:rgba(244,241,234,0.82); }
 .big-num{ font-weight:200;font-size:clamp(4rem,13vw,11rem);line-height:.9;letter-spacing:-.04em;color:#fff; }
@@ -459,6 +471,16 @@ a{color:inherit;text-decoration:none}
 .hcard .idx{ font-size:.72rem;letter-spacing:.2em;color:var(--orange);font-weight:600; }
 .hcard h4{ font-weight:400;font-size:1.5rem;letter-spacing:-.02em;margin-top:.6rem; }
 .hcard p{ color:rgba(244,241,234,0.82);font-size:.875rem;margin-top:.6rem;font-weight:300;max-width:34ch; }
+
+/* static grid variant — 3-up, 2 rows, no horizontal scroll/pin */
+.app-grid{ display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
+  width:min(var(--wrap),100% - var(--gut)*2);margin-inline:auto; }
+.app-grid .hcard{ flex:none;width:100%;height:auto;aspect-ratio:4/3.6; }
+.app-grid .hcard-body{ padding:1.2rem; }
+.app-grid .hcard h4{ font-size:1.05rem;margin-top:.4rem; }
+.app-grid .hcard p{ font-size:.78rem;margin-top:.4rem; }
+@media (max-width:900px){ .app-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .app-grid{ grid-template-columns:1fr; } }
 
 /* ============================================================
    GLASS PANEL (compare) — with its own colour pool behind
@@ -915,6 +937,9 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
   background:radial-gradient(120% 90% at 85% -10%, rgba(176,186,193,.28), transparent 55%); }
 .wcard .ep{ font-size:.66rem; letter-spacing:.32em; text-transform:uppercase;
   color:#a7d6dc; font-weight:600; }
+/* shrunk so "System-Level Orchestration." fits on one line like the other
+   two card headings, instead of being the only one that wraps to two */
+#intelligence .wcard h4{ font-size:clamp(1.15rem,1.7vw,1.4rem); }
 .wcard h4{ font-weight:300; font-size:clamp(1.5rem,2.2vw,1.9rem); letter-spacing:-.02em;
   margin-top:1rem; color:#fff; }
 .wcard p{ margin-top:.9rem; color:rgba(239,243,243,.78); font-weight:300;
@@ -1117,7 +1142,7 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
 .found-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
 @media (max-width:1100px){ .found-grid{ grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px){ .found-grid{ grid-template-columns:1fr; } }
-.found-grid .tcard .tmark{ font-size:clamp(1.5rem,2.4vw,2rem); font-weight:300; color:var(--orange); }
+.found-grid .tcard .tmark{ font-size:clamp(1rem,1.6vw,1.2rem); font-weight:300; color:var(--orange); line-height:1.25; }
 
 /* side-by-side comparison table */
 .compare-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
