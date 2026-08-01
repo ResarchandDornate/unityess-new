@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large video assets (host separately, don't commit to git)
+public/assets/*.mp4
+
+# backup of the pre-conversion static HTML site
+/_old-static-site/
