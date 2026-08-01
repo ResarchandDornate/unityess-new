@@ -45,3 +45,7 @@ public/assets/*.mp4
 
 # backup of the pre-conversion static HTML site
 /_old-static-site/
+
+.vercel
+.env*
+!.env.example

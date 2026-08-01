@@ -4,6 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 
 const PRODUCT_NAMES = { "aura.pdf": "Aura", "aqua.pdf": "Aqua", "ultima.pdf": "Ultima" };
 
+const LEAD_API_URL =
+  process.env.NEXT_PUBLIC_LEAD_API_URL || "https://backoffice-prod.ornatesolar.com/api/leads/website-lead/";
+
 const INITIAL_FORM = { name: "", phone: "", email: "", org: "", useCase: "", req: "" };
 
 export default function QuoteForm() {
@@ -56,7 +59,7 @@ export default function QuoteForm() {
     setStatusType("");
 
     try {
-      const res = await fetch("https://backoffice-prod.ornatesolar.com/api/leads/website-lead/", {
+      const res = await fetch(LEAD_API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
