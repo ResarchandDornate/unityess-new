@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function ApplicationsPage() {
   return (
@@ -53,19 +52,19 @@ export default function ApplicationsPage() {
           <h2 className="h2"><span className="line-mask"><span>Built for the operations</span></span><span className="line-mask"><span>that cannot afford to stop.</span></span></h2>
         </div>
         <div className="app-grid">
-          <Link className="hcard" href="/applications/industrial" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-manufacturing-plants.webp" alt="" /></div>
-            <div className="hcard-body"><div className="idx">01</div><h4> Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines. </p></div></Link>
-          <Link className="hcard" href="/applications/hospitals" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-hospitals-backup.webp" alt="" /></div>
-            <div className="hcard-body"><div className="idx">02</div><h4> Hospitals </h4><p>Instant switchover, continuous power, surgical suite backup. The grid that never goes dark.</p></div></Link>
-          <Link className="hcard" href="/applications/utility-grid" data-hot><div className="hbg"><img src="/assets/img/solar-energy-grid-scale-storage.webp" alt="" /></div>
-            <div className="hcard-body"><div className="idx">03</div><h4>Utility Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p></div></Link>
-          <Link className="hcard" href="/applications/solar-hybrid" data-hot><div className="hbg"><img src="/assets/img/solar-hybrid-energy-storage-system.webp" alt="" /></div>
-            <div className="hcard-body"><div className="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand. </p></div></Link>
-          <Link className="hcard" href="/applications/data-centres" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-data-centers.webp" alt="" /></div>
-            <div className="hcard-body"><div className="idx">05</div><h4>Data Centres</h4><p>Uninterruptible backup, UPS replacement, peak demand management for critical infrastructure.</p></div></Link>
-          <Link className="hcard" href="/applications/agriculture" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-agriculture-applications.webp" alt="" /></div>
+          <a className="hcard" href="/applications/industrial" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-manufacturing-plants.webp" alt="" /></div>
+            <div className="hcard-body"><div className="idx">01</div><h4> Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines. </p></div></a>
+          <a className="hcard" href="/applications/hospitals" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-hospitals-backup.webp" alt="" /></div>
+            <div className="hcard-body"><div className="idx">02</div><h4> Hospitals </h4><p>Instant switchover, continuous power, surgical suite backup. The grid that never goes dark.</p></div></a>
+          <a className="hcard" href="/applications/utility-grid" data-hot><div className="hbg"><img src="/assets/img/solar-energy-grid-scale-storage.webp" alt="" /></div>
+            <div className="hcard-body"><div className="idx">03</div><h4>Utility Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p></div></a>
+          <a className="hcard" href="/applications/solar-hybrid" data-hot><div className="hbg"><img src="/assets/img/solar-hybrid-energy-storage-system.webp" alt="" /></div>
+            <div className="hcard-body"><div className="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand. </p></div></a>
+          <a className="hcard" href="/applications/data-centres" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-data-centers.webp" alt="" /></div>
+            <div className="hcard-body"><div className="idx">05</div><h4>Data Centres</h4><p>Uninterruptible backup, UPS replacement, peak demand management for critical infrastructure.</p></div></a>
+          <a className="hcard" href="/applications/agriculture" data-hot><div className="hbg"><img src="/assets/img/solar-energy-for-agriculture-applications.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">06</div><h4>Agriculture </h4><p>Cold storage backup, irrigation power, post-harvest protection.
-              </p></div></Link>
+              </p></div></a>
         </div>
       </section>
 
@@ -169,8 +168,8 @@ export default function ApplicationsPage() {
           <h2 className="h2" style={{ marginTop: "1.2rem", maxWidth: "none", whiteSpace: "nowrap" }}><span className="line-mask"><span>Whatever the challenge, <span className="grad">we&rsquo;ve already solved it.</span></span></span></h2>
           <p className="hero-sub reveal" style={{ marginInline: "auto", maxWidth: "50ch" }}>Tell us what you&rsquo;re powering, and we&rsquo;ll recommend the system built for it &mdash; proven specifications, not projections.</p>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn" data-hot><span>Talk to Engineering</span></Link>
-            <Link href="/products" className="btn ghost" data-hot><span>View Products</span></Link>
+            <a href="/contact" className="btn" data-hot><span>Talk to Engineering</span></a>
+            <a href="/products" className="btn ghost" data-hot><span>View Products</span></a>
           </div>
         </div>
       </section>

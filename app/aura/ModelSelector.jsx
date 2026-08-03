@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 const rows = [
   { load: "25 kW", h2: "—", h3: "—", h4: "100 kWh" },
@@ -29,10 +28,10 @@ export default function ModelSelector() {
         <div><div className="ss-lbl">3 hr backup</div><div className="ss-val" id="aura-3h">{selected ? selected.h3 : "—"}</div></div>
         <div className="ss-div"></div>
         <div><div className="ss-lbl">4 hr backup</div><div className="ss-val" id="aura-4h">{selected ? selected.h4 : "—"}</div></div>
-        <Link className="ss-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot>
+        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot>
           <DatasheetIcon size={14} />
           Download Datasheet
-        </Link>
+        </a>
       </div>
 
       <div className="selector-table-wrap" style={{ marginTop: "1.25rem" }}>
@@ -63,9 +62,9 @@ export default function ModelSelector() {
                 <td className={`st-bc${row.h3 === "—" ? " st-empty" : ""}`}>{row.h3}</td>
                 <td className={`st-bc${row.h4 === "—" ? " st-empty" : ""}`}>{row.h4}</td>
                 <td>
-                  <Link className="st-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot onClick={(e) => e.stopPropagation()}>
+                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot onClick={(e) => e.stopPropagation()}>
                     <DatasheetIcon /> Datasheet
-                  </Link>
+                  </a>
                 </td>
               </tr>
             ))}

@@ -40,13 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large video assets not referenced by any page (host separately if needed)
-public/assets/*.mp4
-!public/assets/hero-scene-1.mp4
-!public/assets/hero-scene-2.mp4
-!public/assets/hero-scene-3.mp4
-!public/assets/how-it-works-hero.mp4
-
 # backup of the pre-conversion static HTML site
 /_old-static-site/
 

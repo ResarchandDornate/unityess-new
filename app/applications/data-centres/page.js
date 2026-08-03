@@ -1,5 +1,4 @@
 import "./data-centres.css";
-import Link from "next/link";
 
 export default function DataCentresApplicationPage() {
   return (
@@ -20,9 +19,9 @@ export default function DataCentresApplicationPage() {
       {/* BREADCRUMB */}
       <div className="wrap">
         <div className="breadcrumb">
-          <Link href="/">Home</Link>
+          <a href="/">Home</a>
           <span className="breadcrumb-sep">/</span>
-          <Link href="/applications">Applications</Link>
+          <a href="/applications">Applications</a>
           <span className="breadcrumb-sep">/</span>
           <span>Data Centres</span>
         </div>
@@ -108,8 +107,8 @@ export default function DataCentresApplicationPage() {
                 <div className="spec-row"><span>Best for</span><span>UPS replacement · Peak shaving · Colocation</span></div>
               </div>
               <div className="links">
-                <Link className="btn" href="/aura"><span>View Unity Aura</span></Link>
-                <Link className="btn ghost" href="/aura#selector"><span>Model selector</span></Link>
+                <a className="btn" href="/aura"><span>View Unity Aura</span></a>
+                <a className="btn ghost" href="/aura#selector"><span>Model selector</span></a>
               </div>
             </div>
           </div>
@@ -124,18 +123,18 @@ export default function DataCentresApplicationPage() {
         </div>
         <div className="wrap">
           <div className="app-grid">
-            <Link className="hcard" href="/applications/industrial"><div className="hbg"><img src="/assets/img/solar-energy-for-manufacturing-plants.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">01</div><h4>Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines.</p></div></Link>
-            <Link className="hcard" href="/applications/hospitals"><div className="hbg"><img src="/assets/img/solar-energy-for-hospitals-backup.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">02</div><h4>Hospitals</h4><p>Instant switchover, continuous power, surgical suite backup. The grid that never goes dark.</p></div></Link>
-            <Link className="hcard" href="/applications/utility-grid"><div className="hbg"><img src="/assets/img/solar-energy-grid-scale-storage.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">03</div><h4>Utility Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p></div></Link>
-            <Link className="hcard" href="/applications/solar-hybrid"><div className="hbg"><img src="/assets/img/solar-hybrid-energy-storage-system.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand.</p></div></Link>
-            <Link className="hcard" href="/applications/agriculture"><div className="hbg"><img src="/assets/img/solar-energy-for-agriculture-applications.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">05</div><h4>Agriculture</h4><p>Cold storage backup, irrigation power, post-harvest protection.</p></div></Link>
-            <Link className="hcard" href="/applications"><div className="hbg"><img src="/assets/img/unityess-containers-in-farmland-solar-field.webp" alt="" /></div>
-              <div className="hcard-body"><div className="idx">06</div><h4>All Applications</h4><p>See every use case and recommended system on one page.</p></div></Link>
+            <a className="hcard" href="/applications/industrial"><div className="hbg"><img src="/assets/img/solar-energy-for-manufacturing-plants.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">01</div><h4>Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines.</p></div></a>
+            <a className="hcard" href="/applications/hospitals"><div className="hbg"><img src="/assets/img/solar-energy-for-hospitals-backup.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">02</div><h4>Hospitals</h4><p>Instant switchover, continuous power, surgical suite backup. The grid that never goes dark.</p></div></a>
+            <a className="hcard" href="/applications/utility-grid"><div className="hbg"><img src="/assets/img/solar-energy-grid-scale-storage.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">03</div><h4>Utility Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p></div></a>
+            <a className="hcard" href="/applications/solar-hybrid"><div className="hbg"><img src="/assets/img/solar-hybrid-energy-storage-system.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand.</p></div></a>
+            <a className="hcard" href="/applications/agriculture"><div className="hbg"><img src="/assets/img/solar-energy-for-agriculture-applications.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">05</div><h4>Agriculture</h4><p>Cold storage backup, irrigation power, post-harvest protection.</p></div></a>
+            <a className="hcard" href="/applications"><div className="hbg"><img src="/assets/img/unityess-containers-in-farmland-solar-field.webp" alt="" /></div>
+              <div className="hcard-body"><div className="idx">06</div><h4>All Applications</h4><p>See every use case and recommended system on one page.</p></div></a>
           </div>
         </div>
       </section>
@@ -149,8 +148,8 @@ export default function DataCentresApplicationPage() {
           <h2 className="h2" style={{ marginTop: "1.2rem" }}><span className="line-mask"><span>Our engineering team will</span></span><span className="line-mask"><span className="grad">size the right system for you.</span></span></h2>
           <p className="hero-sub reveal" style={{ marginInline: "auto", maxWidth: "48ch" }}>Send us your load profile and we&rsquo;ll return a proposal within 24 hours.</p>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn"><span>Talk to Engineering</span></Link>
-            <Link href="/projects" className="btn ghost"><span>View Projects</span></Link>
+            <a href="/contact" className="btn"><span>Talk to Engineering</span></a>
+            <a href="/projects" className="btn ghost"><span>View Projects</span></a>
           </div>
         </div>
       </section>

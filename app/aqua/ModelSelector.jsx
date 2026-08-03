@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 const rows = [
   { cap: "125 kWh", h2: "261 kWh", h4: "522 kWh", voltage: "415V" },
@@ -30,10 +29,10 @@ export default function ModelSelector() {
         <div><div className="ss-lbl">4 hr storage</div><div className="ss-val" id="aqua-4h">{selected ? selected.h4 : "—"}</div></div>
         <div className="ss-div"></div>
         <div><div className="ss-lbl">Voltage</div><div className="ss-val">415V</div></div>
-        <Link className="ss-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot>
+        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot>
           <DatasheetIcon size={14} />
           Download Datasheet
-        </Link>
+        </a>
       </div>
 
       <div className="selector-table-wrap" style={{ marginTop: "1.25rem" }}>
@@ -65,9 +64,9 @@ export default function ModelSelector() {
                 <td className={`st-bc${row.h4 === "—" ? " st-empty" : ""}`}>{row.h4}</td>
                 <td className="st-vc">{row.voltage}</td>
                 <td>
-                  <Link className="st-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot onClick={(e) => e.stopPropagation()}>
+                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot onClick={(e) => e.stopPropagation()}>
                     <DatasheetIcon /> Datasheet
-                  </Link>
+                  </a>
                 </td>
               </tr>
             ))}

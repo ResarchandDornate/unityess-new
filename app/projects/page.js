@@ -1,5 +1,4 @@
 import "./projects.css";
-import Link from "next/link";
 import ProjectsGrid from "./ProjectsGrid";
 
 const projects = [
@@ -239,9 +238,9 @@ export default function ProjectsPage() {
             <a href="mailto:info@ornatesolar.com" className="btn" data-hot>
               <span>Begin the Conversation</span>
             </a>
-            <Link href="/products" className="btn ghost" data-hot>
+            <a href="/products" className="btn ghost" data-hot>
               <span>View Products</span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

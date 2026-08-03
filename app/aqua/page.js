@@ -1,5 +1,4 @@
 import "./aqua.css";
-import Link from "next/link";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export default function AquaPage() {
     <>
     <main className="wrap" style={{ marginTop: "clamp(6rem,14vh,8rem)", maxWidth: 1040 }}>
       <div className="breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/products">Products</Link> / Aqua
+        <a href="/">Home</a> / <a href="/products">Products</a> / Aqua
       </div>
 
       {/* HERO */}
@@ -32,8 +31,8 @@ export default function AquaPage() {
           </div>
           <blockquote>Optimize your operations with an Energy Storage System designed for Open Access Applications. It stores low-cost renewable energy for later utilization and delivers reliable power — solar when available, grid when required, storage always balancing the two.</blockquote>
           <div className="detail-cta">
-            <Link className="btn" href="/contact" data-hot><span>Request Consultation</span></Link>
-            <Link className="btn ghost" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot><span>Download Datasheet</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>
@@ -59,7 +58,7 @@ export default function AquaPage() {
 
         <p className="selector-helper">
           <span className="hdot"></span>
-          Scalable up to 12 units in parallel. Need a custom configuration? <Link href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</Link>
+          Scalable up to 12 units in parallel. Need a custom configuration? <a href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</a>
         </p>
       </section>
 
@@ -106,14 +105,14 @@ export default function AquaPage() {
         <div className="eyebrow">Explore More Systems</div>
         <h2>Find the right solution for your needs</h2>
         <div className="explore-grid">
-          <Link className="explore-card" href="/aura">
+          <a className="explore-card" href="/aura">
             <div><h3>Aura</h3><div className="tag">Commercial Series</div></div>
             <div className="arrow">→</div>
-          </Link>
-          <Link className="explore-card" href="/ultima">
+          </a>
+          <a className="explore-card" href="/ultima">
             <div><h3>Ultima</h3><div className="tag">Utility Series</div></div>
             <div className="arrow">→</div>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -126,8 +125,8 @@ export default function AquaPage() {
           <h3>Interested in Aqua?</h3>
           <p>Get in touch for specialized pricing, technical consultation, and custom configuration options.</p>
           <div className="btn-row">
-            <Link className="btn" href="/contact" data-hot><span>Talk to Engineering</span></Link>
-            <Link className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Talk to Engineering</span></a>
+            <a className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></a>
           </div>
         </div>
       </div>

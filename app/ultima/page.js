@@ -1,5 +1,4 @@
 import "./ultima.css";
-import Link from "next/link";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export default function UltimaPage() {
     <>
     <main className="wrap" style={{ marginTop: "clamp(6rem,14vh,8rem)", maxWidth: 1040 }}>
       <div className="breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/products">Products</Link> / Ultima
+        <a href="/">Home</a> / <a href="/products">Products</a> / Ultima
       </div>
 
       {/* HERO */}
@@ -32,8 +31,8 @@ export default function UltimaPage() {
           </div>
           <blockquote>Built for India&rsquo;s fast-growing utility-scale solar and hybrid projects — delivering high-density, multi-megawatt-hour storage in a single containerized unit. Plug-and-operate design minimizes civil work for faster commissioning.</blockquote>
           <div className="detail-cta">
-            <Link className="btn" href="/contact" data-hot><span>Request Consultation</span></Link>
-            <Link className="btn ghost" href="/contact?datasheet=/assets/datasheets/ultima.pdf" data-hot><span>Download Datasheet</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/ultima.pdf" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>
@@ -75,7 +74,7 @@ export default function UltimaPage() {
 
         <p className="selector-helper">
           <span className="hdot"></span>
-          Need a larger utility-scale configuration? <Link href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</Link>
+          Need a larger utility-scale configuration? <a href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</a>
         </p>
       </section>
 
@@ -154,14 +153,14 @@ export default function UltimaPage() {
         <div className="eyebrow">Explore More Systems</div>
         <h2>Find the right solution for your needs</h2>
         <div className="explore-grid">
-          <Link className="explore-card" href="/aura">
+          <a className="explore-card" href="/aura">
             <div><h3>Aura</h3><div className="tag">Commercial Series</div></div>
             <div className="arrow">→</div>
-          </Link>
-          <Link className="explore-card" href="/aqua">
+          </a>
+          <a className="explore-card" href="/aqua">
             <div><h3>Aqua</h3><div className="tag">Industrial Series</div></div>
             <div className="arrow">→</div>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -174,8 +173,8 @@ export default function UltimaPage() {
           <h3>Interested in Ultima?</h3>
           <p>Get in touch for specialized pricing, technical consultation, and custom configuration options.</p>
           <div className="btn-row">
-            <Link className="btn" href="/contact" data-hot><span>Talk to Engineering</span></Link>
-            <Link className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Talk to Engineering</span></a>
+            <a className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></a>
           </div>
         </div>
       </div>

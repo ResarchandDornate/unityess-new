@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function ProductsPage() {
   return (
@@ -32,24 +31,24 @@ export default function ProductsPage() {
       <section className="pad" id="collection">
         <div className="wrap">
           <div className="prod-grid pcards">
-            <Link className="card reveal" href="/aura" data-hot>
+            <a className="card reveal" href="/aura" data-hot>
               <div className="media"><img src="/assets/img/aura.webp?v=4" alt="Unity Aura commercial cabinets on site" /></div>
               <div className="body">
                 <span className="btn"><span>Discover Aura</span></span>
               </div>
-            </Link>
-            <Link className="card reveal" href="/aqua" data-hot>
+            </a>
+            <a className="card reveal" href="/aqua" data-hot>
               <div className="media"><img src="/assets/img/aqua.webp?v=4" alt="Unity Aqua hybrid solar, grid and storage platform" /></div>
               <div className="body">
                 <span className="btn"><span>Discover Aqua</span></span>
               </div>
-            </Link>
-            <Link className="card reveal" href="/ultima" data-hot>
+            </a>
+            <a className="card reveal" href="/ultima" data-hot>
               <div className="media"><img src="/assets/img/unity-ultima-containerised-utility-system.webp?v=3" alt="Unity Ultima containerised utility system" /></div>
               <div className="body">
                 <span className="btn"><span>Discover Ultima</span></span>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -110,9 +109,9 @@ export default function ProductsPage() {
                   <tr><th>Best for</th><td>Resorts, Hotels, Data centres, CPOs</td><td>Industries, Open Access applications</td><td>Utility-scale solar, grid frequency regulation, IPP/EPC</td></tr>
                   <tr>
                     <th></th>
-                    <td><Link className="go" href="/aura" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></Link></td>
-                    <td><Link className="go" href="/aqua" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></Link></td>
-                    <td><Link className="go" href="/ultima" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></Link></td>
+                    <td><a className="go" href="/aura" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
+                    <td><a className="go" href="/aqua" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
+                    <td><a className="go" href="/ultima" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
                   </tr>
                 </tbody>
               </table>
@@ -130,8 +129,8 @@ export default function ProductsPage() {
           <h2 className="h2" style={{ marginTop: "1.2rem" }}><span className="line-mask"><span>Always with you.</span></span><span className="line-mask"><span className="grad">Whatever you&rsquo;re building.</span></span></h2>
           <p className="hero-sub reveal" style={{ marginInline: "auto", maxWidth: "48ch" }}>Our engineering team can recommend the optimal solution based on your load profile &mdash; proven specifications, not projections.</p>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn" data-hot><span>Talk to Engineering</span></Link>
-            <Link href="/how-it-works#how" className="btn ghost" data-hot><span>How we work</span></Link>
+            <a href="/contact" className="btn" data-hot><span>Talk to Engineering</span></a>
+            <a href="/how-it-works#how" className="btn ghost" data-hot><span>How we work</span></a>
           </div>
         </div>
       </section>

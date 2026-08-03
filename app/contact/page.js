@@ -1,5 +1,4 @@
 import "./contact.css";
-import Link from "next/link";
 import QuoteForm from "./QuoteForm";
 
 export const metadata = {
@@ -85,8 +84,8 @@ export default function ContactPage() {
           <div className="eyebrow center line-mask" style={{ color: "#a7d6dc" }}><span>A joint venture</span></div>
           <h2 className="h2" style={{ marginTop: "1.2rem", maxWidth: "36ch" }}><span className="line-mask"><span>Backed by Ornate Solar</span></span><span className="line-mask"><span className="grad">and Inverted Energy, working as one.</span></span></h2>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/about" className="btn" data-hot><span>About UnityESS</span></Link>
-            <Link href="/products" className="btn ghost" data-hot><span>View Products</span></Link>
+            <a href="/about" className="btn" data-hot><span>About UnityESS</span></a>
+            <a href="/products" className="btn ghost" data-hot><span>View Products</span></a>
           </div>
         </div>
       </section>

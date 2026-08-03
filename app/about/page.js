@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -10,7 +9,7 @@ export default function AboutPage() {
         </div>
         <div className="hero-scrim"></div>
         <div className="hero-inner">
-          {/* <Link className="backlink reveal" href="/" data-hot>&larr; Home</Link> */}
+          {/* <a className="backlink reveal" href="/" data-hot>&larr; Home</a> */}
           <div className="eyebrow line-mask" style={{ marginTop: "1.1rem" }}><span>About</span></div>
           <h1 className="display" style={{ marginTop: ".9rem" }}>
             <span className="line-mask"><span>We store energy. So the people</span></span>
@@ -162,8 +161,8 @@ export default function AboutPage() {
           <h2 className="h2" style={{ marginTop: "1.2rem", maxWidth: "42ch" }}><span className="line-mask"><span>Always with you.</span></span><span className="line-mask"><span className="grad" style={{ whiteSpace: "nowrap" }}>From first call to twenty years in.</span></span></h2>
           <p className="hero-sub reveal" style={{ marginInline: "auto", maxWidth: "50ch" }}>Speak with our engineering team to architect a solution for your specific load profile &mdash; proven specifications, not projections.</p>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn" data-hot><span>Contact Engineering</span></Link>
-            <Link href="/products" className="btn ghost" data-hot><span>View Products</span></Link>
+            <a href="/contact" className="btn" data-hot><span>Contact Engineering</span></a>
+            <a href="/products" className="btn ghost" data-hot><span>View Products</span></a>
           </div>
         </div>
       </section>

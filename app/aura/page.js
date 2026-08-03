@@ -1,5 +1,4 @@
 import "./aura.css";
-import Link from "next/link";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export default function AuraPage() {
     <>
     <main className="wrap" style={{ marginTop: "clamp(6rem,14vh,8rem)", maxWidth: 1040 }}>
       <div className="breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/products">Products</Link> / Aura
+        <a href="/">Home</a> / <a href="/products">Products</a> / Aura
       </div>
 
       {/* HERO */}
@@ -32,8 +31,8 @@ export default function AuraPage() {
           </div>
           <blockquote>Power your operations with a BESS built for India&rsquo;s toughest industrial conditions. Delivers clean, reliable, and uninterrupted power — reducing diesel usage, cutting energy bills, and stabilizing your plant during peak loads.</blockquote>
           <div className="detail-cta">
-            <Link className="btn" href="/contact" data-hot><span>Request Consultation</span></Link>
-            <Link className="btn ghost" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot><span>Download Datasheet</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>
@@ -59,7 +58,7 @@ export default function AuraPage() {
 
         <p className="selector-helper">
           <span className="hdot"></span>
-          Don&rsquo;t see your configuration? <Link href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</Link>
+          Don&rsquo;t see your configuration? <a href="/contact" data-hot style={{ color: "var(--orange)", textDecoration: "none", fontWeight: 500 }}>Talk to our engineering team →</a>
         </p>
       </section>
 
@@ -148,14 +147,14 @@ export default function AuraPage() {
         <div className="eyebrow">Explore More Systems</div>
         <h2>Find the right solution for your needs</h2>
         <div className="explore-grid">
-          <Link className="explore-card" href="/aqua">
+          <a className="explore-card" href="/aqua">
             <div><h3>Aqua</h3><div className="tag">Industrial Series</div></div>
             <div className="arrow">→</div>
-          </Link>
-          <Link className="explore-card" href="/ultima">
+          </a>
+          <a className="explore-card" href="/ultima">
             <div><h3>Ultima</h3><div className="tag">Utility Series</div></div>
             <div className="arrow">→</div>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -168,8 +167,8 @@ export default function AuraPage() {
           <h3>Interested in Aura?</h3>
           <p>Get in touch for specialized pricing, technical consultation, and custom configuration options.</p>
           <div className="btn-row">
-            <Link className="btn" href="/contact" data-hot><span>Talk to Engineering</span></Link>
-            <Link className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></Link>
+            <a className="btn" href="/contact" data-hot><span>Talk to Engineering</span></a>
+            <a className="btn ghost" href="/how-it-works" data-hot><span>How It Works</span></a>
           </div>
         </div>
       </div>

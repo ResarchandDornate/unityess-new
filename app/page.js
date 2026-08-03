@@ -1,4 +1,3 @@
-import Link from "next/link";
 import YouVideo from "@/components/YouVideo";
 import HomeEffects from "@/components/HomeEffects";
 
@@ -42,8 +41,8 @@ export default function Home() {
             Battery energy storage systems that keep your operations running, your costs down, and your grid independence up.
           </p>
           <div className="hero-cta">
-            <Link href="/contact" className="btn" data-hot><span>Enquire about your project</span></Link>
-            <Link href="/products" className="btn ghost" data-hot><span>Explore our products</span></Link>
+            <a href="/contact" className="btn" data-hot><span>Enquire about your project</span></a>
+            <a href="/products" className="btn ghost" data-hot><span>Explore our products</span></a>
           </div>
         </div>
       </header>
@@ -96,10 +95,10 @@ export default function Home() {
               <div className="eyebrow fade">The Collection</div>
               <h2 className="h2"><span className="line-mask"><span>Three systems. One family.</span></span></h2>
             </div>
-            <Link href="/contact" className="btn ghost reveal" data-hot><span>Not sure which? Ask us</span></Link>
+            <a href="/contact" className="btn ghost reveal" data-hot><span>Not sure which? Ask us</span></a>
           </div>
           <div className="prod-grid g4">
-            <Link className="card reveal" href="/aura" data-hot>
+            <a className="card reveal" href="/aura" data-hot>
               <div className="media"><img src="/assets/img/aura.webp?v=4" alt="Unity Aura commercial cabinet" /></div>
               <div className="body">
                 <div className="tag">100 kWh – 225 kWh</div>
@@ -109,8 +108,8 @@ export default function Home() {
                   <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg>
                 </span>
               </div>
-            </Link>
-            <Link className="card reveal" href="/aqua" data-hot>
+            </a>
+            <a className="card reveal" href="/aqua" data-hot>
               <div className="media"><img src="/assets/img/aqua.webp?v=4" alt="Unity Aqua hybrid solar, grid and storage platform" /></div>
               <div className="body">
                 <div className="tag">250 kWh – 2500 kWh</div>
@@ -120,8 +119,8 @@ export default function Home() {
                   <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg>
                 </span>
               </div>
-            </Link>
-            <Link className="card reveal" href="/ultima" data-hot>
+            </a>
+            <a className="card reveal" href="/ultima" data-hot>
               <div className="media"><img src="/assets/img/unity-ultima-containerised-utility-system.webp?v=3" alt="Unity Ultima containerised utility system" /></div>
               <div className="body">
                 <div className="tag">3.00 MWh – 6.60 MWh</div>
@@ -131,7 +130,7 @@ export default function Home() {
                   <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg>
                 </span>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -143,30 +142,30 @@ export default function Home() {
           <h2 className="h2"><span className="line-mask"><span>Built for the operations</span></span><span className="line-mask"><span>that cannot afford to stop.</span></span></h2>
         </div>
         <div className="htrack" id="htrack">
-          <Link className="hcard" href="/applications/industrial" data-hot>
+          <a className="hcard" href="/applications/industrial" data-hot>
             <div className="hbg"><img src="/assets/img/solar-energy-for-manufacturing-plants.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">01</div><h4> Industrial</h4><p>Peak load shifting, demand charge reduction, backup for production lines. </p></div>
-          </Link>
-          <Link className="hcard" href="/applications/hospitals" data-hot>
+          </a>
+          <a className="hcard" href="/applications/hospitals" data-hot>
             <div className="hbg"><img src="/assets/img/solar-energy-for-hospitals-backup.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">02</div><h4> Hospitals </h4><p>Instant switchover, continuous power, surgical suite backup. The grid that never goes dark.</p></div>
-          </Link>
-          <Link className="hcard" href="/applications/utility-grid" data-hot>
+          </a>
+          <a className="hcard" href="/applications/utility-grid" data-hot>
             <div className="hbg"><img src="/assets/img/solar-energy-grid-scale-storage.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">03</div><h4>Utility Grid Operators</h4><p>Frequency regulation, voltage support, renewable smoothing. Grid stability at scale.</p></div>
-          </Link>
-          <Link className="hcard" href="/applications/solar-hybrid" data-hot>
+          </a>
+          <a className="hcard" href="/applications/solar-hybrid" data-hot>
             <div className="hbg"><img src="/assets/img/solar-hybrid-energy-storage-system.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">04</div><h4>Solar + Storage Hybrid</h4><p>Capture excess generation, dispatch on demand. </p></div>
-          </Link>
-          <Link className="hcard" href="/applications/data-centres" data-hot>
+          </a>
+          <a className="hcard" href="/applications/data-centres" data-hot>
             <div className="hbg"><img src="/assets/img/solar-energy-for-data-centers.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">05</div><h4>Data Centres</h4><p>Uninterruptible backup, UPS replacement, peak demand management for critical infrastructure.</p></div>
-          </Link>
-          <Link className="hcard" href="/applications/agriculture" data-hot>
+          </a>
+          <a className="hcard" href="/applications/agriculture" data-hot>
             <div className="hbg"><img src="/assets/img/solar-energy-for-agriculture-applications.webp" alt="" /></div>
             <div className="hcard-body"><div className="idx">06</div><h4>Agriculture </h4><p>Cold storage backup, irrigation power, post-harvest protection.</p></div>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -178,7 +177,7 @@ export default function Home() {
           <div className="eyebrow center line-mask" style={{ color: "#a7d6dc" }}><span>Contact</span></div>
           <h2 className="h2"><span className="line-mask"><span>Ready to deploy?</span></span><span className="line-mask"><span className="grad">Tell us about your project.</span></span></h2>
           <div className="reveal" style={{ marginTop: "2.2rem" }}>
-            <Link href="/contact" className="btn" data-hot><span>Begin the conversation</span></Link>
+            <a href="/contact" className="btn" data-hot><span>Begin the conversation</span></a>
           </div>
         </div>
       </section>
