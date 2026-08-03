@@ -493,6 +493,14 @@ a{color:inherit;text-decoration:none}
 .hcard:hover h4{ text-decoration:underline; text-underline-offset:4px; }
 .hcard p{ color:rgba(244,241,234,0.82);font-size:1rem;margin-top:.6rem;font-weight:300;max-width:34ch; }
 
+/* mobile: the GSAP pin+scrub effect is disabled below 760px (see SiteEffects),
+   so the track needs to be natively swipeable or every card past the first
+   is unreachable. */
+@media (max-width:760px){
+  .htrack{ overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x proximity; padding-bottom:1rem; }
+  .htrack .hcard{ scroll-snap-align:start; }
+}
+
 /* static grid variant — 3-up, 2 rows, no horizontal scroll/pin */
 .app-grid{ display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
   width:min(var(--wrap),100% - var(--gut)*2);margin-inline:auto; }
@@ -1181,6 +1189,13 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
 @media (max-width:1100px){ .found-grid{ grid-template-columns:repeat(2,1fr); } }
 @media (max-width:640px){ .found-grid{ grid-template-columns:1fr; } }
 .found-grid .tcard .tmark{ font-size:1rem; font-weight:700; color:var(--orange); line-height:1.4; margin-bottom:.5rem; letter-spacing:-.01em; }
+
+/* pages set an explicit column count inline via style={gridTemplateColumns}
+   (2 or 3 columns), which — being an inline style — outranks this
+   stylesheet's own responsive rules above and stops them collapsing to
+   1 column on mobile. !important reclaims that on small screens only. */
+@media (max-width:640px){ .found-grid{ grid-template-columns:1fr!important; } }
+@media (max-width:640px){ .wire-grid.founder-grid{ grid-template-columns:1fr!important; } }
 
 /* side-by-side comparison table */
 .compare-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }

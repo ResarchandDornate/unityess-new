@@ -72,6 +72,10 @@ section.block { padding: 72px 0; border-top: 1px solid var(--line-soft); }
 .selector-meta .mi .mv { font-size: 14px; font-weight: 500; color: var(--t-hi); }
 .selector-table-wrap { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .selector-table { width: 100%; border-collapse: collapse; }
+@media (max-width: 700px) {
+  .selector-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .selector-table { min-width: 620px; }
+}
 .selector-table thead tr.st-h1 { background: var(--orange); }
 .selector-table thead th { padding: 0.875rem 1.25rem; text-align: center; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; border-bottom: 1px solid var(--line); }
 .selector-table thead th.st-gh { text-align: center; border-left: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.75); }
