@@ -76,6 +76,47 @@ export default function AuraPage() {
         </div>
       </section>
 
+      {/* ENGINEERED FOR PERFORMANCE */}
+      <section className="block">
+        <div className="eyebrow">Engineered For Performance &amp; Safety</div>
+        <h2>Every detail accounted for</h2>
+        <div className="eng-grid2">
+          <div className="eng-img-wrap2"><img src="/assets/img/unity-aura-cabinet-diagram.webp" alt="Aura cabinet internal component diagram" /></div>
+          <div className="eng-list2">
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><path d="M3 13l9 5 9-5" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>IP16S battery pack architecture for high energy density in a compact footprint</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4.6v9.8L12 21l-8-4.6V6.6L12 2z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Bypass, Grid, Load &amp; PV breakers give dedicated, protected control over every circuit</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-7 8 7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /><path d="M6 10v9h12v-9" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Integrated EMS provides real-time monitoring and remote dispatch</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.6" /><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
+              </div>
+              <p>Battery Controller and DC/DC stage manage charging with precision</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>High-performance PCS engineered for safe, efficient grid-tied operation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section className="block">
         <div className="eyebrow">About Aura</div>
