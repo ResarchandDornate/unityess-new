@@ -76,6 +76,47 @@ export default function AquaPage() {
         </div>
       </section>
 
+      {/* ENGINEERED FOR PERFORMANCE */}
+      <section className="block">
+        <div className="eyebrow">Engineered For Performance &amp; Safety</div>
+        <h2>Every detail accounted for</h2>
+        <div className="eng-grid2">
+          <div className="eng-img-wrap2"><img src="/assets/img/unity-model-a-engineered.webp" alt="Aqua engineered cabinet diagram" /></div>
+          <div className="eng-list2">
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><path d="M3 13l9 5 9-5" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Normalized, high-protection grade construction design</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4.6v9.8L12 21l-8-4.6V6.6L12 2z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Batteries are designed to be completely self-contained</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-7 8 7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /><path d="M6 10v9h12v-9" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Suitable for installations and use in a variety of environments</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.6" /><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
+              </div>
+              <p>Advanced BMS control for maximum DC output efficiency</p>
+            </div>
+            <div className="eng-item2">
+              <div className="eng-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <p>Separate space for batteries &amp; electrics enhances fire safety</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section className="block">
         <div className="eyebrow">About Aqua</div>
