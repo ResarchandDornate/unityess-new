@@ -219,8 +219,11 @@ function initImageExpand(gsap, ScrollTrigger) {
       anticipatePin: 1,
     },
   });
-  tl.fromTo(frame, { clipPath: from }, { clipPath: "inset(0% 0% 0% 0% round 0px)", ease: "none", duration: 1 })
-    .fromTo(img, { scale: 1.18 }, { scale: 1, ease: "none", duration: 1 }, 0);
+  tl.fromTo(frame, { clipPath: from }, { clipPath: "inset(0% 0% 0% 0% round 0px)", ease: "none", duration: 1 });
+  // video looks soft when scaled up — skip the zoom-settle tween for <video>, keep it for <img>
+  if (img.tagName !== "VIDEO") {
+    tl.fromTo(img, { scale: 1.18 }, { scale: 1, ease: "none", duration: 1 }, 0);
+  }
   if (surr) tl.to(surr, { opacity: 0, y: -12, duration: 0.42, ease: "power1.out" }, 0);
 
   return tl;
