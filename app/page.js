@@ -78,11 +78,9 @@ export default function Home() {
             <div className="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div>
           </div>
           <figure className="xpand-frame" id="xpandFrame">
-            <img id="xpandImg" src="/assets/img/battery-icons-silhouetted-against-a-sunset.webp" alt="Battery icons silhouetted against a sunset" />
-            <div className="xpand-scrim"></div>
-            <figcaption className="xpand-cap" id="xpandCap">
-              <div className="xpand-line">Where the day&rsquo;s sun<br />becomes the night&rsquo;s power.</div>
-            </figcaption>
+            <video id="xpandImg" autoPlay muted loop playsInline preload="auto">
+              <source src="/assets/unity-ess-brand-loop.mp4" type="video/mp4" />
+            </video>
           </figure>
         </div>
       </section>
