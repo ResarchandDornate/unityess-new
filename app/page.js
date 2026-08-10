@@ -74,8 +74,8 @@ export default function Home() {
         <div className="xpand-stage">
           <div className="xpand-surround" id="xpandSurround" aria-hidden="true">
             <div className="xs-marks"><i></i><i></i><i></i><i></i></div>
-            <div className="xs-meta xs-meta-l">UNITY cabinets · commissioned on-site</div>
-            <div className="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div>
+            {/* <div className="xs-meta xs-meta-l">UNITY cabinets · commissioned on-site</div> */}
+            {/* <div className="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div> */}
           </div>
           <figure className="xpand-frame" id="xpandFrame">
             <video id="xpandImg" autoPlay muted loop playsInline preload="auto">
