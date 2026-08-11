@@ -78,7 +78,7 @@ export default function Home() {
             {/* <div className="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div> */}
           </div>
           <figure className="xpand-frame" id="xpandFrame">
-            <video id="xpandImg" autoPlay muted loop playsInline preload="auto">
+            <video id="xpandImg" autoPlay muted loop playsInline preload="metadata" poster="/assets/img/unity-ess-brand-loop-poster.webp">
               <source src="/assets/unity-ess-brand-loop.mp4" type="video/mp4" />
             </video>
           </figure>
