@@ -654,10 +654,7 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
 }
 .xpand-frame img,.xpand-frame video{ width:100%;height:100%;object-fit:cover;will-change:transform;
   transform:scale(1.18);filter:saturate(1.05) contrast(1.03); }
-/* the video has its own baked-in logo/captions near its edges — cover crops
-   them off whenever the frame's aspect ratio isn't ~16:9, so it needs contain
-   (full frame always visible) instead, with a background to fill the letterbox. */
-.xpand-frame video{ transform:scale(1);object-fit:contain;object-position:center;background:#0b0e12; }
+.xpand-frame video{ transform:scale(1); }
 .xpand-scrim{ position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(4,8,14,.5) 0%,rgba(4,8,14,.4) 40%,rgba(4,8,14,.62) 100%); }
 .xpand-cap{ position:absolute;inset:0;z-index:2;color:var(--paper);
