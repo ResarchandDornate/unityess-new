@@ -207,7 +207,13 @@ function initImageExpand(gsap, ScrollTrigger) {
   if (!sec || !frame || !img) return null;
 
   const mobile = window.matchMedia("(max-width:760px)").matches;
-  const from = mobile ? "inset(6% 5% 6% 5% round 16px)" : "inset(9% 13% 9% 13% round 20px)";
+  // the frame's own clip-path crops its box independent of the media's object-fit —
+  // fine for a photo, but this video has its own logo/captions near its edges, so a
+  // deep inset here clips them regardless of how the video itself is fitted.
+  const isVideo = img.tagName === "VIDEO";
+  const from = isVideo
+    ? (mobile ? "inset(2% 2% 2% 2% round 16px)" : "inset(2% 2% 2% 2% round 20px)")
+    : (mobile ? "inset(6% 5% 6% 5% round 16px)" : "inset(9% 13% 9% 13% round 20px)");
 
   const tl = gsap.timeline({
     scrollTrigger: {
