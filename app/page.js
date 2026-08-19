@@ -78,6 +78,9 @@ export default function Home() {
             {/* <div className="xs-meta xs-meta-r">Thar Desert · Rajasthan · 18:42 IST</div> */}
           </div>
           <figure className="xpand-frame" id="xpandFrame">
+            <video className="xpand-bgvideo" aria-hidden="true" autoPlay muted loop playsInline preload="metadata">
+              <source src="/assets/13%20August%20Website%20Video.mp4" type="video/mp4" />
+            </video>
             <video id="xpandImg" autoPlay muted loop playsInline preload="metadata">
               <source src="/assets/13%20August%20Website%20Video.mp4" type="video/mp4" />
             </video>
