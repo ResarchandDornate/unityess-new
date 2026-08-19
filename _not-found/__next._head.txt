@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[25725,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"ViewportBoundary"]
+3:I[25725,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"UnityESS — Energy, when you need it | Battery Energy Storage, India"}],["$","meta","1",{"name":"description","content":"Unity ESS — battery energy storage built for India's grid by Ornate Solar and Inverted Energy. Commissioned in under 48 hours, monitored 24/7, from 1 kWh homes to 6.60 MWh utility systems."}],["$","link","2",{"rel":"icon","href":"/assets/img/favicon.webp"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"2ByL-Lh0SCOBoAVy5Jn8E"}
