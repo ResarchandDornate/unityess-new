@@ -1,6 +1,14 @@
 import "./projects.css";
 import ProjectsGrid from "./ProjectsGrid";
 
+export const metadata = {
+  title: "BESS Projects Across India | UnityESS Case Studies",
+  description:
+    "UnityESS battery energy storage system projects in India — 35 MWh Phalodi, 4.5 MWh Bikaner, Coimbatore EV charging & more. www.unityess.ai",
+  keywords: ["battery energy storage system in india", "bess manufacturer in india"],
+  alternates: { canonical: "/projects/" },
+};
+
 const projects = [
   {
     id: "coimbatore",

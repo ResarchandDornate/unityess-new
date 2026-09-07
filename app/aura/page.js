@@ -2,9 +2,11 @@ import "./aura.css";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
-  title: "Aura — UnityESS",
+  title: "Unity Aura | C&I Energy Storage System | UnityESS",
   description:
-    "Aura — a liquid-cooled commercial BESS built on 314Ah LFP cells, for peak shaving, backup and solar integration at factories, campuses and data centres.",
+    "Unity Aura is a 100–225 kWh air-cooled energy storage system for commercial & industrial use, LFP cells, 10,000+ cycles. www.unityess.ai",
+  keywords: ["energy storage system", "bess", "battery energy storage solution"],
+  alternates: { canonical: "/aura/" },
 };
 
 export default function AuraPage() {

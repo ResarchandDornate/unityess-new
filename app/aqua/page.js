@@ -2,9 +2,11 @@ import "./aqua.css";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
-  title: "Aqua — UnityESS",
+  title: "Unity Aqua | Battery Energy Storage Solution | UnityESS",
   description:
-    "Aqua — a mid-range hybrid Energy Storage System for Open Access Applications, pairing on-site solar with storage for reliable, low-cost power.",
+    "Unity Aqua is a liquid-cooled battery energy storage solution, 261–3,000 kWh, for industrial & open-access sites in India. www.unityess.ai",
+  keywords: ["battery energy storage solution", "energy storage solution", "bess"],
+  alternates: { canonical: "/aqua/" },
 };
 
 export default function AquaPage() {

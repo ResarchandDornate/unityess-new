@@ -2,9 +2,11 @@ import "./how-it-works.css";
 import EmsChart from "./EmsChart";
 
 export const metadata = {
-  title: "How It Works — Five Stages, One Standard | UnityESS",
+  title: "How It Works: Five Stages, One Standard | UnityESS",
   description:
-    "Every UnityESS system moves through the same five stages — consultation, engineering, manufacturing, commissioning, and 24/7 monitoring — whether it's a 5 kWh Reserve unit or a 6.60 MWh Ultima container. Proven before promised.",
+    "Every UnityESS system moves through five stages, from consultation to 24/7 monitoring. Proven before promised. www.unityess.ai",
+  keywords: ["how bess works", "energy storage manufacturer", "bess"],
+  alternates: { canonical: "/how-it-works/" },
 };
 
 export default function HowItWorksPage() {

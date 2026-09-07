@@ -1,5 +1,13 @@
 import "./hospitals.css";
 
+export const metadata = {
+  title: "Battery Backup for Hospitals | UnityESS",
+  description:
+    "Sub-20ms switchover battery energy storage for hospitals — continuous power for surgical suites, ICUs and critical care. www.unityess.ai",
+  keywords: ["battery backup for hospitals", "hospital power backup", "bess"],
+  alternates: { canonical: "/applications/hospitals/" },
+};
+
 export default function HospitalsApplicationPage() {
   return (
     <>

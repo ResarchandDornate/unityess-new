@@ -1,5 +1,13 @@
 import "./solar-hybrid.css";
 
+export const metadata = {
+  title: "Solar + Battery Storage Hybrid Systems | UnityESS",
+  description:
+    "Store solar energy at peak generation and dispatch it when tariffs and demand are highest, with UnityESS hybrid storage. www.unityess.ai",
+  keywords: ["solar battery hybrid system", "solar plus storage", "bess"],
+  alternates: { canonical: "/applications/solar-hybrid/" },
+};
+
 export default function SolarHybridApplicationPage() {
   return (
     <>

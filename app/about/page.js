@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "About UnityESS | Energy Storage Manufacturer, India",
+  description:
+    "UnityESS is an energy storage manufacturer in India — a joint venture of Ornate Solar and Inverted Energy, built in Ghiloth. www.unityess.ai",
+  keywords: ["energy storage manufacturer", "bess manufacturer in india"],
+  alternates: { canonical: "/about/" },
+};
 
 export default function AboutPage() {
   return (

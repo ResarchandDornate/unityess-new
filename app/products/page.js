@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "Product Range: Aura, Aqua, Ultima | UnityESS",
+  description:
+    "Explore UnityESS's battery energy storage system range — Aura (C&I), Aqua (industrial/open-access) and Ultima (utility-scale). www.unityess.ai",
+  keywords: ["battery energy storage system", "bess", "energy storage system"],
+  alternates: { canonical: "/products/" },
+};
 
 export default function ProductsPage() {
   return (

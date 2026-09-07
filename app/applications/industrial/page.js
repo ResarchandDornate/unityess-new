@@ -1,5 +1,13 @@
 import "./industrial.css";
 
+export const metadata = {
+  title: "Industrial Battery Energy Storage | UnityESS",
+  description:
+    "Peak load shifting and demand charge reduction with UnityESS battery storage for factories and industrial plants. www.unityess.ai",
+  keywords: ["industrial battery energy storage", "demand charge reduction", "bess"],
+  alternates: { canonical: "/applications/industrial/" },
+};
+
 export default function IndustrialApplicationPage() {
   return (
     <>

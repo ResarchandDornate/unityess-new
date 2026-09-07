@@ -2,9 +2,11 @@ import "./contact.css";
 import QuoteForm from "./QuoteForm";
 
 export const metadata = {
-  title: "Contact — Let's Build Something That Doesn't Go Dark | UnityESS",
+  title: "Contact UnityESS | BESS Manufacturer in India",
   description:
-    "Talk to UnityESS engineering — sizing a system for a single facility or planning a utility-scale project. Call 1800-2026-252, email info@ornatesolar.com, or request a quote for your load profile.",
+    "Talk to UnityESS engineering about your BESS project — Aura, Aqua, or Ultima. Our team responds within 24 hours. www.unityess.ai",
+  keywords: ["bess manufacturer in india", "battery energy storage system"],
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {

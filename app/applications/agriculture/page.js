@@ -1,5 +1,13 @@
 import "./agriculture.css";
 
+export const metadata = {
+  title: "Battery Storage for Cold Storage & Agriculture | UnityESS",
+  description:
+    "Cold storage backup and irrigation power with UnityESS battery energy storage — built for farms and cooperatives. www.unityess.ai",
+  keywords: ["battery storage for agriculture", "cold storage backup power", "bess"],
+  alternates: { canonical: "/applications/agriculture/" },
+};
+
 export default function AgricultureApplicationPage() {
   return (
     <>

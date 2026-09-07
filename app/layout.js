@@ -6,6 +6,7 @@ import SiteEffects from "@/components/SiteEffects";
 import SiteScripts from "@/components/SiteScripts";
 
 export const metadata = {
+  metadataBase: new URL("https://unityess.ai"),
   title: "UnityESS — Energy, when you need it | Battery Energy Storage, India",
   description:
     "Unity ESS — battery energy storage built for India's grid by Ornate Solar and Inverted Energy. Commissioned in under 48 hours, monitored 24/7, from 1 kWh homes to 6.60 MWh utility systems.",

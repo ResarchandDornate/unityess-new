@@ -2,9 +2,11 @@ import "./ultima.css";
 import ModelSelector from "./ModelSelector";
 
 export const metadata = {
-  title: "Ultima — UnityESS",
+  title: "Unity Ultima | Utility-Scale BESS in India | UnityESS",
   description:
-    "Ultima — a liquid-cooled, containerised utility BESS scaling to 6.60 MWh per unit, for grid support, arbitrage and renewable firming.",
+    "Unity Ultima is a containerized battery energy storage system for utility-scale projects in India — 5–6.25 MWh, up to 2.5 MW. www.unityess.ai",
+  keywords: ["battery energy storage system in india", "energy storage system", "bess manufacturer in india"],
+  alternates: { canonical: "/ultima/" },
 };
 
 export default function UltimaPage() {

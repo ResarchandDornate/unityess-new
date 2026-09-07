@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "Energy Storage Solutions by Industry | UnityESS",
+  description:
+    "UnityESS energy storage solutions for hospitals, industry, utilities, solar hybrid, data centres & agriculture. www.unityess.ai",
+  keywords: ["energy storage solution", "battery energy storage solution", "bess"],
+  alternates: { canonical: "/applications/" },
+};
 
 export default function ApplicationsPage() {
   return (

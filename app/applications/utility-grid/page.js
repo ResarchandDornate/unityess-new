@@ -1,5 +1,13 @@
 import "./utility-grid.css";
 
+export const metadata = {
+  title: "Utility-Scale Grid Storage | Unity Ultima | UnityESS",
+  description:
+    "Frequency regulation, voltage support and renewable smoothing at scale with Unity Ultima utility BESS. www.unityess.ai",
+  keywords: ["utility scale battery storage", "grid stability storage", "bess manufacturer in india"],
+  alternates: { canonical: "/applications/utility-grid/" },
+};
+
 export default function UtilityGridApplicationPage() {
   return (
     <>

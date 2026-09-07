@@ -1,5 +1,13 @@
 import "./data-centres.css";
 
+export const metadata = {
+  title: "Battery Energy Storage for Data Centres | UnityESS",
+  description:
+    "UPS replacement and sub-20ms switchover battery storage for data centres that operate at 100% uptime. www.unityess.ai",
+  keywords: ["battery storage for data centres", "ups replacement", "bess"],
+  alternates: { canonical: "/applications/data-centres/" },
+};
+
 export default function DataCentresApplicationPage() {
   return (
     <>
