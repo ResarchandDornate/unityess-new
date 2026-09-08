@@ -20,6 +20,7 @@ export default function Nav() {
         <a href="/projects" className="hide-sm" data-hot>Projects</a>
         <a href="/applications" className="hide-sm" data-hot>Applications</a>
         <a href="/about" className="hide-sm" data-hot>About</a>
+        <a href="/blog" className="hide-sm" data-hot>Blog</a>
       </div>
       <a href="/contact" className="btn" data-hot><span>Contact Us</span></a>
     </nav>

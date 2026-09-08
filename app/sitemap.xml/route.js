@@ -1,3 +1,5 @@
+import { getAllPosts } from "../blog/blogPosts";
+
 export const dynamic = "force-static";
 
 const BASE_URL = "https://unityess.ai";
@@ -19,6 +21,12 @@ const routes = [
   { path: "/about/", priority: "0.7", changeFrequency: "monthly" },
   { path: "/projects/", priority: "0.8", changeFrequency: "weekly" },
   { path: "/contact/", priority: "0.7", changeFrequency: "yearly" },
+  { path: "/blog/", priority: "0.8", changeFrequency: "weekly" },
+  ...getAllPosts().map((post) => ({
+    path: `/blog/${post.slug}/`,
+    priority: "0.6",
+    changeFrequency: "monthly",
+  })),
 ];
 
 export function GET() {
