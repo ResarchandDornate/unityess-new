@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[25725,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"ViewportBoundary"]
+3:I[25725,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/_next/static/chunks/24-kswmlaz47i.js","/_next/static/chunks/158myu8e_yme3.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Battery Backup for Hospitals | UnityESS"}],["$","meta","1",{"name":"description","content":"Sub-20ms switchover battery energy storage for hospitals — continuous power for surgical suites, ICUs and critical care. www.unityess.ai"}],["$","meta","2",{"name":"keywords","content":"battery backup for hospitals,hospital power backup,bess"}],["$","link","3",{"rel":"canonical","href":"https://unityess.ai/applications/hospitals/"}],["$","link","4",{"rel":"icon","href":"/assets/img/favicon.webp"}],["$","$L5","5",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"vp-z3Z2vZwXPBlrPaSsB4"}
