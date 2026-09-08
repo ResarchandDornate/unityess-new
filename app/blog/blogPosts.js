@@ -10,7 +10,7 @@ const blogPosts = [
     metaDescription:
       "UnityESS enables battery storage for EV charging in India with scalable BESS solutions. Improve fast charging performance, reduce costs, and build reliable EV charging infrastructure.",
     keyword: "battery storage for ev charging",
-    category: "EV Charging",
+    category: "Industry Insights",
     date: "2026-09-07",
     dateLabel: "September 7, 2026",
     readTime: "6 min read",
