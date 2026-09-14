@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import "../kc.css";
 import { getAllPosts, getPostBySlug } from "../blogPosts";
-import KcFonts from "../KcFonts";
 import SidebarLeadForm from "../SidebarLeadForm";
 
 export function generateStaticParams() {
@@ -56,8 +55,6 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <div className="kc">
-      <KcFonts />
-
       <main className="wrap kc-article">
         <div className="kc-breadcrumb">
           <a href="/">Home</a> <span className="sep">/</span> <a href="/blog">Blog</a> <span className="sep">/</span> {post.category}

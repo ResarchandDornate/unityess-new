@@ -2,7 +2,6 @@ import "./kc.css";
 import { getAllPosts } from "./blogPosts";
 import KnowledgeCentreGrid from "./KnowledgeCentreGrid";
 import NewsletterForm from "./NewsletterForm";
-import KcFonts from "./KcFonts";
 
 export const metadata = {
   title: "Blog | UnityESS",
@@ -33,8 +32,6 @@ export default function BlogIndexPage() {
       </header>
 
       <div className="kc">
-        <KcFonts />
-
         <main className="wrap">
           {featured && (
             <a className="kc-featured" href={`/blog/${featured.slug}`} data-hot>
@@ -60,8 +57,8 @@ export default function BlogIndexPage() {
           <div className="kc-newsletter-scrim"></div>
           <div className="wrap">
             <div className="kc-eyebrow">Stay Updated</div>
-            <h3>Get the next post before anyone else.</h3>
-            <p>No spam — just field notes, product updates, and the occasional deep-dive, sent when there&rsquo;s something worth reading.</p>
+            <h3>Stay ahead on energy storage.</h3>
+            <p>Every thing  you need to know about energy storage.</p>
             <NewsletterForm />
           </div>
         </section>

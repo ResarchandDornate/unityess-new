@@ -8,7 +8,7 @@
   --kc-paper: #FBFAF8; --kc-ink: #16191A; --kc-ink-soft: #4A4E50; --kc-muted: #8A8E90;
   --kc-teal: #005F6B; --kc-teal-tint: #E7EBED; --kc-line: #DEDBD4; --kc-line-soft: #EDEAE3;
   --kc-radius: 2px; --kc-radius-lg: 14px; --kc-radius-md: 8px;
-  font-family: 'Source Serif 4', serif;
+  font-family: var(--sans);
   font-size: 15px; line-height: 1.6; color: var(--kc-ink);
   background: var(--kc-paper);
 }
@@ -16,7 +16,7 @@
 .kc a{ color: inherit; text-decoration: none; }
 .kc .wrap{ padding-block: 0; max-width: 1080px; padding-inline: clamp(1.5rem, 5vw, 5rem); }
 
-.kc-eyebrow{ font-family: 'Inter', sans-serif; font-size: 10.5px; font-weight: 600;
+.kc-eyebrow{ font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--kc-muted); }
 
 /* the photo hero above this page lives outside .kc (it uses the site's
@@ -35,18 +35,18 @@
   background: var(--kc-teal-tint); min-height: 200px; }
 .kc-featured-media img{ position: absolute; inset: 0; width: 100%; height: 100%;
   object-fit: cover; display: block; }
-.kc-featured .kc-tag{ font-family: 'Inter', sans-serif; font-size: 10.5px; letter-spacing: 0.08em;
+.kc-featured .kc-tag{ font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--kc-teal); margin-bottom: 12px; }
-.kc-featured h2{ font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(19px, 2.2vw, 24px);
+.kc-featured h2{ font-family: var(--serif); font-weight: 400; font-size: clamp(19px, 2.2vw, 24px);
   margin: 0 0 12px; line-height: 1.2; color: var(--kc-ink); }
 .kc-featured p{ color: var(--kc-ink-soft); font-size: 14px; margin: 0 0 16px; }
-.kc-featured .kc-meta{ font-family: 'Inter', sans-serif; font-size: 11.5px; color: var(--kc-muted); }
+.kc-featured .kc-meta{ font-family: var(--sans); font-size: 11.5px; color: var(--kc-muted); }
 @media (max-width: 900px){ .kc-featured{ grid-template-columns: 1fr; gap: 24px; }
   .kc-featured-media{ aspect-ratio: 4/3; } }
 
 /* ---------- Filters ---------- */
 .kc-filters{ display: flex; gap: 8px; flex-wrap: wrap; padding: 40px 0 8px; }
-.kc-filter-tab{ font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.06em;
+.kc-filter-tab{ font-family: var(--sans); font-size: 11px; letter-spacing: 0.06em;
   text-transform: uppercase; padding: 8px 16px; border: 1px solid var(--kc-line); border-radius: 999px;
   color: var(--kc-ink-soft); cursor: pointer; background: transparent; transition: all 0.2s ease; }
 .kc-filter-tab.active, .kc-filter-tab:hover{ border-color: var(--kc-ink); color: var(--kc-ink);
@@ -61,18 +61,18 @@
 .kc-photo{ height: 160px; background: var(--kc-teal-tint); }
 .kc-photo img{ width: 100%; height: 100%; object-fit: cover; display: block; }
 .kc-card-body{ padding: 20px; flex: 1; display: flex; flex-direction: column; }
-.kc-card-tag{ font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 0.08em;
+.kc-card-tag{ font-family: var(--sans); font-size: 10px; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--kc-teal); margin-bottom: 10px; }
-.kc-card-body h3{ font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; margin: 0 0 8px;
+.kc-card-body h3{ font-family: var(--serif); font-weight: 500; font-size: 17px; margin: 0 0 8px;
   line-height: 1.3; color: var(--kc-ink); }
 .kc-card-body p{ color: var(--kc-ink-soft); font-size: 13px; margin: 0 0 16px; flex: 1; }
-.kc-card-meta{ font-family: 'Inter', sans-serif; font-size: 11px; color: var(--kc-muted); margin-top: auto;
+.kc-card-meta{ font-family: var(--sans); font-size: 11px; color: var(--kc-muted); margin-top: auto;
   padding-top: 12px; border-top: 1px solid var(--kc-line-soft); }
 @media (max-width: 980px){ .kc-grid{ grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px){ .kc-grid{ grid-template-columns: 1fr; } }
 
 .kc-empty{ padding: 40px 0 48px; text-align: center; color: var(--kc-muted);
-  font-family: 'Inter', sans-serif; font-size: 13px; border-top: 1px solid var(--kc-line-soft); }
+  font-family: var(--sans); font-size: 13px; border-top: 1px solid var(--kc-line-soft); }
 
 /* ---------- Newsletter ---------- */
 .kc-newsletter{ position: relative; overflow: hidden; background: var(--kc-ink); color: var(--kc-paper);
@@ -83,16 +83,16 @@
   background: linear-gradient(180deg, rgba(10,14,18,.72) 0%, rgba(10,14,18,.62) 45%, rgba(10,14,18,.82) 100%); }
 .kc-newsletter > .wrap{ position: relative; z-index: 2; }
 .kc-newsletter .kc-eyebrow{ color: #9BA0A2; }
-.kc-newsletter h3{ font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(22px, 3vw, 30px);
+.kc-newsletter h3{ font-family: var(--serif); font-weight: 400; font-size: clamp(22px, 3vw, 30px);
   margin: 14px 0 12px; }
 .kc-newsletter p{ max-width: 440px; margin: 0 auto 26px; color: #C7CACB; font-size: 13.5px; }
 .kc-newsletter-form{ display: flex; gap: 10px; justify-content: center; max-width: 420px; margin: 0 auto;
   flex-wrap: wrap; }
-.kc-newsletter-form input{ flex: 1; min-width: 200px; font-family: 'Source Serif 4', serif; font-size: 13.5px;
+.kc-newsletter-form input{ flex: 1; min-width: 200px; font-family: var(--sans); font-size: 13.5px;
   padding: 12px 18px; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px;
   background: rgba(255,255,255,0.05); color: var(--kc-paper); }
 .kc-newsletter-form input::placeholder{ color: #8A8E90; }
-.kc-newsletter-form button{ font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+.kc-newsletter-form button{ font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: 0.08em; text-transform: uppercase; background: var(--kc-paper); color: var(--kc-ink);
   padding: 12px 24px; border: none; border-radius: 999px; cursor: pointer;
   transition: background 0.2s ease; }
@@ -103,7 +103,7 @@
    ============================================================ */
 .kc-article{ margin-top: clamp(6rem,14vh,8rem); padding-bottom: clamp(4rem,8vh,6rem); }
 
-.kc-breadcrumb{ font-family: 'Inter', sans-serif; font-size: 12px; color: var(--kc-muted); }
+.kc-breadcrumb{ font-family: var(--sans); font-size: 12px; color: var(--kc-muted); }
 .kc-breadcrumb a{ color: var(--kc-muted); }
 .kc-breadcrumb a:hover{ color: var(--kc-teal); }
 .kc-breadcrumb .sep{ color: var(--kc-line); margin: 0 .5em; }
@@ -124,15 +124,15 @@
 .kc-lead-form{ border: 1px solid var(--kc-line); border-radius: var(--kc-radius-lg); background: #fff;
   padding: 1.3rem; display: flex; flex-direction: column; gap: .6rem;
   box-shadow: 0 18px 40px -28px rgba(22,30,48,.25); }
-.kc-lead-title{ font-family: 'Fraunces', serif; font-weight: 500; font-size: 16px; color: var(--kc-ink); }
-.kc-lead-sub{ font-family: 'Inter', sans-serif; font-size: 11.5px; line-height: 1.5; color: var(--kc-muted);
+.kc-lead-title{ font-family: var(--serif); font-weight: 500; font-size: 16px; color: var(--kc-ink); }
+.kc-lead-sub{ font-family: var(--sans); font-size: 11.5px; line-height: 1.5; color: var(--kc-muted);
   margin: -.3rem 0 .2rem; }
-.kc-lead-form input{ font-family: 'Inter', sans-serif; font-size: 12.5px; padding: 10px 12px;
+.kc-lead-form input{ font-family: var(--sans); font-size: 12.5px; padding: 10px 12px;
   border: 1px solid var(--kc-line); border-radius: var(--kc-radius-md); background: var(--kc-paper);
   color: var(--kc-ink); }
 .kc-lead-form input::placeholder{ color: var(--kc-muted); }
 .kc-lead-form input:focus{ outline: none; border-color: var(--kc-teal); }
-.kc-lead-form button{ font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+.kc-lead-form button{ font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: 0.06em; text-transform: uppercase; background: var(--kc-ink); color: var(--kc-paper);
   padding: 11px 14px; border: none; border-radius: var(--kc-radius-md); cursor: pointer; margin-top: .2rem;
   transition: background 0.2s ease; }
@@ -146,9 +146,9 @@
 }
 
 .kc-post-head{ margin-top: 1.4rem; }
-.kc-post-head h1{ font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(28px, 4vw, 44px);
+.kc-post-head h1{ font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 4vw, 44px);
   line-height: 1.15; margin: 14px 0 14px; letter-spacing: -0.01em; color: var(--kc-ink); }
-.kc-post-meta{ font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--kc-muted);
+.kc-post-meta{ font-family: var(--sans); font-size: 12.5px; color: var(--kc-muted);
   display: flex; align-items: center; gap: .5em; }
 .kc-post-meta .dot{ width: 3px; height: 3px; border-radius: 50%; background: var(--kc-line); }
 
@@ -162,7 +162,7 @@
 .kc-banner img{ display: block; width: 100%; height: auto; }
 
 .kc-prose{ margin-top: clamp(2rem,5vh,3rem); }
-.kc-prose h2{ font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(20px, 2.4vw, 26px);
+.kc-prose h2{ font-family: var(--serif); font-weight: 500; font-size: clamp(20px, 2.4vw, 26px);
   line-height: 1.3; margin: 2.2rem 0 .8rem; color: var(--kc-ink); }
 .kc-prose p{ font-size: 15px; line-height: 1.75; color: var(--kc-ink-soft); margin-top: 1rem; }
 .kc-prose ul{ margin-top: 1rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: .55rem; }
@@ -173,24 +173,24 @@
 
 .kc-figure{ margin: 2rem 0; }
 .kc-figure img{ width: 100%; border-radius: var(--kc-radius); border: 1px solid var(--kc-line); display: block; }
-.kc-figure figcaption{ margin-top: .7rem; font-family: 'Inter', sans-serif; font-size: 12px;
+.kc-figure figcaption{ margin-top: .7rem; font-family: var(--sans); font-size: 12px;
   color: var(--kc-muted); text-align: center; }
 
 .kc-inline-cta{ margin-top: 2.4rem; padding: 1.4rem 1.6rem; border: 1px solid var(--kc-line);
   border-radius: var(--kc-radius-lg); background: #fff;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-.kc-inline-cta p{ margin: 0; font-family: 'Inter', sans-serif; font-size: 13.5px; color: var(--kc-ink);
+.kc-inline-cta p{ margin: 0; font-family: var(--sans); font-size: 13.5px; color: var(--kc-ink);
   max-width: 34ch; }
 /* ".kc a{ color:inherit }" above is more specific than a bare ".kc-btn" rule
    (class+type beats a single class), which was silently making this button's
    text the same color as its own dark background — hence "invisible" text.
    ".kc a.kc-btn" matches that specificity so the button's own color wins. */
-.kc a.kc-btn{ font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+.kc a.kc-btn{ font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
   text-transform: uppercase; padding: 12px 22px; background: var(--kc-ink); color: var(--kc-paper);
   border-radius: var(--kc-radius-md); white-space: nowrap; transition: background 0.2s ease; }
 .kc a.kc-btn:hover{ background: var(--kc-teal); }
 
 .kc-back{ margin-top: 3rem; padding-top: 1.4rem;
-  border-top: 1px solid var(--kc-line-soft); font-family: 'Inter', sans-serif; font-size: 13px; }
+  border-top: 1px solid var(--kc-line-soft); font-family: var(--sans); font-size: 13px; }
 .kc-back a{ color: var(--kc-ink-soft); }
 .kc-back a:hover{ color: var(--kc-teal); }

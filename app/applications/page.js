@@ -12,7 +12,7 @@ export default function ApplicationsPage() {
       {/* HERO */}
       <header className="hero centered" id="top">
         <div className="hero-media" data-parallax="0.14">
-          <img src="/assets/img/unityess-containers-in-farmland-solar-field.webp" alt="UnityESS containers in a farmland solar field" />
+          <img src="/assets/img/pexels-matej-117839-716661.jpg.jpeg" alt="Engineering design sketches with a compass and pencil" />
         </div>
         <div className="hero-scrim"></div>
         <div className="hero-inner">
