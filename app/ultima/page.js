@@ -34,7 +34,7 @@ export default function UltimaPage() {
           <blockquote>Built for India&rsquo;s fast-growing utility-scale solar and hybrid projects — delivering high-density, multi-megawatt-hour storage in a single containerized unit. Plug-and-operate design minimizes civil work for faster commissioning.</blockquote>
           <div className="detail-cta">
             <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
-            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/ultima.pdf" data-hot><span>Download Datasheet</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/ultima.pdf#quote" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>

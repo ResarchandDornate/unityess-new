@@ -34,7 +34,7 @@ export default function AquaPage() {
           <blockquote>Optimize your operations with an Energy Storage System designed for Open Access Applications. It stores low-cost renewable energy for later utilization and delivers reliable power — solar when available, grid when required, storage always balancing the two.</blockquote>
           <div className="detail-cta">
             <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
-            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot><span>Download Datasheet</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aqua.pdf#quote" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>

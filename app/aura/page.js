@@ -4,7 +4,7 @@ import ModelSelector from "./ModelSelector";
 export const metadata = {
   title: "Unity Aura | C&I Energy Storage System | UnityESS",
   description:
-    "Unity Aura is a 100–225 kWh air-cooled energy storage system for commercial & industrial use, LFP cells, 10,000+ cycles. www.unityess.ai",
+    "Unity Aura is a 100–225 kWh air-cooled energy storage system for commercial & industrial use, LFP cells, 8,000+ cycles. www.unityess.ai",
   keywords: ["energy storage system", "bess", "battery energy storage solution"],
   alternates: { canonical: "/aura/" },
 };
@@ -23,7 +23,7 @@ export default function AuraPage() {
           <img src="/assets/img/aura.webp?v=4" alt="Aura" />
         </div>
         <div>
-          <div className="eyebrow">QESS · Commercial Series</div>
+          <div className="eyebrow">UESS · Commercial Series</div>
           <h1>Aura</h1>
           <div className="badge-row">
             <div className="badge"><div className="num">100–225kWh</div><div className="label">Capacity </div></div>
@@ -34,7 +34,7 @@ export default function AuraPage() {
           <blockquote>Power your operations with a BESS built for India&rsquo;s toughest industrial conditions. Delivers clean, reliable, and uninterrupted power — reducing diesel usage, cutting energy bills, and stabilizing your plant during peak loads.</blockquote>
           <div className="detail-cta">
             <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
-            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot><span>Download Datasheet</span></a>
+            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aura.pdf#quote" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>

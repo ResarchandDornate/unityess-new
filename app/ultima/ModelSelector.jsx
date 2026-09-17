@@ -26,7 +26,7 @@ export default function ModelSelector() {
         <div><div className="ss-lbl">2 hr backup</div><div className="ss-val" id="ultima-2h">{selected ? selected.h2 : "—"}</div></div>
         <div className="ss-div"></div>
         <div><div className="ss-lbl">4 hr backup</div><div className="ss-val" id="ultima-4h">{selected ? selected.h4 : "—"}</div></div>
-        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/ultima.pdf" data-hot>
+        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/ultima.pdf#quote" data-hot>
           <DatasheetIcon size={14} />
           Download Datasheet
         </a>
@@ -58,7 +58,7 @@ export default function ModelSelector() {
                 <td className={`st-bc${row.h2 === "—" ? " st-empty" : ""}`}>{row.h2}</td>
                 <td className={`st-bc${row.h4 === "—" ? " st-empty" : ""}`}>{row.h4}</td>
                 <td>
-                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/ultima.pdf" data-hot onClick={(e) => e.stopPropagation()}>
+                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/ultima.pdf#quote" data-hot onClick={(e) => e.stopPropagation()}>
                     <DatasheetIcon /> Datasheet
                   </a>
                 </td>

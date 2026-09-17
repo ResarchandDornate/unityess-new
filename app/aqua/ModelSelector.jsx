@@ -29,7 +29,7 @@ export default function ModelSelector() {
         <div><div className="ss-lbl">4 hr storage</div><div className="ss-val" id="aqua-4h">{selected ? selected.h4 : "—"}</div></div>
         <div className="ss-div"></div>
         <div><div className="ss-lbl">Voltage</div><div className="ss-val">415V</div></div>
-        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot>
+        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf#quote" data-hot>
           <DatasheetIcon size={14} />
           Download Datasheet
         </a>
@@ -64,7 +64,7 @@ export default function ModelSelector() {
                 <td className={`st-bc${row.h4 === "—" ? " st-empty" : ""}`}>{row.h4}</td>
                 <td className="st-vc">{row.voltage}</td>
                 <td>
-                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf" data-hot onClick={(e) => e.stopPropagation()}>
+                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aqua.pdf#quote" data-hot onClick={(e) => e.stopPropagation()}>
                     <DatasheetIcon /> Datasheet
                   </a>
                 </td>

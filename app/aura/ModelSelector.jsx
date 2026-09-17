@@ -28,7 +28,7 @@ export default function ModelSelector() {
         <div><div className="ss-lbl">3 hr backup</div><div className="ss-val" id="aura-3h">{selected ? selected.h3 : "—"}</div></div>
         <div className="ss-div"></div>
         <div><div className="ss-lbl">4 hr backup</div><div className="ss-val" id="aura-4h">{selected ? selected.h4 : "—"}</div></div>
-        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot>
+        <a className="ss-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf#quote" data-hot>
           <DatasheetIcon size={14} />
           Download Datasheet
         </a>
@@ -62,7 +62,7 @@ export default function ModelSelector() {
                 <td className={`st-bc${row.h3 === "—" ? " st-empty" : ""}`}>{row.h3}</td>
                 <td className={`st-bc${row.h4 === "—" ? " st-empty" : ""}`}>{row.h4}</td>
                 <td>
-                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf" data-hot onClick={(e) => e.stopPropagation()}>
+                  <a className="st-dl" href="/contact?datasheet=/assets/datasheets/aura.pdf#quote" data-hot onClick={(e) => e.stopPropagation()}>
                     <DatasheetIcon /> Datasheet
                   </a>
                 </td>

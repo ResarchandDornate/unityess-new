@@ -4,7 +4,7 @@ import HomeEffects from "@/components/HomeEffects";
 export const metadata = {
   title: "BESS Manufacturer in India | UnityESS",
   description:
-    "UnityESS is a BESS manufacturer in India building Aura, Aqua & Ultima — LFP battery storage with 10,000+ cycle life. www.unityess.ai",
+    "UnityESS is a BESS manufacturer in India building Aura, Aqua & Ultima — LFP battery storage with 8,000+ cycle life. www.unityess.ai",
   keywords: ["UnityESS", "bess", "battery energy storage system"],
   alternates: { canonical: "/" },
 };
