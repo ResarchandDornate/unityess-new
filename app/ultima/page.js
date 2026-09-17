@@ -23,7 +23,7 @@ export default function UltimaPage() {
           <img src="/assets/img/unity-ultima-containerised-utility-system.webp?v=3" alt="Ultima" />
         </div>
         <div>
-          <div className="eyebrow">UESS · Utility Series</div>
+          <div className="eyebrow">UnityESS · Utility Series</div>
           <h1>Ultima</h1>
           <div className="badge-row">
             <div className="badge"><div className="num">3.0 -6.25 MWh</div><div className="label">Capacity (current SKU)</div></div>
@@ -68,7 +68,7 @@ export default function UltimaPage() {
           <div className="mi"><div className="ml">Cooling</div><div className="mv">Liquid cooled</div></div>
           <div className="mi"><div className="ml">Chemistry</div><div className="mv">LFP &middot; 314Ah / 587Ah</div></div>
           <div className="mi"><div className="ml">Form factor</div><div className="mv">20ft container</div></div>
-          <div className="mi"><div className="ml">Cycle life</div><div className="mv">8,000+ cycles</div></div>
+          <div className="mi"><div className="ml">Cycle life</div><div className="mv">10,000+ cycles</div></div>
           <div className="mi"><div className="ml">Certification</div><div className="mv">UL9540A</div></div>
         </div>
 

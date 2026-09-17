@@ -23,12 +23,12 @@ export default function AquaPage() {
           <img src="/assets/img/aqua.webp?v=4" alt="Aqua" />
         </div>
         <div>
-          <div className="eyebrow">UESS · Commercial &amp; Industrial Series</div>
+          <div className="eyebrow">UnityESS · Commercial &amp; Industrial Series</div>
           <h1>Aqua</h1>
           <div className="badge-row">
             <div className="badge"><div className="num">261 – 3000 kWh</div><div className="label">Capacity</div></div>
             <div className="badge"><div className="num">125 - 1000 kW</div><div className="label">Power</div></div>
-            <div className="badge"><div className="num">Outdoor</div><div className="label">Cabinet </div></div>
+            <div className="badge"><div className="num">10,000</div><div className="label">Cycles</div></div>
             <div className="badge"><div className="num">Hybrid</div><div className="label">Solar · Grid · Storage</div></div>
           </div>
           <blockquote>Optimize your operations with an Energy Storage System designed for Open Access Applications. It stores low-cost renewable energy for later utilization and delivers reliable power — solar when available, grid when required, storage always balancing the two.</blockquote>
@@ -50,7 +50,7 @@ export default function AquaPage() {
         <div className="selector-meta">
           <div className="mi"><div className="ml">Cooling</div><div className="mv">Liquid cooled</div></div>
           <div className="mi"><div className="ml">Chemistry</div><div className="mv">LFP &middot; 314Ah</div></div>
-          <div className="mi"><div className="ml">Cycle life</div><div className="mv">8,000+ cycles</div></div>
+          <div className="mi"><div className="ml">Cycle life</div><div className="mv">10,000+ cycles</div></div>
           <div className="mi"><div className="ml">DC RTE</div><div className="mv">&gt;94%</div></div>
           <div className="mi"><div className="ml">Protection</div><div className="mv">IP54</div></div>
           <div className="mi"><div className="ml">Operating Temperature</div><div className="mv">30°C &ndash; 55°C</div></div>

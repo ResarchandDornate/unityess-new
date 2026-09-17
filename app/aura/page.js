@@ -23,7 +23,7 @@ export default function AuraPage() {
           <img src="/assets/img/aura.webp?v=4" alt="Aura" />
         </div>
         <div>
-          <div className="eyebrow">UESS · Commercial Series</div>
+          <div className="eyebrow">UnityESS · Commercial Series</div>
           <h1>Aura</h1>
           <div className="badge-row">
             <div className="badge"><div className="num">100–225kWh</div><div className="label">Capacity </div></div>
