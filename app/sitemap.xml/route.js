@@ -1,4 +1,5 @@
 import { getAllPosts } from "../blog/blogPosts";
+import { getAllWhitePapers } from "../white-paper/whitePapers";
 
 export const dynamic = "force-static";
 
@@ -24,6 +25,12 @@ const routes = [
   { path: "/blog/", priority: "0.8", changeFrequency: "weekly" },
   ...getAllPosts().map((post) => ({
     path: `/blog/${post.slug}/`,
+    priority: "0.6",
+    changeFrequency: "monthly",
+  })),
+  { path: "/white-paper/", priority: "0.7", changeFrequency: "monthly" },
+  ...getAllWhitePapers().map((wp) => ({
+    path: `/white-paper/${wp.slug}/`,
     priority: "0.6",
     changeFrequency: "monthly",
   })),

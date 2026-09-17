@@ -2,7 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const PRODUCT_NAMES = { "aura.pdf": "Aura", "aqua.pdf": "Aqua", "ultima.pdf": "Ultima" };
+const PRODUCT_NAMES = {
+  "aura.pdf": "Aura",
+  "aqua.pdf": "Aqua",
+  "ultima.pdf": "Ultima",
+  "why-voltage-levels-matter-in-bess.pdf": "Voltage Levels in BESS",
+};
 
 const LEAD_API_URL =
   process.env.NEXT_PUBLIC_LEAD_API_URL || "https://backoffice-prod.ornatesolar.com/api/leads/website-lead/";
@@ -21,17 +26,20 @@ export default function QuoteForm() {
     setDatasheetUrl(params.get("datasheet"));
   }, []);
 
+  const isWhitepaper = datasheetUrl?.includes("/whitepapers/") ?? false;
+  const resourceLabel = isWhitepaper ? "whitepaper" : "datasheet";
+
   const productName = useMemo(() => {
     if (!datasheetUrl) return null;
     const file = datasheetUrl.split("/").pop();
     return PRODUCT_NAMES[file] || "product";
   }, [datasheetUrl]);
 
-  const eyebrowText = datasheetUrl ? "Download Datasheet" : "Request a quote";
+  const eyebrowText = datasheetUrl ? `Download ${isWhitepaper ? "Whitepaper" : "Datasheet"}` : "Request a quote";
   const headingL1 = datasheetUrl ? `Get the ${productName}` : "Tell us about your site,";
-  const headingL2 = datasheetUrl ? "datasheet, sent straight to you." : "load profile, or project scale.";
+  const headingL2 = datasheetUrl ? `${resourceLabel}, sent straight to you.` : "load profile, or project scale.";
   const leadText = datasheetUrl
-    ? `Fill in your details and the ${productName} datasheet will download automatically.`
+    ? `Fill in your details and the ${productName} ${resourceLabel} will download automatically.`
     : "Our engineers will size the right system for your load profile and get back to you directly.";
   const btnLabel = submitting ? "Submitting…" : datasheetUrl ? "Submit & Download" : "Submit request";
 
@@ -51,7 +59,7 @@ export default function QuoteForm() {
       remark: form.useCase,
       message: form.req,
       website_url: "unityess.ai",
-      lead_type: datasheetUrl ? "Unityess-Datasheet-Download" : "Unityess",
+      lead_type: datasheetUrl ? (isWhitepaper ? "Unityess-Whitepaper-Download" : "Unityess-Datasheet-Download") : "Unityess",
     };
 
     setSubmitting(true);
@@ -75,7 +83,7 @@ export default function QuoteForm() {
           document.body.appendChild(link);
           link.click();
           link.remove();
-          setStatusMessage("Thank you! Your datasheet is downloading.");
+          setStatusMessage(`Thank you! Your ${resourceLabel} is downloading.`);
         } else {
           setStatusMessage("Query submitted successfully!");
         }

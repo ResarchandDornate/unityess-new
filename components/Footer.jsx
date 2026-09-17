@@ -25,6 +25,7 @@ export default function Footer() {
             <li><a href="/projects" data-hot>Projects</a></li>
             <li><a href="/applications" data-hot>Applications</a></li>
             <li><a href="/blog" data-hot>Blog</a></li>
+            <li><a href="/white-paper" data-hot>White Papers</a></li>
             <li><a href="/contact" data-hot>Contact</a></li>
             <li><a href="https://service.unityess.cloud/report" data-hot>Get Support</a></li>
           </ul>

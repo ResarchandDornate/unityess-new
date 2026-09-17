@@ -20,7 +20,15 @@ export default function Nav() {
         <a href="/projects" className="hide-sm" data-hot>Projects</a>
         <a href="/applications" className="hide-sm" data-hot>Applications</a>
         <a href="/about" className="hide-sm" data-hot>About</a>
-        <a href="/blog" className="hide-sm" data-hot>Blog</a>
+        <div className="nav-item">
+          <a href="/blog" className="hide-sm" data-hot>
+            Resources
+          </a>
+          <div className="nav-dropdown">
+            <a href="/blog" data-hot>Blogs</a>
+            <a href="/white-paper" data-hot>White Papers</a>
+          </div>
+        </div>
       </div>
       <a href="/contact" className="btn" data-hot><span>Contact Us</span></a>
     </nav>
