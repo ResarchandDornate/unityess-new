@@ -23,6 +23,8 @@ function ArticleBlock({ block }) {
   switch (block.type) {
     case "h2":
       return <h2>{block.text}</h2>;
+    case "h3":
+      return <h3>{block.text}</h3>;
     case "ul":
       return (
         <ul>
@@ -87,8 +89,8 @@ export default async function BlogPostPage({ params }) {
               ))}
 
               <div className="kc-inline-cta">
-                <p>Talk to our engineering team about a BESS-integrated EV charging deployment.</p>
-                <a className="kc-btn" href="/contact" data-hot>Contact Engineering</a>
+                <p>{post.ctaText || "Talk to our engineering team about your BESS project."}</p>
+                <a className="kc-btn" href={post.ctaHref || "/contact"} data-hot>{post.ctaLabel || "Contact Engineering"}</a>
               </div>
             </article>
 

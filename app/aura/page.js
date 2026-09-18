@@ -34,7 +34,7 @@ export default function AuraPage() {
           <blockquote>Power your operations with a BESS built for India&rsquo;s toughest industrial conditions. Delivers clean, reliable, and uninterrupted power — reducing diesel usage, cutting energy bills, and stabilizing your plant during peak loads.</blockquote>
           <div className="detail-cta">
             <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
-            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/aura.pdf#quote" data-hot><span>Download Datasheet</span></a>
+            <a className="btn ghost" href="/contact?datasheet=aura.pdf#quote" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>

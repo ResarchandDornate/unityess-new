@@ -4,6 +4,181 @@
 // picks up new slugs automatically on the next build.
 const blogPosts = [
   {
+    slug: "why-bess-is-no-longer-optional-for-india",
+    title: "Why BESS Is No Longer Optional for India’s Renewable Energy Growth",
+    metaTitle: "BESS in India: Solving Renewable Curtailment Challenges",
+    metaDescription:
+      "BESS in India is essential to manage solar curtailment, balance demand-supply gaps, and improve grid stability as renewable capacity rapidly grows.",
+    keyword: "bess in india",
+    category: "Industry Insights",
+    date: "2026-09-18",
+    dateLabel: "September 18, 2026",
+    readTime: "5 min read",
+    coverImage: "/assets/img/solar-field-at-dusk-in-rajasthan.webp",
+    coverAlt: "Solar field at dusk in Rajasthan",
+    sidebarAds: [
+      {
+        src: "/blogs/aura%20blog.jpeg",
+        alt: "Unity Aura — air cooled, commercial & industrial, 100 kWh to 225 kWh",
+        href: "/aura",
+      },
+      {
+        src: "/blogs/aqua%20blog.jpeg",
+        alt: "Unity Aqua — liquid cooled, open access & industrial, 261 kWh to 3000 kWh",
+        href: "/aqua",
+      },
+      {
+        src: "/blogs/ultima%20bolg.jpeg",
+        alt: "Unity Ultima — containerised, utility scale, 3.34 MWh to 5.016 MWh",
+        href: "/ultima",
+      },
+    ],
+    excerpt:
+      "Rajasthan curtailed 11.5 GW of renewable energy in Q1 2026 alone — a grid flexibility problem, not a generation one. Here's why storage, not transmission, is the only scalable fix.",
+    ctaText: "Setting up solar with BESS in Rajasthan?",
+    ctaLabel: "Talk to Our BESS Experts",
+    ctaHref: "/contact",
+    body: [
+      { type: "p", text: "Rajasthan has long been India’s renewable powerhouse, driven by large scale solar installations across regions like Bhadla Solar Park and Jaisalmer. However, in 2026, the challenge is no longer about adding capacity, it is about effectively integrating that capacity into the grid." },
+      { type: "p", text: "This is where BESS in India is becoming increasingly critical, not just for the state, but as a model for India." },
+      { type: "p", text: "BESS in Rajasthan is no longer optional, it is a blueprint for why storage is essential for India’s renewable energy future." },
+
+      { type: "h2", text: "Rajasthan’s Curtailment Crisis: A Warning Signal" },
+      { type: "p", text: "Between January and March 2026, renewable energy curtailment in Rajasthan reached a staggering 11.5 GW cumulatively. What’s more alarming is how sharply the situation escalated:" },
+      { type: "ul", items: [
+        "Jan–Feb 2026: ~3.2 GW curtailed",
+        "March 2026 alone: 8.3 GW curtailed",
+        "Peak solar hours (10:30 AM – 2:30 PM): Curtailment reached 30% to 80%",
+      ]},
+      { type: "image", src: "/blogs/rajasthan-renewable-curtailment-crisis%20new%20blog.webp", alt: "Rajasthan Renewable Energy Curtailment Q1 2026 — 11.5 GW curtailed cumulatively, with a 2.6x spike in March", caption: "Source: Blog data — unityess.ai" },
+      { type: "p", text: "This directly impacted nearly 34 GW of operational solar capacity, leaving developers unable to dispatch power during peak generation windows." },
+      { type: "p", text: "Even more concerning, certain projects reportedly faced near 100% curtailment during midday under T-GNA provisions, especially in March 2026." },
+      { type: "image", src: "/blogs/rajasthan-renewable-curtailment-data-march-2026%20for%20new%20blog.webp", alt: "Rajasthan renewable energy curtailment in March 2026, solar and wind, day by day", caption: "Source: RRVPNL, Mercom India Research" },
+      { type: "p", text: "This is not a generation problem. It’s a grid flexibility problem." },
+      { type: "p", text: "This is not a Rajasthan only issue, it is an early indicator of what other renewable heavy states in India will face." },
+      { type: "p", text: "States like Gujarat, Tamil Nadu, and Karnataka are already moving in the same direction in terms of renewable penetration." },
+
+      { type: "h2", text: "What’s Causing This Massive Curtailment?" },
+      { type: "p", text: "The current situation is the result of multiple overlapping constraints:" },
+
+      { type: "h3", text: "1. Transmission Congestion" },
+      { type: "p", text: "Despite the commissioning of high-capacity corridors, evacuation infrastructure is under pressure:" },
+      { type: "ul", items: [
+        "Grid planners have flagged ~60 GW of renewable connectivity facing structural constraints",
+        "Even recently commissioned lines are operating near saturation during peak hours",
+      ]},
+      { type: "p", text: "This reflects a lag between generation growth and transmission readiness." },
+
+      { type: "h3", text: "2. Demand-Supply Timing Mismatch" },
+      { type: "p", text: "Solar generation in Rajasthan peaks sharply during midday, while demand typically rises in the evening." },
+      { type: "ul", items: [
+        "Peak solar output: late morning to early afternoon",
+        "Peak demand: evening hours",
+      ]},
+      { type: "p", text: "This mismatch results in excess daytime generation, which the grid is unable to absorb." },
+      { type: "image", src: "/blogs/solar-demand-supply-mismatch-india%20for%20new%20blog.webp", alt: "The daily timing mismatch between solar generation and grid demand — solar peaks midday, demand peaks in the evening", caption: "Solar peaks midday; demand peaks in the evening — BESS bridges this gap." },
+
+      { type: "h3", text: "3. Thermal Generation Inflexibility" },
+      { type: "p", text: "Coal-based plants continue to operate due to technical and contractual constraints:" },
+      { type: "ul", items: [
+        "Minimum stable load: ~55–70%",
+        "Limited ramp-down capability",
+      ]},
+      { type: "p", text: "As a result, even though renewable energy has “must-run” status, thermal generation is not reduced proportionately, leading to renewable curtailment." },
+
+      { type: "h3", text: "4. Grid Stability and Voltage Issues" },
+      { type: "p", text: "High solar injection during low demand periods contributes to:" },
+      { type: "ul", items: [
+        "Voltage rise",
+        "Reactive power imbalances",
+        "Frequency management challenges",
+      ]},
+      { type: "p", text: "To maintain grid stability, operators are forced to limit renewable dispatch." },
+
+      { type: "h2", text: "Economic Impact: Curtailment Is Now a Financial Risk" },
+      { type: "p", text: "Curtailment is directly affecting project economics:" },
+      { type: "ul", items: [
+        "Estimated losses exceed ₹250 crore for ~4 GW curtailed capacity since March 2025",
+        "Reduced revenue realization during peak generation hours",
+        "Increased debt servicing pressure, particularly for smaller developers",
+      ]},
+      { type: "p", text: "Industry stakeholders have warned that continued curtailment could:" },
+      { type: "ul", items: [
+        "Delay future investments",
+        "Increase financing costs",
+        "Slow progress toward India’s 500 GW renewable energy target",
+      ]},
+
+      { type: "h2", text: "Rajasthan’s Shift Toward Storage Integration" },
+      { type: "p", text: "Recognizing the urgency, the deployment of BESS in Rajasthan is accelerating." },
+      { type: "p", text: "Key developments:" },
+      { type: "ul", items: [
+        "Target: ~6,000 MWh BESS capacity by September 2026",
+        "Draft regulatory framework (2025): storage requirement for high-capacity captive renewable projects",
+        "Provision for ~20% excess energy storage integration",
+      ]},
+      { type: "p", text: "These developments indicate a clear policy and market shift toward storage-backed renewable systems." },
+
+      { type: "h2", text: "Why Transmission Expansion Alone Is Not Enough" },
+      { type: "p", text: "While transmission upgrades are critical, they cannot fully resolve curtailment." },
+      { type: "ul", items: [
+        "Transmission moves energy—but does not shift it across time",
+        "Solar generation remains concentrated in daytime hours",
+        "Demand patterns remain unchanged",
+      ]},
+      { type: "p", text: "Even with expanded transmission, midday surplus will persist without storage." },
+      { type: "p", text: "This is why: transmission solves capacity constraints. BESS solves temporal imbalance." },
+
+      { type: "h2", text: "The Strategic Shift: From Capacity Addition to Energy Optimization" },
+      { type: "p", text: "India’s renewable journey is entering a new phase, with Rajasthan leading the transition:" },
+      { type: "ul", items: [
+        "Phase 1 — Capacity expansion",
+        "Phase 2 — Grid stabilization",
+        "Phase 3 (current) — Storage integration",
+      ]},
+      { type: "p", text: "With approximately 34 GW already operational in Rajasthan, further solar additions without storage will increase curtailment, not efficiency. The same trajectory applies to India as a whole." },
+
+      { type: "h2", text: "Why BESS Is the Only Scalable Solution" },
+      { type: "p", html: '<a href="https://unityess.ai/">Battery Energy Storage Systems</a> directly address the root cause of curtailment: timing mismatch between generation and demand.' },
+      { type: "p", text: "What BESS solves:" },
+      { type: "ul", items: [
+        "Stores excess solar energy during midday",
+        "Releases power during evening peak demand",
+        "Reduces dependence on inflexible thermal plants",
+        "Stabilizes voltage and grid frequency",
+        "Improves transmission utilization (from ~8 hours to ~16 hours)",
+      ]},
+      { type: "image", src: "/blogs/india-renewable-energy-policy-shift%20for%20new%20blog.webp", alt: "BESS doubles transmission utilization — from 8 hours a day without storage to 16 hours a day with storage", caption: "Storage shifts solar generation to cover evening demand — filling the idle hours." },
+
+      { type: "h2", text: "What Happens Next?" },
+      { type: "p", text: "The next phase of India’s energy transition will depend on how quickly storage is deployed." },
+      { type: "p", text: "Rajasthan’s experience will serve as a real world benchmark for:" },
+      { type: "ul", items: [
+        "Policy decisions",
+        "Grid planning",
+        "Investment strategies",
+      ]},
+      { type: "p", text: "But one thing is already clear: without BESS in Rajasthan, the state’s renewable growth will slow. Also without BESS adoption across India, the country’s energy transition will face the same ceiling." },
+
+      { type: "h2", text: "Conclusion" },
+      { type: "p", text: "Rajasthan’s renewable sector is at an inflection point. The state has successfully built one of the largest solar ecosystems in the world—but grid limitations are now holding it back." },
+      { type: "p", html: '<a href="https://unityess.ai/">Battery Energy Storage Systems</a> are no longer optional because they:' },
+      { type: "ul", items: [
+        "Protect developer revenues",
+        "Improve grid efficiency",
+        "Enable higher renewable penetration",
+        "Future-proof India’s energy transition",
+      ]},
+      { type: "p", text: "The situation unfolding in Rajasthan reflects a broader national reality. India is now transitioning from renewable capacity expansion to grid optimization." },
+
+      { type: "h2", text: "About UnityESS" },
+      { type: "p", html: '<a href="https://unityess.ai/">UnityESS</a> is a next generation energy storage system in India, developed by <a href="https://ornatesolar.com/">Ornate Solar</a> in collaboration with Inverted Energy. It is designed to deliver reliable, intelligent, and scalable energy storage solutions for modern power needs.' },
+      { type: "p", text: "By combining solar expertise with advanced battery technology, UnityESS provides a complete solution that ensures energy reliability, cost optimization, and energy independence." },
+      { type: "p", text: "From commercial and industrial applications to utility scale and residential use, UnityESS enables smarter energy usage through intelligent management and robust design." },
+      { type: "p", text: "If you are looking for a reliable energy storage solution, call us at 1800 2026 252 to discuss your options." },
+    ],
+  },
+  {
     slug: "battery-storage-for-ev-charging-in-india",
     title: "Battery Storage for EV Charging in India: How It Works, Benefits, Applications and Case Study",
     metaTitle: "Battery storage for EV charging in India | UnityESS",
@@ -37,6 +212,9 @@ const blogPosts = [
     ],
     excerpt:
       "India's EV charging bottleneck isn't charger availability — it's grid capacity. Here's how battery storage decouples charging demand from real-time grid limitations, with a live 125 kW / 261 kWh case study.",
+    ctaText: "Talk to our engineering team about a BESS-integrated EV charging deployment.",
+    ctaLabel: "Contact Engineering",
+    ctaHref: "/contact",
     body: [
       { type: "p", text: "India’s electric mobility transition is accelerating, but the biggest barrier to scalable EV charging infrastructure is not charger availability but power delivery efficiency and grid limitations." },
       { type: "p", text: "Most EV charging stations, especially fast charging hubs, face a structural constraint. The electrical grid cannot consistently support sudden high load charging demand without expensive upgrades or stability risks." },

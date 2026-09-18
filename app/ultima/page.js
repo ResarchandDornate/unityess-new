@@ -34,7 +34,7 @@ export default function UltimaPage() {
           <blockquote>Built for India&rsquo;s fast-growing utility-scale solar and hybrid projects — delivering high-density, multi-megawatt-hour storage in a single containerized unit. Plug-and-operate design minimizes civil work for faster commissioning.</blockquote>
           <div className="detail-cta">
             <a className="btn" href="/contact" data-hot><span>Request Consultation</span></a>
-            <a className="btn ghost" href="/contact?datasheet=/assets/datasheets/ultima.pdf#quote" data-hot><span>Download Datasheet</span></a>
+            <a className="btn ghost" href="/contact?datasheet=ultima.pdf#quote" data-hot><span>Download Datasheet</span></a>
           </div>
         </div>
       </section>
@@ -141,12 +141,12 @@ export default function UltimaPage() {
         <div className="eyebrow">Applications</div>
         <h2>Where the Ultima delivers unstoppable performance</h2>
         <div className="detail-app-grid">
-          <div className="detail-app-card"><h3>Utility-scale solar &amp; hybrid projects</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-          <div className="detail-app-card"><h3>Grid frequency regulation</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-          <div className="detail-app-card"><h3>Peak shaving &amp; load shifting</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-          <div className="detail-app-card"><h3>Renewable energy integration</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-          <div className="detail-app-card"><h3>Ramp-rate control</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
-          <div className="detail-app-card"><h3>IPP &amp; EPC deployments</h3><p>Engineered for maximum performance and unwavering reliability.</p></div>
+          <div className="detail-app-card"><h3>Utility-scale solar &amp; hybrid projects</h3><p>Firms solar and wind output at grid scale.</p></div>
+          <div className="detail-app-card"><h3>Grid frequency regulation</h3><p>Responds to frequency deviations and fluctuations.</p></div>
+          <div className="detail-app-card"><h3>Peak shaving &amp; load shifting</h3><p>Shifts renewable generation to evening peak demand.</p></div>
+          <div className="detail-app-card"><h3>Renewable energy integration</h3><p>Modular integration with distributed energy assets.</p></div>
+          <div className="detail-app-card"><h3>Ramp-rate control</h3><p>Smooths output swings as solar generation rises and falls.</p></div>
+          <div className="detail-app-card"><h3>Black start &amp; grid resilience</h3><p>Restores power to critical loads during full grid outages.</p></div>
         </div>
       </section>
 

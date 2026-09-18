@@ -1266,20 +1266,21 @@ table.spec tr:last-child td,table.spec tr:last-child th{border-bottom:0}
 /* ============================================================
    CONTACT PAGE — quote form
    ============================================================ */
-.qform{ display:grid; grid-template-columns:1fr 1fr; gap:1.2rem 1.4rem; }
+.qform{ display:grid; grid-template-columns:1fr 1fr; gap:.85rem 1rem; }
 @media (max-width:720px){ .qform{ grid-template-columns:1fr; } }
-.qform .field{ display:flex; flex-direction:column; gap:.5rem; }
+.qform .field{ display:flex; flex-direction:column; gap:.35rem; }
 .qform .field.full{ grid-column:1 / -1; }
-.qform label{ font-size:.66rem; letter-spacing:.24em; text-transform:uppercase;
+.qform label{ font-size:.6rem; letter-spacing:.2em; text-transform:uppercase;
   color:var(--t-low); font-weight:600; }
 .qform input, .qform textarea{
-  font:inherit; font-weight:300; color:var(--t-hi);
+  font-size:.88rem; font-weight:300; color:var(--t-hi);
   background:var(--glass-soft); border:1px solid var(--glass-line);
-  border-radius:12px; padding:.85em 1em; outline:none;
+  border-radius:10px; padding:.6em .85em; outline:none;
   transition:border-color .35s var(--ease), background .35s var(--ease);
 }
 .qform input:focus, .qform textarea:focus{ border-color:var(--orange-2); background:var(--glass-grad); }
-.qform textarea{ min-height:8.5rem; resize:vertical; }
+.qform textarea{ min-height:5.5rem; resize:vertical; }
+.qform button[type="submit"]{ padding:.75em 2em; font-size:.85rem; }
 
 
 /* ============================================================

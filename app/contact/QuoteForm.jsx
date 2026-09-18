@@ -2,11 +2,18 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const PRODUCT_NAMES = {
-  "aura.pdf": "Aura",
-  "aqua.pdf": "Aqua",
-  "ultima.pdf": "Ultima",
-  "why-voltage-levels-matter-in-bess.pdf": "Voltage Levels in BESS",
+// Keyed by filename only (no folder path) so the ?datasheet= query param
+// never needs to carry a "/" — a bare filename never gets percent-encoded,
+// so the URL stays readable (…?datasheet=aura.pdf instead of …?datasheet=%2Fassets%2F…).
+const RESOURCES = {
+  "aura.pdf": { label: "Aura", path: "/assets/datasheets/aura.pdf" },
+  "aqua.pdf": { label: "Aqua", path: "/assets/datasheets/aqua.pdf" },
+  "ultima.pdf": { label: "Ultima", path: "/assets/datasheets/ultima.pdf" },
+  "why-voltage-levels-matter-in-bess.pdf": {
+    label: "Voltage Levels in BESS",
+    path: "/assets/whitepapers/why-voltage-levels-matter-in-bess.pdf",
+    whitepaper: true,
+  },
 };
 
 const LEAD_API_URL =
@@ -26,14 +33,18 @@ export default function QuoteForm() {
     setDatasheetUrl(params.get("datasheet"));
   }, []);
 
-  const isWhitepaper = datasheetUrl?.includes("/whitepapers/") ?? false;
-  const resourceLabel = isWhitepaper ? "whitepaper" : "datasheet";
-
-  const productName = useMemo(() => {
+  // datasheetUrl is now just a bare filename (e.g. "aura.pdf"); fall back to
+  // treating it as a full path too, so any old-format link keeps working.
+  const resource = useMemo(() => {
     if (!datasheetUrl) return null;
     const file = datasheetUrl.split("/").pop();
-    return PRODUCT_NAMES[file] || "product";
+    return RESOURCES[file] || null;
   }, [datasheetUrl]);
+
+  const isWhitepaper = resource?.whitepaper ?? false;
+  const resourceLabel = isWhitepaper ? "whitepaper" : "datasheet";
+  const productName = resource?.label || (datasheetUrl ? "product" : null);
+  const downloadPath = resource?.path || datasheetUrl;
 
   const eyebrowText = datasheetUrl ? `Download ${isWhitepaper ? "Whitepaper" : "Datasheet"}` : "Request a quote";
   const headingL1 = datasheetUrl ? `Get the ${productName}` : "Tell us about your site,";
@@ -76,9 +87,9 @@ export default function QuoteForm() {
 
       if (data.success) {
         setForm(INITIAL_FORM);
-        if (datasheetUrl) {
+        if (downloadPath) {
           const link = document.createElement("a");
-          link.href = datasheetUrl;
+          link.href = downloadPath;
           link.download = "";
           document.body.appendChild(link);
           link.click();
@@ -114,7 +125,7 @@ export default function QuoteForm() {
         </h2>
         <p className="lead reveal" style={{ marginTop: "1.6rem", maxWidth: "50ch", marginInline: "auto" }} id="qLead">{leadText}</p>
       </div>
-      <div className="glass-panel reveal" style={{ padding: "clamp(1.8rem,4vw,2.8rem)", maxWidth: "900px", marginInline: "auto" }}>
+      <div className="glass-panel reveal qform-panel" style={{ padding: "clamp(1.3rem,3vw,1.9rem)", maxWidth: "640px", marginInline: "auto" }}>
         <form className="qform" id="quoteForm" onSubmit={handleSubmit}>
           <div className="field">
             <label htmlFor="qName">Your name *</label>

@@ -30,7 +30,7 @@ export default function ContactPage() {
       {/* REACH US */}
       <section className="pad" id="reach" style={{ paddingBottom: "clamp(2rem,5vh,4rem)" }}>
         <div className="wrap">
-          <div className="found-grid">
+          <div className="found-grid" style={{ gridTemplateColumns: "repeat(3,1fr)" }}>
             <div className="tcard reveal">
               <div className="tmark">Talk to a human</div>
               <p><a href="tel:+9118002026252" data-hot>1800-2026-252</a></p>
@@ -43,10 +43,21 @@ export default function ContactPage() {
               <div className="tmark">Head office</div>
               <p>A-87, Okhla Phase II<br />New Delhi, India</p>
             </div>
-            <div className="tcard reveal">
-              <div className="tmark">File a complaint</div>
-              <p>For service or product issues on a deployed system.<br /><a href="https://service.unityess.cloud/report" data-hot>Complaint Portal &rarr;</a></p>
+          </div>
+
+          <div className="service-banner reveal">
+            <div className="service-banner-main">
+              <div className="service-banner-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>
+              </div>
+              <div>
+                <h3>Have a service issue?</h3>
+                <p>File a complaint and our support team will get back to you.</p>
+              </div>
             </div>
+            <a className="btn" href="https://service.unityess.cloud/report?brand=unityess" data-hot>
+              <span>File a Complaint &rarr;</span>
+            </a>
           </div>
         </div>
       </section>

@@ -164,6 +164,8 @@
 .kc-prose{ margin-top: clamp(2rem,5vh,3rem); }
 .kc-prose h2{ font-family: var(--serif); font-weight: 500; font-size: clamp(20px, 2.4vw, 26px);
   line-height: 1.3; margin: 2.2rem 0 .8rem; color: var(--kc-ink); }
+.kc-prose h3{ font-family: var(--serif); font-weight: 600; font-size: clamp(16px, 1.8vw, 19px);
+  line-height: 1.35; margin: 1.8rem 0 .6rem; color: var(--kc-ink); }
 .kc-prose p{ font-size: 15px; line-height: 1.75; color: var(--kc-ink-soft); margin-top: 1rem; }
 .kc-prose ul{ margin-top: 1rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: .55rem; }
 .kc-prose li{ font-size: 15px; line-height: 1.65; color: var(--kc-ink-soft); }

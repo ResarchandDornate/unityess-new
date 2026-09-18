@@ -2,3 +2,26 @@
 .qstatus.success{ color:#0a7d4f; }
 .qstatus.error{ color:#c0392b; }
 .qform button[disabled]{ opacity:.6; cursor:not-allowed; pointer-events:none; }
+
+/* ---------- Reach us / Where we are cards (smaller than the default .tcard) ---------- */
+#reach .found-grid, #where .found-grid{ gap:.8rem; }
+#reach .tcard, #where .tcard{ padding:.9rem 1rem 1rem; border-radius:14px; }
+#reach .tcard .tmark, #where .tcard .tmark{ font-size:.78rem; font-weight:700; color:var(--orange);
+  letter-spacing:-.01em; margin-bottom:.35rem; }
+#reach .tcard p, #where .tcard p{ font-size:.85rem; margin-top:0; line-height:1.4; }
+
+/* ---------- Service / complaint banner ---------- */
+.service-banner{ margin-top:.8rem; display:flex; align-items:center; justify-content:space-between;
+  gap:1rem; flex-wrap:wrap; background:var(--orange); color:#fff; border-radius:14px; padding:.85rem 1.2rem; }
+.service-banner-main{ display:flex; align-items:center; gap:.75rem; flex:1; min-width:220px; }
+.service-banner-icon{ width:32px; height:32px; border-radius:8px; background:rgba(255,255,255,.16);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0; color:#fff; }
+.service-banner-icon svg{ width:16px; height:16px; }
+.service-banner h3{ font-size:.88rem; font-weight:600; margin:0; color:#fff; }
+.service-banner p{ font-size:.76rem; margin:.15rem 0 0; color:rgba(255,255,255,.85); }
+.service-banner .btn{ background:#fff; color:var(--orange); white-space:nowrap; box-shadow:none;
+  padding:.55em 1.3em; font-size:.82rem; }
+.service-banner .btn::after{ opacity:0; }
+.service-banner .btn:hover{ background:#e8e8e8; transform:translateY(-2px); box-shadow:none; }
+@media (max-width:640px){ .service-banner{ justify-content:center; text-align:center; }
+  .service-banner-main{ justify-content:center; } }
