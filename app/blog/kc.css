@@ -4,6 +4,15 @@
    the site's design system (which has its own .hero, .card,
    .eyebrow, .btn, .wrap, etc. with different definitions).
    ============================================================ */
+/* the site-wide ambient teal gradient/orb effect (body background + the
+   fixed AmbientFX layer rendered in the root layout) shows through on every
+   page; the blog pages want a flat white page, so drop both whenever .kc
+   is present anywhere in the document */
+body:has(.kc){ background-image: none; background-color: #fff; }
+body:has(.kc) .fx-aurora,
+body:has(.kc) .fx-grid,
+body:has(.kc) .fx-grain{ display: none; }
+
 .kc {
   --kc-paper: #FBFAF8; --kc-ink: #16191A; --kc-ink-soft: #4A4E50; --kc-muted: #8A8E90;
   --kc-teal: #005F6B; --kc-teal-tint: #E7EBED; --kc-line: #DEDBD4; --kc-line-soft: #EDEAE3;
