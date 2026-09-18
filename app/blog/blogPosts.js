@@ -16,6 +16,8 @@ const blogPosts = [
     readTime: "5 min read",
     coverImage: "/assets/img/solar-field-at-dusk-in-rajasthan.webp",
     coverAlt: "Solar field at dusk in Rajasthan",
+    bannerImage: "/blogs/why-bess-is-no-longer-optional-banner.webp",
+    bannerAlt: "Why BESS Is No Longer Optional for India — UnityESS blog banner",
     sidebarAds: [
       {
         src: "/blogs/aura%20blog.jpeg",
