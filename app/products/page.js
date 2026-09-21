@@ -137,6 +137,7 @@ export default function ProductsPage() {
           <p className="hero-sub reveal" style={{ marginInline: "auto", maxWidth: "48ch" }}>Our engineering team can recommend the optimal solution based on your load profile &mdash; proven specifications, not projections.</p>
           <div className="reveal" style={{ marginTop: "2.2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/contact" className="btn" data-hot><span>Talk to Engineering</span></a>
+            <a href="/contact?datasheet=bess-catalogue-2026.pdf#quote" className="btn ghost" data-hot><span>Download Catalogue</span></a>
             <a href="/how-it-works#how" className="btn ghost" data-hot><span>How we work</span></a>
           </div>
         </div>

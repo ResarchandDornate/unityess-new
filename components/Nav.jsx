@@ -27,6 +27,7 @@ export default function Nav() {
           <div className="nav-dropdown">
             <a href="/blog" data-hot>Blogs</a>
             <a href="/white-paper" data-hot>White Papers</a>
+            <a href="/contact?datasheet=bess-catalogue-2026.pdf#quote" data-hot>Download Catalogue</a>
           </div>
         </div>
       </div>
