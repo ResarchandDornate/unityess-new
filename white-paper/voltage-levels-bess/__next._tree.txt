@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/1-3gv4nwhc13p.css","style"]
+:HL["/_next/static/chunks/0brtv8gq51pe4.css","style"]
+:HL["/assets/img/unity-ess-logo.webp?v=4","image"]
+:HL["/assets/img/unityess-cabinet-on-site-at-sunrise.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"white-paper","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"voltage-levels-bess","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"mfw4mBliDzzk1pqA75mxf"}

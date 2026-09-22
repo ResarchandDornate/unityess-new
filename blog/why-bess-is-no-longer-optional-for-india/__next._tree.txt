@@ -1,0 +1,12 @@
+:HL["/_next/static/chunks/1-3gv4nwhc13p.css","style"]
+:HL["/_next/static/chunks/2pby6lgn-g39u.css","style"]
+:HL["/assets/img/unity-ess-logo.webp?v=4","image"]
+:HL["/blogs/why-bess-is-no-longer-optional-banner.webp","image"]
+:HL["/blogs/rajasthan-renewable-curtailment-crisis%20new%20blog.webp","image"]
+:HL["/blogs/rajasthan-renewable-curtailment-data-march-2026%20for%20new%20blog.webp","image"]
+:HL["/blogs/solar-demand-supply-mismatch-india%20for%20new%20blog.webp","image"]
+:HL["/blogs/india-renewable-energy-policy-shift%20for%20new%20blog.webp","image"]
+:HL["/blogs/aura%20blog.jpeg","image"]
+:HL["/blogs/aqua%20blog.jpeg","image"]
+:HL["/blogs/ultima%20bolg.jpeg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"why-bess-is-no-longer-optional-for-india","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"mfw4mBliDzzk1pqA75mxf"}
