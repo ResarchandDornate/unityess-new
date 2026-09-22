@@ -38,24 +38,27 @@ export default function ProductsPage() {
       <section className="pad" id="collection">
         <div className="wrap">
           <div className="prod-grid pcards">
-            <a className="card reveal" href="/aura" data-hot>
-              <div className="media"><img src="/assets/img/aura.webp?v=4" alt="Unity Aura commercial cabinets on site" /></div>
-              <div className="body">
-                <span className="btn"><span>Discover Aura</span></span>
+            <div className="card reveal">
+              <a className="media" href="/aura" data-hot><img src="/assets/img/aura.webp?v=4" alt="Unity Aura commercial cabinets on site" /></a>
+              <div className="body" style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                <a className="btn" href="/aura" data-hot><span>Discover Aura</span></a>
+                <a className="btn ghost" href="/contact?datasheet=aura.pdf#quote" data-hot><span>Download Datasheet</span></a>
               </div>
-            </a>
-            <a className="card reveal" href="/aqua" data-hot>
-              <div className="media"><img src="/assets/img/aqua.webp?v=4" alt="Unity Aqua hybrid solar, grid and storage platform" /></div>
-              <div className="body">
-                <span className="btn"><span>Discover Aqua</span></span>
+            </div>
+            <div className="card reveal">
+              <a className="media" href="/aqua" data-hot><img src="/assets/img/aqua.webp?v=4" alt="Unity Aqua hybrid solar, grid and storage platform" /></a>
+              <div className="body" style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                <a className="btn" href="/aqua" data-hot><span>Discover Aqua</span></a>
+                <a className="btn ghost" href="/contact?datasheet=aqua.pdf#quote" data-hot><span>Download Datasheet</span></a>
               </div>
-            </a>
-            <a className="card reveal" href="/ultima" data-hot>
-              <div className="media"><img src="/assets/img/unity-ultima-containerised-utility-system.webp?v=3" alt="Unity Ultima containerised utility system" /></div>
-              <div className="body">
-                <span className="btn"><span>Discover Ultima</span></span>
+            </div>
+            <div className="card reveal">
+              <a className="media" href="/ultima" data-hot><img src="/assets/img/unity-ultima-containerised-utility-system.webp?v=3" alt="Unity Ultima containerised utility system" /></a>
+              <div className="body" style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                <a className="btn" href="/ultima" data-hot><span>Discover Ultima</span></a>
+                <a className="btn ghost" href="/contact?datasheet=ultima.pdf#quote" data-hot><span>Download Datasheet</span></a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -114,6 +117,12 @@ export default function ProductsPage() {
                   <tr><th>Form factor</th><td>Outdoor/Indoor cabinet</td><td>Outdoor cabinet </td><td>Container</td></tr>
                   <tr><th>Cycle life</th><td>8,000+</td><td>8,000+</td><td>8,000+</td></tr>
                   <tr><th>Best for</th><td>Resorts, Hotels, Data centres, CPOs</td><td>Industries, Open Access applications</td><td>Utility-scale solar, grid frequency regulation, IPP/EPC</td></tr>
+                  <tr>
+                    <th>Datasheet</th>
+                    <td><a className="go" href="/contact?datasheet=aura.pdf#quote" data-hot>Aura Datasheet <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
+                    <td><a className="go" href="/contact?datasheet=aqua.pdf#quote" data-hot>Aqua Datasheet <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
+                    <td><a className="go" href="/contact?datasheet=ultima.pdf#quote" data-hot>Ultima Datasheet <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>
+                  </tr>
                   <tr>
                     <th></th>
                     <td><a className="go" href="/aura" data-hot>Discover <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 6h15M12 1l5 5-5 5" stroke="currentColor" strokeWidth="1.4" /></svg></a></td>

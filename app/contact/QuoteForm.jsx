@@ -6,9 +6,12 @@ import { useEffect, useMemo, useState } from "react";
 // never needs to carry a "/" — a bare filename never gets percent-encoded,
 // so the URL stays readable (…?datasheet=aura.pdf instead of …?datasheet=%2Fassets%2F…).
 const RESOURCES = {
-  "aura.pdf": { label: "Aura", path: "/assets/BESS Catalogue 2026.pdf" },
-  "aqua.pdf": { label: "Aqua", path: "/assets/BESS Catalogue 2026.pdf" },
-  "ultima.pdf": { label: "Ultima", path: "/assets/BESS Catalogue 2026.pdf" },
+  "aura.pdf": { label: "Aura", path: "/assets/datasheets/aura.pdf" },
+  "Aura.pdf": { label: "Aura", path: "/assets/whitepapers/Aura.pdf" },
+  "aqua.pdf": { label: "Aqua", path: "/assets/datasheets/aqua.pdf" },
+  "Aqua.pdf": { label: "Aqua", path: "/assets/whitepapers/Aqua.pdf" },
+  "ultima.pdf": { label: "Ultima", path: "/assets/datasheets/ultima.pdf" },
+  "Ultima.pdf": { label: "Ultima", path: "/assets/whitepapers/Ultima.pdf" },
   "bess-catalogue-2026.pdf": { label: "BESS Catalogue 2026", path: "/assets/BESS Catalogue 2026.pdf" },
   "BESS Catalogue 2026.pdf": { label: "BESS Catalogue 2026", path: "/assets/BESS Catalogue 2026.pdf" },
   "why-voltage-levels-matter-in-bess.pdf": {
