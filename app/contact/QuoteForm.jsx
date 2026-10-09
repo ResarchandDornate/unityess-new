@@ -22,7 +22,7 @@ const RESOURCES = {
 };
 
 const LEAD_API_URL =
-  process.env.NEXT_PUBLIC_LEAD_API_URL || "https://backoffice-prod.ornatesolar.com/api/leads/website-lead/";
+  process.env.NEXT_PUBLIC_LEAD_API_URL || "https://api.erp.ornatesolar.com/api/business-development/website-leads/";
 
 const INITIAL_FORM = { name: "", phone: "", email: "", org: "", useCase: "", req: "" };
 
