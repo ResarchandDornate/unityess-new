@@ -300,12 +300,102 @@ const blogPosts = [
       { type: "p", text: "If you are looking for a reliable energy storage solution, call us at 1800 2026 252 to discuss your options." },
     ],
   },
+  {
+    slug: "battery-energy-storage-system-for-industries-in-india",
+    title: "Battery Energy Storage System for 20 Indian Industries That Need to Quit Diesel",
+    metaTitle: "Battery Energy Storage System for Industries in India",
+    metaDescription: "See why a battery energy storage system beats diesel generators for Indian industries: lower cost, instant backup, and the top 20 sectors to switch first.",
+    keyword: "battery energy storage system for industries",
+    category: "Industry Insights",
+    date: "2026-11-21",
+    dateLabel: "November 21, 2026",
+    readTime: "8 min read",
+    coverImage: "/assets/img/solar-energy-for-manufacturing-plants.webp",
+    coverAlt: "Battery energy storage supporting an industrial manufacturing facility",
+    excerpt: "Diesel generators still power industrial backup across India, but battery storage can switch in milliseconds, reduce fuel costs and emissions, and support peak shaving. Here are 20 sectors where BESS can make a difference.",
+    ctaText: "Looking to replace diesel backup at your site?",
+    ctaLabel: "Talk to Our BESS Experts",
+    ctaHref: "/contact",
+    body: [
+      { type: "p", text: "A Battery Energy Storage System (BESS) stores electricity in rechargeable batteries and discharges it on demand, in milliseconds, to run equipment or back up a site during an outage. For Indian industries still relying on diesel generators, BESS can run at a lower cost per unit, switch in instantly instead of waiting for a generator to start, and produce zero on-site combustion emissions. This guide explains how BESS works, compares it with diesel, and highlights 20 sectors where adoption may pay off fastest." },
+      { type: "h2", text: "What is a Battery Energy Storage System (BESS)?" },
+      { type: "p", text: "A battery energy storage system for industries is a modular bank of batteries, typically lithium iron phosphate (LFP) cells, paired with an inverter and a battery management system (BMS) that controls charging and discharging. It charges from the grid, on-site solar, or both, then supplies stored power to a facility's load during an outage or on a schedule that shifts consumption away from expensive peak-tariff hours." },
+      { type: "p", text: "For industrial and commercial sites, BESS also supports peak shaving, open-access optimisation, renewable integration, and power-quality correction during voltage dips and brownouts. This reflects the broader shift from backup-centric to application-driven energy storage." },
+
+      { type: "h2", text: "Why diesel generators still dominate industrial backup power in India" },
+      { type: "p", text: "India's diesel generator market is valued at roughly USD 1.33 billion in 2026 and is projected to cross USD 1.88 billion by 2031. That reflects how many Indian industries still pay for power twice: once to the grid and again for diesel, because grid supply alone cannot always be relied on." },
+      { type: "p", text: "CSTEP's 2025 study Switch on, Smoke off counted 14.7 lakh diesel generator sets above 5 kVA operating in India, with combined capacity above 2.7 lakh MVA, and identified them as a major hyperlocal source of PM2.5 pollution in cities including Bengaluru, Mumbai, and Patna. The telecom sector alone is estimated to use 2.5 to 3.2 billion litres of diesel a year to keep towers running during outages." },
+      { type: "p", text: "Diesel generators run at roughly ₹30–35 per unit on a fuel-led cost basis, with 38–42% efficiency and a response time of around 30 seconds. Fuel prices also expose industrial users to global oil prices, currency movements, and fiscal-policy changes. The source document cites monthly diesel bills of ₹6–8 lakh at a mid-size Delhi NCR hospital." },
+
+      { type: "h2", text: "BESS vs diesel generator: why BESS is better for many applications" },
+      { type: "table", headers: ["Parameter", "Diesel generator", "Battery Energy Storage System (BESS)"], rows: [
+        ["Switchover / response time", "About 30 seconds to start and stabilise", "About 10 millisecond switchover, with no warm-up"],
+        ["Running cost", "About ₹30–35 per unit; fuel-led and exposed to diesel price swings", "Charged from grid or solar; no per-run fuel cost, with lower-cost charging possible during off-peak or solar hours"],
+        ["Efficiency", "About 38–42% fuel-to-power efficiency", "No combustion losses; round-trip efficiency depends on the battery and inverter"],
+        ["Emissions & air quality", "Combustion emissions including PM2.5 and CO₂", "Zero on-site combustion emissions"],
+        ["Noise & site footprint", "Needs acoustic enclosures and noise compliance", "Silent operation"],
+        ["Regulatory direction", "New DG sets must meet CPCB IV+ emission norms since 1 July 2023", "Aligned with policy direction to include storage in new solar and industrial capacity"],
+        ["Best suited for", "Rare, extended outages beyond a battery's designed backup window", "Daily outages, peak-tariff shifting, voltage dips, and routine reliability needs"],
+      ]},
+
+      { type: "h2", text: "Benefits of adopting BESS for industries in India" },
+      { type: "ul", items: [
+        "Lower backup power costs: avoid fuel purchase, transport, and storage, and reduce exposure to diesel price volatility.",
+        "Instant, reliable switchover: a 10 millisecond transition can protect sensitive equipment that cannot tolerate a generator's start-up delay.",
+        "Lower emissions and noise at the site, without diesel combustion or acoustic enclosures.",
+        "Savings beyond backup: peak shaving and open-access optimisation can reduce demand charges and electricity bills even when there is no outage.",
+        "Fits India's policy direction: storage is increasingly included in planning for renewable and industrial capacity.",
+        "Scales with the business, from a commercial site to a utility-scale, grid-adjacent installation.",
+      ]},
+
+      { type: "h2", text: "20 Indian industries where BESS adoption makes sense" },
+      { type: "table", headers: ["#", "Industry", "Diesel pain point", "UnityESS fit"], rows: [
+        ["1", "Telecom towers", "35–40% of India's approximately 824,000 towers still rely on diesel; DoT's green-tower target is 50% renewable by 2027.", "Aura"],
+        ["2", "Data centres", "DG sets remain central to uptime across India's approximately 271 live facilities; IESA projects 6.7–14.2 GWh of BESS demand here by 2032.", "Aqua / Ultima"],
+        ["3", "Hospitals", "Mid-size Delhi NCR hospitals report ₹6–8 lakh in monthly diesel bills.", "Aura"],
+        ["4", "Cold storage & cold chain", "Diesel can account for up to 30% of cold-chain operating cost.", "Aqua"],
+        ["5", "Textile manufacturing", "Continuous spinning, weaving, and dyeing lines face heavy diesel backup costs in centres such as Surat, Tiruppur, Coimbatore, and Ludhiana.", "Aqua / Aura"],
+        ["6", "Pharma & chemicals plants", "CIP cycles and batch processes cannot tolerate outages; the source cites slow power restoration in pharma and biotech.", "Aqua"],
+        ["7", "Auto & auto-component manufacturing", "Industrial demand charges exceed ₹450/kVA in Maharashtra, Gujarat, and Tamil Nadu.", "Aqua / Ultima"],
+        ["8", "EV charging infrastructure", "CEA estimates 47 GW / 237 GWh of BESS will be needed to serve EV charging demand by 2032.", "Aqua"],
+        ["9", "IT parks, commercial real estate & malls", "Commercial real estate is identified as an early BESS-adopter segment.", "Aura"],
+        ["10", "Hospitality: hotels, resorts, banquet halls", "The source cites Bengaluru's Uru Brewpark cutting nearly 1,000 litres of diesel after a BESS-as-a-service deployment.", "Aura"],
+        ["11", "Construction sites", "Highways, airports, metro corridors, and industrial-corridor projects create sustained temporary-power demand.", "Aura / Aqua"],
+        ["12", "Mining & quarrying", "Remote sites far from urban centres depend on gensets for operational continuity.", "Aqua / Ultima"],
+        ["13", "Ports & shipping / logistics hubs", "A 250 MW / 500 MWh BESS project broke ground in Tamil Nadu in October 2026; captive port power could follow a similar model.", "Ultima"],
+        ["14", "Railways & metro corridors", "Large infrastructure projects need sustained and reliable backup power.", "Ultima"],
+        ["15", "Airports", "Large, grid-adjacent sites need reliable power during construction and operations.", "Aqua / Ultima"],
+        ["16", "Cement, steel & heavy process industries", "High demand charges and long operating hours make energy management a key cost concern.", "Ultima"],
+        ["17", "Food processing & FMCG plants", "Refrigeration and continuous-process lines face spoilage and process-interruption risks.", "Aqua"],
+        ["18", "Warehousing & 3PL logistics parks", "Sites combine on-site generation with grid supply to reduce dependence on a single source.", "Aqua"],
+        ["19", "BFSI: bank branches, ATMs & data-processing centres", "Distributed sites need dependable backup and can benefit from application-driven storage.", "Aura"],
+        ["20", "Agriculture: irrigation pumpsets & rural agri-processing", "Solar-plus-storage cold rooms can reduce post-harvest spoilage for smallholders.", "Aura"],
+      ]},
+
+      { type: "h2", text: "What global BESS leaders are already proving" },
+      { type: "p", text: "India is catching up with a global shift. The source document reports that global battery storage installations crossed 100 GW in 2025, up 40% year-on-year and eleven times the 2021 level. Large battery installations are also being used abroad to provide backup and bridging power at data centres in place of diesel generators." },
+      { type: "p", text: "UnityESS is positioned as a domestic alternative to imported systems, with cells and systems produced at a 6-acre facility in Ghiloth, Rajasthan, and nine years of battery and O&M data across three factories. The document also reports that India allocated 10.4 GW of standalone BESS capacity in 2025 and projects roughly 30-fold growth in the C&I energy-storage market by 2032." },
+
+      { type: "h2", text: "Policy signals making BESS the default in Indian industry" },
+      { type: "p", text: "The Central Electricity Authority puts India's total storage requirement at 888 GWh by 2035–36, including 321 GWh of battery storage, to meet rising demand and integrate renewable power. The Ministry of Power is steering new solar projects toward storage as a component of renewable capacity." },
+      { type: "p", text: "Diesel will not disappear overnight, and it still has a role in rare, extended outages. A battery sized for two hours cannot cover a two-day outage. But for routine outages, peak-tariff windows, voltage dips, and brownouts, storage can respond quickly without a fuel run." },
+
+      { type: "h2", text: "Which UnityESS BESS fits your industry?" },
+      { type: "p", text: "UnityESS Aura suits commercial and industrial sites needing 100–225 kWh of air-cooled backup, such as hospitals, telecom towers, malls, and hospitality sites. UnityESS Aqua serves industrial and open-access consumers from 261 kWh to 3 MWh, with liquid cooling for continuous duty in cold chain, textiles, pharma, data centres, and EV charging. UnityESS Ultima is designed for utility-scale loads, at 5–6.25 MWh per container, including ports, railways, mining, and grid-adjacent heavy industry." },
+      { type: "p", text: "The source document reports UnityESS deployments of 35 MWh at Phalodi, 4.5 MWh at Bikaner, and 3.34 MWh in Maharashtra, alongside a 261 kWh BESS-integrated EV charging site in Coimbatore." },
+
+      { type: "h2", text: "About UnityESS" },
+      { type: "p", html: '<a href="https://unityess.ai/">UnityESS</a> is a next-generation battery energy storage system in India, developed by <a href="https://ornatesolar.com/">Ornate Solar</a> in collaboration with Inverted Energy. It is designed to deliver reliable, intelligent, and scalable energy storage solutions for modern power needs.' },
+      { type: "p", text: "By combining solar expertise with battery technology, UnityESS provides energy reliability, cost optimisation, and energy independence for commercial, industrial, utility-scale, and residential applications." },
+      { type: "p", text: "To discuss an energy storage solution for your site, call 1800 2026 252." },
+    ],
+  },
 ];
 
 export default blogPosts;
 
 export function getAllPosts() {
-  return blogPosts;
+  return [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function getPostBySlug(slug) {

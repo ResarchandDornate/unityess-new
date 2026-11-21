@@ -181,6 +181,12 @@ body:has(.kc) .fx-grain{ display: none; }
 .kc-prose li::marker{ color: var(--kc-teal); }
 .kc-prose p a{ color: var(--kc-teal); text-decoration: underline; text-underline-offset: 2px; }
 .kc-prose p a:hover{ color: var(--kc-ink); }
+.kc-table-wrap{ margin: 1.5rem 0; overflow-x: auto; border: 1px solid var(--kc-line); border-radius: var(--kc-radius); }
+.kc-table{ width: 100%; border-collapse: collapse; min-width: 640px; font-size: 13px; line-height: 1.55; }
+.kc-table th,.kc-table td{ padding: .8rem .9rem; border-bottom: 1px solid var(--kc-line); text-align: left; vertical-align: top; }
+.kc-table th{ background: rgba(0,0,0,.035); color: var(--kc-ink); font-weight: 600; }
+.kc-table td{ color: var(--kc-ink-soft); }
+.kc-table tr:last-child td{ border-bottom: 0; }
 
 .kc-figure{ margin: 2rem 0; }
 .kc-figure img{ width: 100%; border-radius: var(--kc-radius); border: 1px solid var(--kc-line); display: block; }

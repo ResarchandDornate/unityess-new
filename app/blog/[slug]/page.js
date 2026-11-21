@@ -33,6 +33,21 @@ function ArticleBlock({ block }) {
           ))}
         </ul>
       );
+    case "table":
+      return (
+        <div className="kc-table-wrap">
+          <table className="kc-table">
+            <thead>
+              <tr>{block.headers.map((header) => <th key={header}>{header}</th>)}</tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, i) => (
+                <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     case "image":
       return (
         <figure className="kc-figure">
