@@ -42,11 +42,27 @@ function ArticleBlock({ block }) {
         <div className="kc-table-wrap">
           <table className="kc-table">
             <thead>
-              <tr>{block.headers.map((header) => <th key={header}>{header}</th>)}</tr>
+              <tr>
+                {block.headers.map((header, i) =>
+                  typeof header === "string" && header.includes("<") ? (
+                    <th key={i} dangerouslySetInnerHTML={{ __html: header }} />
+                  ) : (
+                    <th key={i}>{header}</th>
+                  )
+                )}
+              </tr>
             </thead>
             <tbody>
               {block.rows.map((row, i) => (
-                <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+                <tr key={i}>
+                  {row.map((cell, j) =>
+                    typeof cell === "string" && cell.includes("<") ? (
+                      <td key={j} dangerouslySetInnerHTML={{ __html: cell }} />
+                    ) : (
+                      <td key={j}>{cell}</td>
+                    )
+                  )}
+                </tr>
               ))}
             </tbody>
           </table>

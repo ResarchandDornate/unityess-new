@@ -180,8 +180,8 @@ body:has(.kc) .fx-grain{ display: none; }
 .kc-prose ul{ margin-top: 1rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: .55rem; }
 .kc-prose li{ font-size: 15px; line-height: 1.65; color: var(--kc-ink-soft); }
 .kc-prose li::marker{ color: var(--kc-teal); }
-.kc-prose p a{ color: var(--kc-teal); text-decoration: underline; text-underline-offset: 2px; }
-.kc-prose p a:hover{ color: var(--kc-ink); }
+.kc-prose p a, .kc-prose li a, .kc-table td a{ color: var(--kc-teal); text-decoration: underline; text-underline-offset: 2px; }
+.kc-prose p a:hover, .kc-prose li a:hover, .kc-table td a:hover{ color: var(--kc-ink); }
 .kc-table-wrap{ margin: 1.5rem 0; overflow-x: auto; border: 1px solid var(--kc-line); border-radius: var(--kc-radius); }
 .kc-table{ width: 100%; border-collapse: collapse; min-width: 640px; font-size: 13px; line-height: 1.55; }
 .kc-table th,.kc-table td{ padding: .8rem .9rem; border-bottom: 1px solid var(--kc-line); text-align: left; vertical-align: top; }
