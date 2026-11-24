@@ -4,6 +4,274 @@
 // picks up new slugs automatically on the next build.
 const blogPosts = [
   {
+    slug: "unityess-aura-commercial-industrial-battery-storage",
+    title: "UnityESS Aura: A Commercial and Industrial Battery Storage System for Business Continuity",
+    metaTitle: "UnityESS Aura: Commercial and Industrial Battery Storage System",
+    metaDescription:
+      "UnityESS Aura is a commercial and industrial battery storage system for factories, hospitals and cold storage, with sub-20ms switchover.",
+    keyword: "commercial and industrial battery storage system",
+    category: "Product Spotlight",
+    date: "2026-11-24",
+    dateLabel: "November 24, 2026",
+    readTime: "6 min read",
+    coverImage: "/assets/img/aura-4-261-kwh-bess.webp",
+    coverAlt: "UnityESS Aura commercial and industrial battery storage system cabinet",
+    bannerImage: "/blogs/aura%20blog.jpeg",
+    bannerAlt: "UnityESS Aura — Commercial and Industrial Battery Storage System",
+    sidebarAds: [
+      {
+        src: "/blogs/aura%20blog.jpeg",
+        alt: "Unity Aura — air cooled, commercial & industrial, 100 kWh to 260 kWh",
+        href: "/aura",
+      },
+      {
+        src: "/blogs/aqua%20blog.jpeg",
+        alt: "Unity Aqua — liquid cooled, open access & industrial, 261 kWh to 3000 kWh",
+        href: "/aqua",
+      },
+      {
+        src: "/blogs/ultima%20bolg.jpeg",
+        alt: "Unity Ultima — containerised, utility scale, 3.34 MWh to 5.016 MWh",
+        href: "/ultima",
+      },
+    ],
+    excerpt:
+      "UnityESS Aura is a cabinet-based commercial and industrial battery energy storage system (100–260 kWh, 50–100 kW) with sub-20ms switchover, engineered for factories, hospitals, warehouses and cold storage across India.",
+    ctaText: "Evaluating a commercial and industrial battery storage system for your business?",
+    ctaLabel: "Talk to Our BESS Experts",
+    ctaHref: "/contact",
+    body: [
+      {
+        type: "p",
+        html: 'A commercial and industrial <a href="/">battery energy storage system</a> (BESS) helps businesses store electricity and use it when the grid supply is interrupted or when energy costs are higher. <a href="/aura">UnityESS Aura</a> is a cabinet-based commercial and industrial battery storage system designed for businesses in India. The published product range is 100–260 kWh, with 50–100 kW power options. It uses LFP battery technology, supports switchover in under 20 milliseconds and is designed for applications such as <a href="/applications/industrial">factories</a>, warehouses, <a href="/applications/hospitals">hospitals</a>, commercial buildings and <a href="/blog/battery-storage-for-ev-charging-in-india">EV charging infrastructure</a>.',
+      },
+      {
+        type: "p",
+        text: "For businesses assessing a diesel generator alternative, UnityESS Aura can support backup power, peak-load management and better use of solar energy. The right configuration depends on the facility's load profile, required backup duration and operating conditions.",
+      },
+      {
+        type: "h2",
+        text: "How Power Cuts Affect Businesses",
+      },
+      {
+        type: "p",
+        text: "A power interruption can affect production schedules, refrigeration, IT infrastructure and essential building services. In a factory, an unexpected outage may interrupt a production process. In a hospital, a dependable battery backup is essential for critical equipment. In a cold storage facility, maintaining temperature is essential to protect stored goods.",
+      },
+      {
+        type: "p",
+        html: 'Diesel generator sets are widely used for backup, but they involve fuel, regular maintenance, emissions and a start-up interval. A <a href="/products">battery energy storage system</a> offers another way to manage short interruptions and energy demand. Depending on system sizing and site requirements, it can reduce reliance on diesel generation and help businesses manage their electricity use more strategically.',
+      },
+      {
+        type: "p",
+        html: 'For an overview of how storage supports commercial and industrial consumers, read Ornate Solar’s guide to <a href="https://ornatesolar.com/blog/bess-for-ci-consumers-in-india-benefits-policies-use-cases" target="_blank" rel="noopener noreferrer">battery energy storage systems for C&amp;I consumers</a>, or explore our sector analysis on <a href="/blog/battery-energy-storage-system-for-industries-in-india">battery storage systems for 20 Indian industries</a>.',
+      },
+      {
+        type: "h2",
+        text: "What Is UnityESS Aura?",
+      },
+      {
+        type: "p",
+        html: '<a href="/aura">UnityESS Aura</a> is a commercial and industrial battery energy storage system designed for businesses that need backup power, peak-load support or renewable-energy integration. Ornate Solar and UnityESS list Aura in 100–260 kWh configurations, with power options ranging from 50 kW to 100 kW.',
+      },
+      {
+        type: "p",
+        text: "The system uses lithium iron phosphate (LFP) battery cells and an air-cooled, cabinet-based design. Its IP54-rated enclosure is intended for indoor and outdoor installation, subject to site and installation requirements. Multiple units can be considered where a facility's energy requirement exceeds the capacity of a single cabinet.",
+      },
+      {
+        type: "p",
+        html: 'Explore the <a href="/aura">UnityESS Aura product page</a> and download the <a href="/assets/datasheets/aura.pdf" target="_blank" rel="noopener noreferrer">UnityESS Aura datasheet</a> for the latest product specifications.',
+      },
+      {
+        type: "image",
+        src: "/assets/img/aura-4-261-kwh-bess.webp",
+        alt: "UnityESS Aura commercial and industrial battery storage system cabinet",
+        caption: "UnityESS Aura: Cabinet-based commercial and industrial battery energy storage system (100–260 kWh).",
+      },
+      {
+        type: "h2",
+        text: "UnityESS Aura: Key Features and Specifications",
+      },
+      {
+        type: "table",
+        headers: ["Parameter", "Published information"],
+        rows: [
+          ["Capacity range", "100–260 kWh"],
+          ["Power range", "50–100 kW"],
+          ["Battery chemistry", "Lithium iron phosphate (LFP)"],
+          ["Cooling", "Air-cooled"],
+          ["Enclosure protection", "IP54"],
+          ["DC round-trip efficiency", "94%"],
+          ["Switchover", "Under 20 milliseconds"],
+          ["Cycle life", "8,000 cycles"],
+        ],
+      },
+      {
+        type: "p",
+        html: '<em>Note: Product configurations and technical values can change. Confirm the applicable model, AC output, backup duration, efficiency measurement, cycle-life conditions, certifications and operating limits against the latest approved <a href="/assets/datasheets/aura.pdf" target="_blank" rel="noopener noreferrer">Aura datasheet</a> before final publication or system selection.</em>',
+      },
+      {
+        type: "h2",
+        text: "How UnityESS Aura Manages Energy",
+      },
+      {
+        type: "p",
+        text: "A BESS is more than a battery cabinet. A complete installation brings together battery cells, a battery management system (BMS), power conversion equipment, thermal management, protection systems and energy management controls. These components work together to charge, store and discharge energy in line with the site’s operating requirements.",
+      },
+      {
+        type: "p",
+        html: 'UnityESS uses its energy management platform, <a href="/how-it-works">Unity EMS</a>, to monitor system performance and manage charging and discharging strategies. Depending on the project design, the system can be configured to support peak-load management, backup power and the integration of on-site solar generation.',
+      },
+      {
+        type: "p",
+        html: 'Learn more about the wider <a href="/products">UnityESS battery energy storage portfolio</a> and how its systems are positioned for different project scales.',
+      },
+      {
+        type: "h2",
+        text: "How UnityESS Aura Helps Businesses",
+      },
+      {
+        type: "h3",
+        text: "1. Backup power during grid interruptions",
+      },
+      {
+        type: "p",
+        text: "UnityESS publishes a switchover time of under 20 milliseconds for Aura. This fast transfer can help support sensitive electrical loads when the grid supply fails. The actual outcome depends on system configuration, connected equipment, protection settings and the load being supported.",
+      },
+      {
+        type: "h3",
+        text: "2. Peak-load management",
+      },
+      {
+        type: "p",
+        text: "A battery storage system can charge when electricity is available and discharge during selected high-demand periods. This can help a business manage peak demand, subject to its tariff structure, load profile, battery capacity and dispatch strategy.",
+      },
+      {
+        type: "h3",
+        text: "3. Reduced dependence on diesel generation",
+      },
+      {
+        type: "p",
+        text: "By supplying energy from stored electricity during suitable operating periods, UnityESS Aura can reduce generator runtime. Whether it can replace a diesel generator for a particular facility depends on the required power, backup duration, critical-load profile and site-specific design. It should not be assumed to replace every generator application without an engineering assessment.",
+      },
+      {
+        type: "h3",
+        text: "4. Better use of on-site solar power",
+      },
+      {
+        type: "p",
+        html: 'When designed to work with a solar installation, battery storage can retain surplus solar energy for use later, including periods when solar generation is low. This can increase the usefulness of on-site renewable electricity and help align energy supply with a facility’s demand. For related information, explore our guides to <a href="/applications/solar-hybrid">solar hybrid BESS applications</a> and Ornate Solar’s <a href="https://ornatesolar.com/blog/bess-for-ci-consumers-in-india-benefits-policies-use-cases" target="_blank" rel="noopener noreferrer">commercial and industrial BESS applications guide</a>.',
+      },
+      {
+        type: "h2",
+        text: "Where Can Businesses Use UnityESS Aura?",
+      },
+      {
+        type: "p",
+        text: "UnityESS Aura is positioned for commercial and industrial facilities with defined backup, energy-management or solar-integration requirements. Potential applications include:",
+      },
+      {
+        type: "ul",
+        items: [
+          'Factories and manufacturing units that need a <a href="/applications/industrial">BESS for factories</a> to support production loads.',
+          'Warehouses and commercial buildings seeking backup and peak-demand management.',
+          'Hospitals and healthcare facilities that need <a href="/applications/hospitals">battery backup for hospitals</a> with critical electrical loads.',
+          'Data centres and server facilities that require carefully engineered <a href="/applications/data-centres">power continuity for data centres</a>.',
+          'Hotels and large commercial facilities with variable demand.',
+          'EV charging stations that need support for <a href="/blog/battery-storage-for-ev-charging-in-india">charging loads and peak management</a>.',
+          'Cold storage facilities where refrigeration continuity is important, subject to load and backup-duration assessment.',
+        ],
+      },
+      {
+        type: "p",
+        html: 'See the complete <a href="/applications">UnityESS applications overview</a> for more information about energy storage system use cases.',
+      },
+      {
+        type: "h2",
+        text: "How to Choose the Right UnityESS System",
+      },
+      {
+        type: "p",
+        text: "Not every facility has the same power requirement. A site assessment should consider the connected load in kW, the energy required in kWh, the duration of backup, the nature of critical loads, the electricity tariff, available solar generation and the space available for installation.",
+      },
+      {
+        type: "p",
+        html: 'UnityESS Aura is intended for commercial-scale applications. For larger industrial storage requirements, businesses can also review <a href="/aqua">UnityESS Aqua</a>, while <a href="/ultima">UnityESS Ultima</a> is positioned for utility-scale projects. The most suitable system should be selected through an engineering assessment rather than capacity alone.',
+      },
+      {
+        type: "p",
+        html: 'Compare the <a href="/aqua">UnityESS Aqua</a> and <a href="/ultima">UnityESS Ultima</a> product ranges on our <a href="/products">products overview page</a>.',
+      },
+      {
+        type: "h2",
+        text: "Why Choose Ornate Solar and UnityESS?",
+      },
+      {
+        type: "p",
+        html: 'UnityESS is the battery energy storage brand developed by <a href="https://ornatesolar.com/" target="_blank" rel="noopener noreferrer">Ornate Solar</a> and Inverted Energy. Ornate Solar’s portfolio covers battery energy storage solutions for commercial, industrial and utility-scale applications. The company’s BESS offering is supported by product engineering, project assessment and system-level integration. Learn more about our background on the <a href="/about">About Us page</a>.',
+      },
+      {
+        type: "p",
+        html: 'To understand the broader company and its energy solutions, visit <a href="https://ornatesolar.com/" target="_blank" rel="noopener noreferrer">Ornate Solar</a> or read about <a href="/projects">UnityESS project deployments</a>, including our <a href="/blog/why-bess-is-no-longer-optional-for-india">Rajasthan multi-site storage projects</a>.',
+      },
+      {
+        type: "h2",
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "h3",
+        text: "What is the UnityESS Aura battery storage system?",
+      },
+      {
+        type: "p",
+        html: '<a href="/aura">UnityESS Aura</a> is a commercial and industrial battery energy storage system (BESS) designed to provide backup power, support peak-load management and enable better use of stored or solar energy.',
+      },
+      {
+        type: "h3",
+        text: "What is the capacity of UnityESS Aura?",
+      },
+      {
+        type: "p",
+        html: 'UnityESS Aura is available in 100 kWh – 260 kWh configurations. Confirm the current available model and configuration with the <a href="/contact">UnityESS team</a>.',
+      },
+      {
+        type: "h3",
+        text: "How much power can UnityESS Aura deliver?",
+      },
+      {
+        type: "p",
+        html: 'The published <a href="/aura">UnityESS Aura product page</a> lists a power range of 50 kW to 100 kW. The applicable output depends on the selected configuration.',
+      },
+      {
+        type: "h3",
+        text: "How quickly does UnityESS Aura switch over during a power cut?",
+      },
+      {
+        type: "p",
+        text: "UnityESS publishes a switchover time of under 20 milliseconds for Aura. Actual performance should be checked against the approved system design and connected-load requirements.",
+      },
+      {
+        type: "h3",
+        text: "Can UnityESS Aura reduce the use of diesel generators?",
+      },
+      {
+        type: "p",
+        text: "Yes. It can supply stored energy during suitable operating periods and may reduce generator runtime. Full replacement depends on the facility’s load, required backup duration and system design.",
+      },
+      {
+        type: "h2",
+        text: "Find the Right Battery Storage System for Your Business",
+      },
+      {
+        type: "p",
+        text: "Power reliability and energy costs affect every part of a commercial or industrial operation. UnityESS Aura brings together LFP battery storage, a cabinet-based design and fast switchover to support businesses looking to strengthen backup arrangements and manage energy use.",
+      },
+      {
+        type: "p",
+        html: 'Share your facility’s load profile, required backup duration and operating details with the UnityESS team to assess the right configuration. <a href="/aura">Explore UnityESS Aura</a> and <a href="/contact">request a consultation</a>.',
+      },
+    ],
+  },
+  {
     slug: "why-bess-is-no-longer-optional-for-india",
     title: "Why BESS Is No Longer Optional for India’s Renewable Energy Growth",
     metaTitle: "BESS in India: Solving Renewable Curtailment Challenges",

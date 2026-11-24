@@ -4,7 +4,7 @@ import { useState } from "react";
 // Fixed taxonomy the site organizes posts under — kept stable regardless of
 // which categories happen to have a published post yet, so the filter bar
 // reflects the site's content plan, not just today's post count.
-const CATEGORIES = ["All Posts", "Industry Insights", "Case Studies", "Product Updates", "Company News"];
+const CATEGORIES = ["All Posts", "Product Spotlight", "Industry Insights", "Case Studies", "Product Updates", "Company News"];
 
 export default function KnowledgeCentreGrid({ posts }) {
   const [active, setActive] = useState("All Posts");

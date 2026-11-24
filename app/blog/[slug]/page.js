@@ -28,9 +28,13 @@ function ArticleBlock({ block }) {
     case "ul":
       return (
         <ul>
-          {block.items.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
+          {block.items.map((item, i) =>
+            typeof item === "string" && item.includes("<") ? (
+              <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+            ) : (
+              <li key={i}>{item}</li>
+            )
+          )}
         </ul>
       );
     case "table":
